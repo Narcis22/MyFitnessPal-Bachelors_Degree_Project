@@ -1,0 +1,53 @@
+:host { 
+    height: 100%;
+}
+
+.login {
+    background-image: url("../../../assets/media/backgrounds/login-background.png"); 
+    background-size: cover; 
+    height: 100vh;
+}
+
+.container-auth{
+    display: grid;
+    justify-content: center;
+}
+
+.lang-select{
+    position: absolute;
+    width: 100%;
+}
+.language-picker:hover{
+    border-color: black;
+}
+
+.option-lang{
+    color: rgb(109, 109, 109);
+    background-color: transparent;
+    width: 150px;
+}
+
+.picker-container{
+    width: 150px;
+    background-color: white;
+    padding: 5px 10px 5px 15px;
+    border-radius: 6px;
+}
+
+.language-label{
+    margin-left: 1.5rem;
+    color: black;
+    font-size: medium;
+    font-weight: 600 !important;
+    width: 150px;
+}
+
+.language-flag{
+    margin-top: -3px;
+}
+
+.language-selector-container{
+    display: flex;
+    float: right;
+    justify-content: end;
+}

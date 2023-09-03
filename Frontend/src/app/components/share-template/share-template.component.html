@@ -1,0 +1,65 @@
+<div class="share-template-container">
+    <div class="shareable-container specific">
+        <div class="display-medal">
+            <img *ngIf="!(data.medalType === 'month')" class="medal-img" src="../../../assets/media/achievements/{{data.medal.sportName}}-{{data.medalType}}-medal.png" height="200px">
+            <img *ngIf="(data.medalType === 'month')" class="medal-img" src="../../../assets/media/achievements/month-{{data.medal.sportName}}.png" height="200px">
+            <img *ngIf="data.medalType === 'gold'" class="laur-img" src="../../../assets/media/images/laur-gold.png" height="350px">
+            <img *ngIf="data.medalType === 'silver'" class="laur-img" src="../../../assets/media/images/laur-silver.png" height="350px">
+            <img *ngIf="data.medalType === 'bronze'" class="laur-img" src="../../../assets/media/images/laur-bronze.png" height="350px">
+            <img *ngIf="data.medalType === 'month'" class="laur-img" src="../../../assets/media/images/laur-month.png" height="350px">
+        </div>
+
+        <div class="content">
+            <div *ngIf="!(this.data.medalType === 'month')" class="sport-name fs-40 {{sportNameCustom}}">
+                {{data.medal.sportName}}
+            </div>
+
+            <div *ngIf="(this.data.medalType === 'month')" class="sport-name fs-40 {{sportNameCustom}}">
+                {{this.monthNames.get(data.medal.sportName)}}
+            </div>
+
+            <!-- Gold & Silver achievement -->
+            <div class="info-user" *ngIf="data.medalType === 'gold' || data.medalType === 'silver'">
+                {{username}} 
+                {{ 'achievements.count-share-1' | translate }}
+                {{data.medalType}}
+                {{ 'achievements.count-share-2' | translate }}
+                {{data.medal.sportName}}
+                {{ 'achievements.count-share-3' | translate }}
+                {{data.count}}
+                {{ 'achievements.count-share-4' | translate }}
+            </div>
+
+            <!-- Bronze achievement -->
+            <div class="info-user" *ngIf="data.medalType === 'bronze'">
+                {{username}} 
+                {{ 'achievements.count-share-5' | translate }}
+            </div>
+
+            <!-- Monthly achievement -->
+            <div class="info-user" *ngIf="data.medalType === 'month'">
+                {{username}} 
+                {{ 'achievements.month-share-text-1' | translate }}
+                {{monthNames.get(data.medal.sportName)}} 2023
+                {{ 'achievements.month-share-text-2' | translate }}
+            </div>
+
+            <!-- Footer note -->
+            <div class="join-message">
+                {{ 'achievements.join' | translate}} 
+                {{username}} 
+                {{ 'achievements.join-message' | translate }}
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="btn btn-danger fs-20 m-1 me-3" (click)="close()">
+            {{ 'general.abandon' | translate }}
+        </button>
+        <button class="btn btn-warning fs-20 m-1 ms-3" (click)="capture()">
+            <img src="../../../assets/media/images/downloads.png" height="20px">
+            {{ 'general.share' | translate }}
+        </button>
+    </div>
+</div>

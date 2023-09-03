@@ -1,0 +1,17 @@
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\bin\Debug\net6.0\MyFitnessPal.Entities.deps.json
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\bin\Debug\net6.0\MyFitnessPal.Entities.runtimeconfig.json
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\bin\Debug\net6.0\MyFitnessPal.Entities.dll
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\bin\Debug\net6.0\MyFitnessPal.Entities.pdb
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\bin\Debug\net6.0\MyFitnessPal.Common.dll
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\bin\Debug\net6.0\MyFitnessPal.Common.pdb
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.csproj.AssemblyReference.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.AssemblyInfoInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.AssemblyInfo.cs
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.csproj.CoreCompileInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.csproj.CopyComplete
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.dll
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\refint\MyFitnessPal.Entities.dll
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.pdb
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\MyFitnessPal.Entities.genruntimeconfig.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Entities\obj\Debug\net6.0\ref\MyFitnessPal.Entities.dll

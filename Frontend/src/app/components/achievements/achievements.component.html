@@ -1,0 +1,165 @@
+<div class="container-achievements h-100 w-100">
+    <div class="floating-container">
+        <div>
+            <img class="scroll-image" src="../../../assets/media/images/info-scroll.png" height=400px>
+            </div>
+        <div class="floating-card-container d-flex justify-content-end pe-5">
+            <div class="bronze-card p-5">
+                <div class="medals-show">
+                    <label class="card-title fs-40"> {{ 'achievements.bronze' | translate }} </label>
+                    <div *ngIf="this.bronzeMedalsMock.length >= 6" class="medals-small-preview">
+                        <div class="coin-image" *ngFor="let id of [0,1,2,3]">
+                            <img src="../../../assets/media/achievements/{{bronzeMedalsMock[id].sportName}}-bronze-medal.png" height="60px" width="60px">
+                        </div>
+                        <div class="coin-image">
+                            <img src="../../../assets/media/profile-pics/profile-pic-27.png" height="60px" width="60px">
+                        </div>
+                    </div>
+                    <div *ngIf="this.bronzeMedalsMock.length >= 1 && this.bronzeMedalsMock.length < 6" class="medals-small-preview">
+                        <div class="coin-image" *ngFor="let medal of bronzeMedalsMock">
+                            <img src="../../../assets/media/achievements/{{medal.sportName}}-bronze-medal.png" height="60px" width="60px">
+                        </div>
+                    </div>
+                    <div *ngIf="this.bronzeMedalsMock.length === 0" class="medals-small-preview fs-30 ms-1">
+                        {{ 'achievements.nothing-here' | translate }} :(
+                    </div>
+                </div>
+                <div class="fs-20 footer-floating-card">
+                    <label class="see-detail-label cursor-pointer" (click)="openFullList(1)"> {{ 'achievements.see-detail' | translate }} </label>
+                    <img class="cursor-pointer ms-1 arr cursor-pointer" height=18px src="../../../assets/media/images/arrow-right.png" (click)="openFullList(1)">
+                </div>
+            </div>
+        </div>
+    
+        <div class="floating-card-container">
+            <div class="gold-card p-5">
+                <div class="medals-show">
+                    <label class="card-title fs-40"> {{ 'achievements.gold' | translate }} </label>
+                    <div *ngIf="this.goldMedalsMock.length >= 9" class="medals-small-preview  pt-5">
+                        <div class="coin-image gold-image" *ngFor="let id of [0,1,2,3,4]">
+                            <img src="../../../assets/media/achievements/{{goldMedalsMock[id].sportName}}-gold-medal.png" height="80px" width="80px">
+                        </div>
+                        <div class="coin-image gold-image">
+                            <img src="../../../assets/media/profile-pics/profile-pic-28.png" height="80px" width="80px">
+                        </div>
+                    </div>
+                    <div *ngIf="this.goldMedalsMock.length >= 1 && this.goldMedalsMock.length < 6" class="medals-small-preview  pt-5">
+                        <div class="coin-image gold-image" *ngFor="let medal of goldMedalsMock">
+                            <img src="../../../assets/media/achievements/{{medal.sportName}}-gold-medal.png" height="80px" width="80px">
+                        </div>
+                    </div>
+                    <div *ngIf="this.goldMedalsMock.length === 0" class="medals-small-preview fs-30 ms-5  pt-5">
+                        {{ 'achievements.nothing-here' | translate }} :(
+                    </div>
+                </div>
+                <div class="fs-20 footer-floating-card">
+                    <label class="see-detail-label cursor-pointer" (click)="openFullList(3)"> {{ 'achievements.see-detail' | translate }} </label>
+                    <img class="cursor-pointer ms-1 arr cursor-pointer" height=18px src="../../../assets/media/images/arrow-right.png" (click)="openFullList(3)">
+                </div>
+            </div>
+        </div>
+        
+        <div class="floating-card-container ps-4">
+            <div class="silver-card p-5">
+                <div class="medals-show">
+                    <label class="card-title fs-40"> {{ 'achievements.silver' | translate }} </label>
+                    <div *ngIf="this.silverMedalsMock.length >= 6" class="medals-small-preview">
+                        <div class="coin-image silver-image" *ngFor="let id of [0,1,2,3,4]">
+                            <img src="../../../assets/media/achievements/{{silverMedalsMock[id].sportName}}-silver-medal.png" height="70px" width="70px">
+                        </div>
+                        <div class="coin-image silver-image">
+                            <img src="../../../assets/media/profile-pics/profile-pic-29.png" height="70px" width="70px">
+                        </div>
+                    </div>
+                    <div *ngIf="this.silverMedalsMock.length >= 1 && this.silverMedalsMock.length < 6" class="medals-small-preview ">
+                        <div class="coin-image silver-image" *ngFor="let medal of silverMedalsMock">
+                            <img src="../../../assets/media/achievements/{{medal.sportName}}-silver-medal.png" height="70px" width="70px">
+                        </div>
+                    </div>
+                    <div *ngIf="this.silverMedalsMock.length === 0" class="medals-small-preview fs-30 ms-5  pt-5">
+                        {{ 'achievements.nothing-here' | translate }} :(
+                    </div>
+                </div>
+                <div class="fs-20 footer-floating-card">
+                    <label class="see-detail-label cursor-pointer" (click)="openFullList(2)"> {{ 'achievements.see-detail' | translate }} </label>
+                    <img class="cursor-pointer arr cursor-pointer" height=18px src="../../../assets/media/images/arrow-right.png" (click)="openFullList(2)">
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="monthly-medal-card">
+        <div class="monthly-medals-row fs-30"> {{ 'achievements.monthly-list' | translate }} : </div>
+        <div class="monthly-medals-list"> 
+            <div *ngFor="let medal of monthlyMedalsMock" class="monthly-img">
+                <img class="cursor-pointer" height=100px src="../../../assets/media/achievements/month-{{medal.sportName}}.png" (click)="openMonthlyShare(medal)">
+            </div>
+            <div *ngIf="monthlyMedalsMock.length === 0" class="monthly-medals-row fs-30">
+                {{ 'achievements.nothing-here' | translate }} :(
+            </div>
+        </div>
+    </div>
+
+
+    <div class="info-section">
+        <label class="info-title fs-50 black-drop-shadow"> {{ 'achievements.how-to-get' | translate}} </label>
+        <div class="medal-info-container mt-5">
+            <div class="medal-info-title">
+                <img class='me-5 mt-1' src="../../../assets/media/achievements/template-gold.png" height="60px">
+                <label class='fs-35 mt-2 gold-drop-shadow'> {{ 'achievements.gold-medals' | translate }} </label>
+                <img class='ms-5 mt-1' src="../../../assets/media/achievements/template-gold.png" height="60px">
+            </div>
+            <div class="medal-info-text">
+                <label class="gold-drop-shadow"> {{ 'achievements.gold-info' | translate}} </label>
+            </div>
+        </div>
+
+        <div class="medal-info-container">
+            <div class="medal-info-title">
+                <img class='me-5 mt-1' src="../../../assets/media/achievements/template-silver.png" height="60px">
+                <label class='fs-35 mt-2 black-drop-shadow'> {{ 'achievements.silver-medals' | translate }} </label>
+                <img class='ms-5 mt-1' src="../../../assets/media/achievements/template-silver.png" height="60px">
+            </div>
+            <div class="medal-info-text">
+                <label class="black-drop-shadow"> {{ 'achievements.silver-info' | translate}} </label>
+            </div>
+        </div>
+
+        <div class="medal-info-container">
+            <div class="medal-info-title">
+                <img class='me-5 mt-1' src="../../../assets/media/achievements/template-bronze.png" height="60px">
+                <label class='fs-35 mt-2 bronze-drop-shadow'> {{ 'achievements.bronze-medals' | translate }} </label>
+                <img class='ms-5 mt-1' src="../../../assets/media/achievements/template-bronze.png" height="60px">
+            </div>
+            <div class="medal-info-text">
+                <label class="bronze-drop-shadow"> {{ 'achievements.bronze-info' | translate}}  </label>
+            </div>
+        </div>
+
+        <div class="medal-info-container">
+            <div class="medal-info-title">
+                <label class='fs-35 mt-3 green-drop-shadow'> {{ 'achievements.monthly-challange' | translate }} </label>
+            </div>
+            <div class="medal-info-text">
+                <label class="green-drop-shadow"> {{ 'achievements.monthly-info' | translate}} </label>
+            </div>
+        </div>
+
+        <div class="general-app-container">
+            <div class="general-app-info">
+                <div class="mt-1 first-app-info-row"> 
+                    {{ 'footer.nume' | translate }}
+                    <div class="d-flex flex-row-reverse"> 
+                        {{ 'footer.project-for' | translate }}
+                    </div>
+                </div>
+                <div class="mt-1"> 
+                    {{ 'footer.email' | translate }} 
+                </div>
+                <div class="mt-1"> {{ 'footer.faculty-1' | translate }}  <a href="https://fmi.unibuc.ro/">{{ 'footer.faculty-2' | translate }} </a> </div>
+                <div class="mt-1"> <img height="40px" src="../../../assets/media/images/sigla-fmi-1.png"> </div>
+            </div>
+        </div>
+    </div>
+</div>

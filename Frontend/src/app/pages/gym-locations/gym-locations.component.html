@@ -1,0 +1,73 @@
+<div class="container-map">
+    <div class="buttons-row">
+        <div></div>
+        <div class="buttons-container">
+            <img    class="cursor-pointer choose-sport-image" 
+                    *ngIf="this.selectedSport != 'gym'"
+                    height="70px" 
+                    src="../../../assets/media/images/traditional-strength-icon.png" 
+                    matTooltip="{{translate.instant('sports.traditional-strength') }}"
+                    (click)="changeSport('gym')">
+            <img    class="selected" 
+                    *ngIf="this.selectedSport === 'gym'"
+                    height="70px" 
+                    src="../../../assets/media/images/traditional-strength-icon-selected.png" 
+                    matTooltip="{{translate.instant('sports.traditional-strength') }} - {{ 'general.selected' | translate }}">
+
+            <img    class="cursor-pointer choose-sport-image" 
+                    *ngIf="this.selectedSport != 'pool'"
+                    height="70px" 
+                    src="../../../assets/media/images/pool-swim-icon.png" 
+                    matTooltip="{{translate.instant('sports.pool-swim') }}"
+                    (click)="changeSport('pool')">
+            <img    class="selected" 
+                    *ngIf="this.selectedSport === 'pool'"
+                    height="70px" 
+                    src="../../../assets/media/images/pool-swim-icon-selected.png" 
+                    matTooltip="{{translate.instant('sports.pool-swim') }} - {{ 'general.selected' | translate }}">
+
+            <img    class="cursor-pointer choose-sport-image" 
+                    *ngIf="this.selectedSport != 'yoga'"
+                    height="70px" 
+                    src="../../../assets/media/images/yoga-icon.png" 
+                    matTooltip="{{translate.instant('sports.yoga') }}"
+                    (click)="changeSport('yoga')">
+            <img    class="selected" 
+                    *ngIf="this.selectedSport === 'yoga'"
+                    height="70px" 
+                    src="../../../assets/media/images/yoga-icon-selected.png" 
+                    matTooltip="{{translate.instant('sports.yoga') }} - {{ 'general.selected' | translate }}">
+
+            <img    class="cursor-pointer choose-sport-image" 
+                    height="70px" 
+                    *ngIf="this.selectedSport != 'cycling'"
+                    src="../../../assets/media/images/cycling-icon.png" 
+                    matTooltip="{{translate.instant('sports.cycling') }}"
+                    (click)="changeSport('cycling')">
+            <img    class="selected" 
+                    *ngIf="this.selectedSport === 'cycling'"
+                    height="70px" 
+                    src="../../../assets/media/images/cycling-icon-selected.png" 
+                    matTooltip="{{translate.instant('sports.cycling') }} - {{ 'general.selected' | translate }}">
+
+            <img    class="cursor-pointer choose-sport-image" 
+                    height="70px" 
+                    *ngIf="this.selectedSport != 'bowling'"
+                    src="../../../assets/media/images/bowling-icon.png" 
+                    matTooltip="{{translate.instant('sports.bowling') }}"
+                    (click)="changeSport('bowling')">
+            <img    class="selected" 
+                    *ngIf="this.selectedSport === 'bowling'" 
+                    height="70px"
+                    src="../../../assets/media/images/bowling-icon-selected.png" 
+                    matTooltip="{{translate.instant('sports.bowling') }} - {{ 'general.selected' | translate }}">
+        </div>
+        <div></div>
+    </div>
+    <div id="map">
+    </div>
+    <div *ngIf="isLoading" class="loader">
+        <img height="300px" class="loading-svg" src="../../../assets/media/SVGs/loader.svg">
+    </div>
+</div>
+

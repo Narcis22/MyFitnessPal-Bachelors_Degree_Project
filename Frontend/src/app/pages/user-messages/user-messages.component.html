@@ -1,0 +1,98 @@
+<div class="messages-list">
+    <div class="title-row fs-50">
+        {{ 'general.user-messages' | translate}}
+    </div>
+    <div class="table-container">
+        <table mat-table [dataSource]="dataSource!" matSort>
+            <!-- Icon Column -->
+            <ng-container matColumnDef="profilePic" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'user-messages.from' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="first-cell"> 
+                    <div *ngIf="element.profilePicId === '0'" class="profile-image">
+                        <img class="profile-custom-pic" [src]="getImageFromByteArray(element.imageContentType, element.image)" height="50px">
+                    </div>
+                    <div *ngIf="!(element.profilePicId === '0')" class="profile-image">
+                        <img src="../../../assets/media/profile-pics/profile-pic-{{element.profilePicId}}.png" height="50px">
+                    </div>
+                </td>
+            </ng-container>
+
+            <!-- Email Column -->
+            <ng-container matColumnDef="email" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell">
+                    {{element.emailSender}} 
+                </td>
+            </ng-container>
+
+            <!-- Date Column -->
+            <ng-container matColumnDef="date" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'user-messages.date' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell"> 
+                    {{element.dateSent | date: 'MMM d, yyyy, HH:mm a'}} 
+                </td>
+            </ng-container>
+
+            <!-- Preview Column -->
+            <ng-container matColumnDef="message-preview" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>  {{ 'user-messages.preview' | translate }}  </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell preview-cell">
+                    {{element.message.substring(0,30)}}... 
+                </td>                
+            </ng-container>
+
+            <!-- SeenStatus Column -->
+            <ng-container matColumnDef="seenStatus" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell seen-cell"> 
+                    <div *ngIf="element.isSeen" class="">
+                        {{ 'user-messages.seen' | translate}}
+                    </div>
+                    <div *ngIf="!element.isSeen" class="notification">
+                        <div class="ring-container">
+                            <div class="ringring"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </td>                
+            </ng-container>
+
+            <!-- Actions Column -->
+            <ng-container matColumnDef="actions" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>  {{ 'user-messages.actions' | translate }}  </th>
+                <td mat-cell *matCellDef="let element" class="last-cell cursor-pointer">
+                    <img    class="open-mail" 
+                            height="35px" 
+                            src="../../../assets/media/images/open-mail.png" 
+                            matTooltip="{{ 'tooltips.open-mail' | translate}}"
+                            (click)="openMailDialog(element)">
+                            
+                    <img    class="open-mail ms-3" 
+                            height="35px" 
+                            src="../../../assets/media/images/reply.png" 
+                            matTooltip="{{ 'tooltips.reply' | translate}}"
+                            (click)="openSendMailDialog(element)">
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+    
+    <div class="general-app-container w-100 mb-5">
+        <div class="general-app-info">
+            <div class="mt-1 first-app-info-row"> 
+                {{ 'footer.nume' | translate }}
+                <div class="d-flex flex-row-reverse"> 
+                    {{ 'footer.project-for' | translate }}
+                </div>
+            </div>
+            <div class="mt-1"> 
+                {{ 'footer.email' | translate }} 
+            </div>
+            <div class="mt-1"> {{ 'footer.faculty-1' | translate }}  <a href="https://fmi.unibuc.ro/">{{ 'footer.faculty-2' | translate }} </a> </div>
+            <div class="mt-1"> <img height="40px" src="../../../assets/media/images/sigla-fmi-1.png"> </div>
+        </div>
+    </div>
+</div>

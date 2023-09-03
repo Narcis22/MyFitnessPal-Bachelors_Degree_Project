@@ -1,0 +1,73 @@
+.container-page{
+    display: grid;
+}
+
+.main-card{
+    width: 500px;
+    height: 600px;
+    
+    background-color: #111111;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 30% auto;
+}
+
+.header-login{
+    display: grid;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-login{
+    display: grid;
+    grid-template-rows: 200px auto;
+}
+
+.input-fields{
+    display: grid;
+    grid-template-rows: 90px 90px;
+    justify-content: center;
+}
+
+.field{
+    width: 400px;
+    line-height: normal;
+    height: 80px;
+    color: white;
+    font-size: large !important;
+}
+
+.footer{
+    display: grid;
+    justify-content: center;
+}
+
+.login-btn{
+    height: 40px;
+    width: 150px;
+    margin: auto;
+    font-size: medium !important;
+
+    border-color: white;
+    color: white;
+}
+
+.login-btn:hover{
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+
+.forgot-pass-link{
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.register-link{
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}

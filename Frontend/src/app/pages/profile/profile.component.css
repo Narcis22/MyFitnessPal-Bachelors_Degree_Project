@@ -1,0 +1,266 @@
+.container-profile{
+    background-color: azure;
+}
+
+.container-content {
+    padding: 50px;
+    height: 950px;
+    background-image: url("../../../assets/media/backgrounds/profile-4-blur.png");    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.profile-content{
+    display: grid;
+    grid-template-rows: 250px auto 50px;
+}
+
+.photo-container{
+    display: grid;
+    grid-template-columns: 200px auto;
+    width: fit-content;
+}
+
+.photo{
+    display: grid;
+    grid-template-rows: 150px auto;
+    margin-top: 25px;
+    padding-left: 0px;
+}
+
+.container-profile-images{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+
+    filter: drop-shadow(0 0 1.5rem crimson);
+}
+
+.edit-icon-overlay{
+    display: none;
+    top: 55px;
+    left: 55px;
+    position: absolute;
+    filter: drop-shadow(0 0 1.5rem rgb(0, 0, 0));
+}
+
+.profile-image:hover{
+    opacity: .5;
+}
+
+.profile-image:hover + .edit-icon-overlay{
+    display: block;
+}
+
+
+
+.user-info-top{
+    display: grid;
+    grid-template-rows: 100px 100px;
+}
+
+.username{
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+
+    display: grid;
+    padding-top: 40px;
+
+    filter: drop-shadow(0 0 1.5rem crimson);
+}
+
+.info-button{
+    margin-top: 53px;
+    margin-left: 50px;
+}
+
+.btn-edit-container{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.edit-label{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+.email{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/* CSS-edit button */
+.edit-profile-button {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.edit-profile-button:before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        goldenrod,
+        #94821f,
+        #3d3f42
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-edit-profile-button 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-edit-profile-button {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.edit-profile-button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.data-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 40px;
+}
+
+.user-sports{
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.user-achievements{
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.sports-title{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    color: white;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.achievements-title{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    color: white;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.drawer-title{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    color: white;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.drawer-buttons{
+    padding-top: 30px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-of-sports{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+/* SportsCascade */
+#container {
+    display: flex;
+    width: fit-content;
+}
+
+.coin-image {
+    height: 70px;
+    width: 70px;
+    margin-left: -35px;  
+    transition:  margin-left 0.3s ease;
+    box-sizing: border-box;
+
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.coin-image:first-of-type, #container:hover .inncoin-imageer:first-of-type {
+    margin-left: 0; 
+}
+
+#container:hover .coin-image {
+    margin-left: -20px;  
+}
+
+.footer{
+    display: grid;
+    justify-content:flex-end;
+    grid-template-columns: calc(100% - 250px) 250px;
+}
+
+.btn-contact-us-container {
+    padding: 20px;
+}
+
+.btn-change-pass{
+    display: grid;
+    justify-content: end;
+    padding: 20px;
+}
+
+.drawer-container {
+    width: 500px; 
+    filter: drop-shadow(0.35rem 0.35rem 1rem rgba(0, 0, 0, 0.5));
+    border-radius: 20px !important;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 70px;
+
+    background-image: url("../../../assets/media/backgrounds/black-paper-background.jpg");
+    background-size: auto 100%;
+    background-repeat: repeat-y;
+}
+
+.general-app-container{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    border-top: 0px solid black;
+    color: black;
+}

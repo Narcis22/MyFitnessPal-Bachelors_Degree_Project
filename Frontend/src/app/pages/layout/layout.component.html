@@ -1,0 +1,115 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid bg-dark container-navbar">
+      <div class="navbar-brand" href="#"> 
+        <img src="../../../assets/media/images/logo-inline-transparent.png" height=40px>
+      </div>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="d-flex collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav col-8">
+          <li class="nav-item">
+            <a class="nav-link" href="/home" class="font-white">
+              <label id="home" class="cursor-pointer"> {{ 'general.home' | translate }} </label>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/activity" class="font-white"> 
+              <label id="activity" class="cursor-pointer"> {{ 'general.activity' | translate }} </label>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/log-workout" class="font-white"> 
+              <label id="log_workout" class="cursor-pointer"> {{ 'general.log-wokout' | translate }} </label>
+            </a>
+          </li>
+          <li class="nav-item dropdown" *ngIf="!isAdmin()">
+            <a class="nav-link dropdown-toggle cursor-pointer"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="font-white">
+              <label id="workout-info">{{ 'workout-info.title' | translate }} </label>
+            </a>
+            <ul class="dropdown-menu bg-dark ms-3" >
+              <li class="drop-item"><a class="dropdown-item" href="/workout-info/arms" class="font-white"> {{ 'workout-info.arms.self' | translate }} </a></li>
+              <li class="drop-item"><a class="dropdown-item" href="/workout-info/back" class="font-white"> {{ 'workout-info.back.self' | translate }} </a></li>
+              <li class="drop-item"><a class="dropdown-item" href="/workout-info/chest" class="font-white"> {{ 'workout-info.chest.self' | translate }} </a></li>
+              <li class="drop-item"><a class="dropdown-item" href="/workout-info/legs" class="font-white"> {{ 'workout-info.legs.self' | translate }} </a></li>
+              <li class="drop-item"><a class="dropdown-item" href="/workout-info/core" class="font-white"> {{ 'workout-info.core.self' | translate }} </a></li>
+            </ul>
+          </li>
+          <li class="nav-item" *ngIf="isAdmin()">
+            <a class="nav-link" href="/user-management" class="font-white"> 
+              <label id="user-management" class="cursor-pointer"> {{ 'general.user-management' | translate }} </label>
+            </a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="/user-messages" class="font-white"> 
+              <label id="user-messages" class="cursor-pointer"> {{ 'general.user-messages' | translate }} </label>
+            </a>
+          </li>
+          <li class="nav-item" *ngIf="isAdmin()">
+            <a class="nav-link" href="/statistics" class="font-white"> 
+              <label id="statistics" class="cursor-pointer"> {{ 'general.statistics' | translate }} </label>
+            </a>
+          </li>
+          <li class="nav-item" *ngIf="!isAdmin()">
+            <a class="nav-link" href="/gym-locations" class="font-white"> 
+              <label id="gym-locations" class="cursor-pointer"> {{ 'general.gym-locations' | translate }} </label>
+            </a>
+          </li>
+        </ul>
+  
+        <div class="full-width d-flex flex-row-reverse end-header">
+          <div class="lang-select d-flex flex-row-reverse" style="margin-right: 300px; margin-top: -2px">
+            <div class="justify-content-center picker-container">
+              <ng-select
+                  class="language-picker"
+                  [clearable]="false"
+                  [searchable]="false"
+                  [(ngModel)]="currentLanguage"
+                  (change)="switchLanguage(currentLanguage)">
+                  <ng-option *ngFor="let language of this.languages" [value]="language">
+                      <label class="option-lang pb-1 pe-2 pt-1">
+                          <img #ro *ngIf="language == 'ro'" src="../../../assets/media/images/romanian.png" height="24" class="language-flag">
+                          <label for="ro" *ngIf="language == 'ro'" class="language-label"> {{ 'language.romanian' | translate }} </label>
+    
+                          <img #en *ngIf="language == 'en'" src="../../../assets/media/images/english.png" height="24" class="language-flag">
+                          <label for="en" *ngIf="language == 'en'" class="language-label"> {{ 'language.english' | translate }} </label>
+                      </label>
+                  </ng-option>
+              </ng-select>
+            </div>
+          </div>
+
+
+          <div class="nav-item align-right cursor-pointer">
+            <a class="nav-link active" aria-current="page" (click)="logout()" class="font-white"> 
+              <img src="../../../assets/media/images/logout.png" height="30px" class="mt-1 cursor-pointer">
+            </a>
+          </div>
+
+          <div class="nav-item profile" style="margin-right: 40px;">
+            <img  *ngIf="!isProfilePicCustom"
+                  src="../../../assets/media/profile-pics/profile-pic-{{userImage.profilePhotoId}}.png" 
+                  height=40px 
+                  class="profile-image cursor-pointer"
+                  (click)="goToProfile()">
+
+            <img  *ngIf="isProfilePicCustom"
+                  [src]="customProfilePic" 
+                  height=40px 
+                  class="profile-image cursor-pointer"
+                  (click)="goToProfile()">
+
+            <div class="label-profile">
+              <label class="cursor-pointer" (click)="goToProfile()"> {{ 'profile.my-profile' | translate }} </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</nav>
+  
+<div class="container-all-pages">
+  <router-outlet></router-outlet>
+</div>

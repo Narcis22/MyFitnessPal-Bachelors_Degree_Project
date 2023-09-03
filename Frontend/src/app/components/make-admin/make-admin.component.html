@@ -1,0 +1,19 @@
+<div class="delete-confirm-container">
+    <div class="title-row fs-30">
+        <label> {{'general.confirm-make-admin' | translate }} </label>
+        <img height=40px>
+    </div>
+    <div class="confirm-text">
+        <mat-checkbox [(ngModel)]="isChecked">
+            <p class="fs-20 mt-3"> {{'general.make' | translate}} {{data}} {{'general.administrator' | translate}} </p>
+        </mat-checkbox>
+    </div>
+    <div class="footer">
+        <button class="btn btn-outline-primary close-button" (click)="abandon()">
+            {{ 'general.abandon' | translate }}
+        </button>
+        <button *ngIf="isChecked === true" class="btn btn-outline-danger close-button" (click)="confirmation()">
+            {{ 'general.confirm' | translate }}
+        </button>
+    </div>
+</div>

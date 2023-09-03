@@ -1,0 +1,355 @@
+.home-page-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card-1{
+    background-image: url("../../../assets/media/backgrounds/pexels-cottonbro-studio.jpg");   
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.label-card-1{
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 350px;
+
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+}
+
+.card-2{
+    background-image: url("../../../assets/media/backgrounds/split-background-blurred.png");   
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 120%;
+}
+
+.content-card-2{
+    display: grid;
+    width: 100%;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.label-card-2-sport{
+    height: 100vh;
+    padding-top: 300px;
+    padding-left: 150px;
+
+    font-family: 'Acme', sans-serif;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.label-card-2-workout{
+    height: 100vh;
+    padding-top: 500px;
+    padding-left: 150px;
+
+    font-family: 'Acme', sans-serif;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 80px;
+    color: rgb(138, 69, 0);
+}
+
+.card-3{
+    background-image: url("../../../assets/media/backgrounds/design-space-paper-textured-background.jpg");   
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 120%;
+}
+
+.content-card-3{
+    display: grid;
+    height: 110vh;
+    padding: 100px;
+    padding-top: 200px;
+    grid-template-rows: 200px 400px;
+}
+
+.label-card-3-title{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 90px;
+    color: black;
+}
+
+.label-card-3-body{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    color: black;
+    font-weight: 800;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.card-4{
+    background-image: url("../../../assets/media/backgrounds/black-paper-background.jpg");   
+    background-size: 140%;
+    background-repeat: no-repeat;
+
+    height: 120%;
+}
+
+.content-card-4{
+    display: grid;
+    grid-template-columns: 700px auto;
+    padding-top: 250px;
+}
+
+.label-card-4-title{
+    font-family: 'Tilt Prism', cursive; 
+    font-size: 70px;
+    color: white;
+    width: 700px;
+    text-align: center;
+
+    transform: rotate(-45deg);
+}
+
+.label-card-4-body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+
+.card-4-home-card{
+    background-image: url("../../../assets/media/backgrounds/home-workout-card.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    display: grid;
+    padding-left: 35px;
+    padding-top: 20px;
+    width: 400px;
+    height: 250px;
+
+    margin-top: 100px;
+
+    border-radius: 30px;    
+    font-family: 'Tilt Prism', cursive; 
+    font-size: 60px;
+    color: black;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-weight: 600;
+
+    filter: drop-shadow(0.35rem 0.35rem 1rem rgba(255, 255, 255, 0.5));
+
+    transition: transform .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transform: perspective(30em)  rotateY(35deg);
+}
+
+.card-4-home-card:hover{
+    transform: perspective(75em) rotateY(0deg) scale(1.2);
+}
+
+.card-4-gym-card{
+    background-image: url("../../../assets/media/backgrounds/background-gym-3-small-blur.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+    display: grid;
+    padding-left: 35px;
+    padding-top: 170px;
+    width: 400px;
+    height: 250px;
+
+    margin-top:100px;
+
+    border-radius: 30px;    
+    font-family: 'Tilt Prism', cursive; 
+    font-size: 60px;
+    color: black;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-weight: 600;
+
+    filter: drop-shadow(0.35rem 0.35rem 1rem rgba(255, 255, 255, 0.5));
+
+    transition: transform .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transform: perspective(30em)  rotateY(-35deg);
+}
+
+.card-4-gym-card:hover{
+    transform: perspective(75em) rotateY(0deg) scale(1.2);
+}
+
+.card-5{
+    background-image: url("../../../assets/media/backgrounds/home-coming-soon-background.png");   
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 120%;
+}
+
+.home-coming-soon{
+    display: grid;
+    justify-content: center;
+    height: 500px;
+
+    background-image: url("../../../assets/media/backgrounds/cooming-soon.png");    
+    background-size: auto 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.card-6{
+    background-image: url("../../../assets/media/backgrounds/background-gym-2.png");   
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 120%;
+}
+
+.container-card-6{
+    display: grid;
+    grid-template-rows: 350px auto;
+    height: 100%;
+    width: 100%;
+}
+
+.label-card-6-container{
+    display: grid;
+    grid-template-rows: 140px 60px auto;
+    justify-content: center;
+
+    width: 100%;
+    padding-top: 150px;
+
+}
+
+.label-card-6-title{
+    font-family: 'Shadows Into Light', cursive;
+    filter: drop-shadow(0.35rem 0.35rem 1rem rgba(0, 0, 0, 0.5));
+    font-size: 90px;
+    color: white;
+
+    text-align: center;
+}
+
+.label-card-6-subtitle{
+    font-family: 'Shadows Into Light', cursive;
+    filter: drop-shadow(0.35rem 0.35rem 1rem rgba(0, 0, 0, 0.5));
+    font-size: 40px;
+    color: white;
+
+    text-align: center;
+}
+
+.card-6-muscle-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 200px 200px;
+}
+
+.muscles-first-row{
+    display: grid;
+    grid-template-columns: 22.5% 18% 18% 18% 22.5%;
+}
+
+.muscles-second-row{
+    display: grid;
+    grid-template-columns: 32% 18% 18% 32%;
+}
+
+.muscle-row-image{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.muscle-card-1{
+    background-image: url("../../../assets/media/backgrounds/muscles-template-arms.png");  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 300px;
+
+    border-radius: 20px;
+}
+
+.muscle-card-2{
+    background-image: url("../../../assets/media/backgrounds/muscles-template-chest.png");  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 300px;
+
+    border-radius: 20px;
+}
+
+.muscle-card-3{
+    background-image: url("../../../assets/media/backgrounds/muscles-template-back.png");  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 300px;
+
+    border-radius: 20px;
+}
+
+.muscle-card-4{
+    background-image: url("../../../assets/media/backgrounds/muscles-template-legs.png");  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 300px;
+
+    border-radius: 20px;
+}
+
+.muscle-card-5{
+    background-image: url("../../../assets/media/backgrounds/muscles-template-core.png");  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 300px;
+
+    border-radius: 20px;
+}
+
+.fancy-shadow{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px,
+    rgba(0, 0, 0, 0.80) 0px 22px 70px 4px;
+}
+
+.float-label{
+    transition: transform .3s ease-in-out;
+}
+.float-label:hover{
+    transform: scale(1.1);
+}
+
+.button-top{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.home-app-info{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.general-app-container{
+    border-top: 0px solid black;
+}

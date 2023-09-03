@@ -1,0 +1,34 @@
+<div class="workout-info-container">
+    <div class="container-info" *ngIf="id === 'arms'">
+        <app-workout-info-arms></app-workout-info-arms>
+    </div>
+    <div class="container-info" *ngIf="id === 'chest'">
+        <app-workout-info-chest></app-workout-info-chest>
+    </div>
+    <div class="container-info" *ngIf="id === 'back'">
+        <app-workout-info-back></app-workout-info-back>
+    </div>
+    <div class="container-info" *ngIf="id === 'core'">
+        <app-workout-info-core></app-workout-info-core>
+    </div>
+    <div class="container-info" *ngIf="id === 'legs'">
+        <app-workout-info-legs></app-workout-info-legs>
+    </div>
+    <div class="workout-info-app-info">
+        <div class="general-app-container mt-0">
+            <div class="general-app-info">
+                <div class="mt-1 first-app-info-row"> 
+                    {{ 'footer.nume' | translate }}
+                    <div class="d-flex flex-row-reverse"> 
+                        {{ 'footer.project-for' | translate }}
+                    </div>
+                </div>
+                <div class="mt-1"> 
+                    {{ 'footer.email' | translate }} 
+                </div>
+                <div class="mt-1"> {{ 'footer.faculty-1' | translate }}  <a href="https://fmi.unibuc.ro/">{{ 'footer.faculty-2' | translate }} </a> </div>
+                <div class="mt-1"> <img height="40px" src="../../../assets/media/images/sigla-fmi-1.png"> </div>
+            </div>
+        </div>
+    </div>
+</div>

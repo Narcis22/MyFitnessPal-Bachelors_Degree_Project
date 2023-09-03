@@ -1,0 +1,38 @@
+<div class="charts-container">
+    <div class="sports-chart-row">
+        <div class="sports-text">
+            {{ 'statistics.chart-1-title' | translate }}
+        </div>
+        
+        <div id="statisticsSportChart" *ngIf="statisticsSportChart !== undefined">
+            <apx-chart
+            [series]="statisticsSportChart.series"
+            [chart]="statisticsSportChart.chart"
+            [dataLabels]="statisticsSportChart.dataLabels"
+            [plotOptions]="statisticsSportChart.plotOptions"
+            [xaxis]="statisticsSportChart.xaxis"
+            [stroke]="statisticsSportChart.stroke"
+            ></apx-chart>
+        </div>
+    </div>
+    
+    <div class="achievements-chart-row">
+        <div class="achievements-text">
+            {{ 'statistics.chart-2-title' | translate }}
+        </div>
+
+        <div id="statisticsAchievementChart" *ngIf="statisticsAchievementChart !== undefined">
+            <apx-chart
+            [series]="statisticsAchievementChart.series"
+            [chart]="statisticsAchievementChart.chart"
+            [dataLabels]="statisticsAchievementChart.dataLabels"
+            [plotOptions]="statisticsAchievementChart.plotOptions"
+            [yaxis]="statisticsAchievementChart.yaxis"
+            [xaxis]="statisticsAchievementChart.xaxis"
+            [legend]="statisticsAchievementChart.legend"
+            [colors]="statisticsAchievementChart.colors"
+            [grid]="statisticsAchievementChart.grid"
+            ></apx-chart>
+        </div>
+    </div>
+</div>   

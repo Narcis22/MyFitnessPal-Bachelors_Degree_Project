@@ -1,0 +1,48 @@
+<div class="change-profile-pic-container w-100 h-100">
+    <div class="title-row fs-40">
+        <label> {{ 'edit-picture.title' | translate }} </label>
+        <img class="cursor-pointer" src="../../../assets/media/images/cancel.png" height="45px" (click)="close()">
+    </div>
+    
+    <div class="previw-image-container">
+        <div *ngIf="!isProfilePicCustom" class="previw-image">
+            <img src="../../../assets/media/profile-pics/profile-pic-{{profilePicId}}.png" height=150px>
+        </div>
+        <div *ngIf="isProfilePicCustom" class="previw-image">
+            <img [src]="image" height="150px">
+        </div>
+    </div>
+    
+    <div class="drag-n-drop-container">
+        <form [formGroup]="form" (ngSubmit)="Submit($event.target.files)">
+            <div class="upload-section">
+                <label class="mt-2 label-file fs-20" for="file"> {{ 'edit-picture.choose-file' | translate }} </label>
+                <input type="file" #myInput formControlName="fileContact" id="file" required class="form-control"
+                    (change)="handleFileInput($event.target)">
+            </div>
+        </form>
+    </div>
+
+    <div class="or-class fs-40">
+        {{ "general.or" | translate }}
+    </div>
+
+    <div class="choose-defaults">
+        <div class="fs-25">
+            <label> {{ 'edit-picture.default-avatar-title' | translate }} </label>
+        </div>
+        <div class="super-container-avatars">
+            <div id="container" (click)="openAvatarList()" class="cursor-pointer">
+                <div class="coin-image" *ngFor="let profileId of [1,2,3,4,5,6,26]">
+                    <img src="../../../assets/media/profile-pics/profile-pic-{{profileId}}.png" alt=pic height="60px" width="60px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="btn btn-outline-light save-button fs-20" (click)="saveChanges()">
+            {{ 'general.save' | translate }}
+        </button>
+    </div>
+</div>

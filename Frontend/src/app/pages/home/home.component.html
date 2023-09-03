@@ -1,0 +1,132 @@
+<div class="home-page-container h-100 w-100">
+    <div class="button-top cursor-pointer">
+        <img src="../../../assets/media/images/previous-white.png" height=50px  (click)="scroll('top')">
+    </div>
+    
+    <!-- Wellcome screen -->
+    <div id="top" class="card-1 w-100 h-100">
+        <div class="label-card-1">
+            <label> {{ 'home.hi' | translate }} {{username}}! {{ 'home.hi-finish' | translate }}
+                <img src="../../../assets/media/images/down-arrow-white.png" height="100px" style="margin-left:-40px;" (click)="scroll('sport-or-workout')">
+            </label>
+        </div>
+    </div>
+
+    <!-- Sport or Workout -->
+    <div id="sport-or-workout" class="card-2 w-100">
+        <div class="content-card-2">
+            <div class="label-card-2-sport">
+                <label class="cursor-pointer float-label" (click)="scroll('sports')"> 
+                    {{ 'home.sport-label' | translate }} 
+                </label>
+            </div>
+
+            <div class="label-card-2-workout">
+                <label class="cursor-pointer float-label" (click)="scroll('funtional-or-strength')"> 
+                    {{ 'home.workout-label' | translate }}    
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sports -->
+    <div id="sports" class="card-3 w-100">
+        <div class="content-card-3">
+            <div class="label-card-3-title">
+                <label> {{ 'home.sports.title' | translate}} </label>
+            </div>
+            <div class="label-card-3-body">
+                <label> {{ 'home.sports.body-line-1' | translate}} </label>
+                <label class="ps-5 pt-3"> {{ 'home.sports.body-line-2' | translate}} </label>
+                <label class="ps-5 pt-3"> {{ 'home.sports.body-line-3' | translate}} </label>
+                <label class="ps-5 pt-3"> {{ 'home.sports.body-line-4' | translate}}  <a class="cursor-pointer" href='log-workout'> {{ 'home.sports.logbook' | translate}} </a></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Funtional/Strength -->
+    <div id="funtional-or-strength" class="card-4 w-100">
+        <div class="content-card-4">
+            <label class="label-card-4-title"> 
+                {{ 'home.training.title' | translate }}
+            </label>
+            <div class="label-card-4-body">
+                <div class="container-card-4-home-card"> 
+                    <div class="card-4-home-card"  (click)="scroll('home-coming-soon')">
+                        {{ 'home.training.home' | translate }}
+                    </div>
+                </div>
+                <div class="container-card-4-gym-card">
+                    <div class="card-4-gym-card"  (click)="scroll('gym')">
+                        {{ 'home.training.gym' | translate }} 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Coming soon -->
+    <div id="home-coming-soon" class="card-5 w-100">
+        <div style="padding:200px">
+            <div class="home-coming-soon">
+            </div>
+        </div>
+    </div>
+
+    <!-- Muscle-gorup -->
+    <div id="gym" class="card-6 w-100">
+        <div class="container-card-6">
+            <div class="label-card-6-container">
+                <label class="label-card-6-title"> {{ 'home.gym.title' | translate }} </label>
+                <label class="label-card-6-subtitle"> {{ 'home.gym.subtitle' | translate }} </label>
+            </div>
+
+            <div class="card-6-muscle-container">
+                <div class="muscles-first-row">
+                    <div></div>
+                    <div class="muscle-row-image">
+                        <div class="muscle-card-1 fancy-shadow float-label cursor-pointer" [routerLink]="['/workout-info', 'arms']">
+                        </div>
+                    </div>
+                    <div class="muscle-row-image">
+                        <div class="muscle-card-2 fancy-shadow float-label cursor-pointer" [routerLink]="['/workout-info', 'chest']">
+                        </div>
+                    </div>
+                    <div class="muscle-row-image">
+                        <div class="muscle-card-3 fancy-shadow float-label cursor-pointer" [routerLink]="['/workout-info', 'back']">
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="muscles-second-row">
+                    <div></div>
+                    <div class="muscle-row-image">
+                        <div class="muscle-card-4 fancy-shadow float-label cursor-pointer" [routerLink]="['/workout-info', 'legs']">
+                        </div>
+                    </div>
+                    <div class="muscle-row-image">
+                        <div class="muscle-card-5 fancy-shadow float-label cursor-pointer" [routerLink]="['/workout-info', 'core']">
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="general-app-container home-app-info">
+            <div class="general-app-info">
+                <div class="first-app-info-row"> 
+                    {{ 'footer.nume' | translate }}
+                    <div class="d-flex flex-row-reverse"> 
+                        {{ 'footer.project-for' | translate }}
+                    </div>
+                </div>
+                <div class="mt-1"> 
+                    {{ 'footer.email' | translate }} 
+                </div>
+                <div class="mt-1"> {{ 'footer.faculty-1' | translate }}  <a href="https://fmi.unibuc.ro/">{{ 'footer.faculty-2' | translate }} </a> </div>
+                <div class="mt-1"> <img height="40px" src="../../../assets/media/images/sigla-fmi-1.png"> </div>
+            </div>
+        </div>
+    </div>
+</div>

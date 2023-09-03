@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: 600px;
+}
+
+.main-card{
+    width: 500px;
+    height: 800px;
+    margin: auto;
+    background-color: #111111;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 120px auto 50px;
+    justify-content: center;
+}
+
+.container-card{
+    display: flex;
+    padding: 30px;
+    min-width: 450px;
+}
+
+.login-logo{
+    padding-bottom: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.header-login{
+    display: grid;
+    justify-content: center;
+    padding: 40px;
+
+}
+
+.field{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 18px;
+    line-height: normal;
+    height: 70px;
+    color: white;
+    font-size: medium !important;
+}
+
+.login-link{
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+}
+
+mat-error{
+    color:red;
+    font-size: small;
+}
+
+.register-btn{
+    height: 40px;
+    width: 150px;
+    margin: auto;
+    font-size: medium !important;
+
+    border-color: white;
+    color: white;
+}
+
+.register-btn:hover{
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+
+.avatar-container{
+    font-family: 'Comfortaa', cursive;
+    padding-top: 20px;
+}
+
+.pick-avatar{
+    display: grid;
+    grid-template-columns: 70px 330px;
+}
+
+/* Profile pic cascade */
+.choose-defaults{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Comfortaa', cursive;
+    grid-template-rows: 50px 150px;
+    grid-gap: 20px;
+}
+
+.super-container-avatars{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+
+}
+
+#container {
+    display: flex;
+    width: fit-content;
+}
+
+.coin-image {
+    height: 60px;
+    width: 60px;
+    margin-left: -30px;  
+    transition:  margin-left 0.3s ease;
+    box-sizing: border-box;
+
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.coin-image:first-of-type, #container:hover .inncoin-imageer:first-of-type {
+    margin-left: 0; 
+}
+
+#container:hover .coin-image {
+    margin-left: -20px;  
+}

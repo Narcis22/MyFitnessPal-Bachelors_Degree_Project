@@ -1,0 +1,30 @@
+<div class="d-flex flex-column flex-root h-100">
+    <div class="login login-1 login-signin-on d-flex flex-column flex-lg-row flex-column-fluid bg-white">
+      <div class="lang-select d-flex flex-row-reverse pe-5 mt-3">
+        <div class="justify-content-center picker-container">
+          <ng-select
+              class="language-picker"
+              [clearable]="false"
+              [searchable]="false"
+              [(ngModel)]="currentLanguage"
+              (change)="switchLanguage(currentLanguage)">
+              <ng-option *ngFor="let language of this.languages" [value]="language">
+                  <label class="option-lang pb-1 pe-2 pt-1">
+                      <img #ro *ngIf="language == 'ro'" src="../../../assets/media/images/romanian.png" height="24" class="language-flag">
+                      <label for="ro" *ngIf="language == 'ro'" class="language-label"> {{ 'language.romanian' | translate }} </label>
+
+                      <img #en *ngIf="language == 'en'" src="../../../assets/media/images/english.png" height="24" class="language-flag">
+                      <label for="en" *ngIf="language == 'en'" class="language-label"> {{ 'language.english' | translate }} </label>
+                  </label>
+              </ng-option>
+          </ng-select>
+        </div>
+      </div>
+
+      <div class="login-content flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
+        <div class="d-flex flex-column-fluid flex-center">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>

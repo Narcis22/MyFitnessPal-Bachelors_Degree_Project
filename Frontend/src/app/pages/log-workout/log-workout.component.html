@@ -1,0 +1,170 @@
+<div class="full-width full-page-height">
+    <div style="position: absolute; margin: 30px" *ngIf="this.imageName != ''">
+        <img src="../.../../../../assets/media/images/previous-green.png" height="45px" (click)="goBack()"  matTooltip="{{ 'general.back' | translate}}">
+    </div>
+    <div class="choose-workout col full-width full-page-height" id="first-slide">
+        <div class="sports-container">
+            <div class="sports-row-1">
+                <div></div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/walking-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(0)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(0)"> {{ 'sports.walking' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/running-icon.png" height=70px class="margin-auto pointe sport-image" (click)="swipeToSecondFaze(1)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(1)"> {{ 'sports.running' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/cycling-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(2)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(2)"> {{ 'sports.cycling' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/indoor-cycling.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(3)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(3)"> {{ 'sports.indoor-cycling' | translate }} </label>
+                </div>
+                <div></div>
+            </div>
+
+            <div class="sports-row-2">
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/eliptical-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(4)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(4)"> {{ 'sports.eliptical' | translate }} </label>
+                </div>
+                <div class="sport-option-wide">
+                    <img src="../../../assets/media/images/traditional-strength-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(5)">
+                    <label class="label-sport-wide" (click)="swipeToSecondFaze(5)"> {{ 'sports.traditional-strength' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/HIIT-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(6)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(6)"> {{ 'sports.hiit' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/stair-stepper-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(7)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(7)"> {{ 'sports.stair-stepper' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/hiking-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(8)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(8)"> {{ 'sports.hiking' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/pool-swim-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(9)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(9)"> {{ 'sports.pool-swim' | translate }} </label>
+                </div>
+            </div>
+
+            <div class="sports-row-3">
+                <div></div>
+                <div class="sport-option-wide">
+                    <img src="../../../assets/media/images/functional-strength-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(10)">
+                    <label class="label-sport-wide" (click)="swipeToSecondFaze(10)"> {{ 'sports.functional-strength' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/yoga-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(11)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(11)"> {{ 'sports.yoga' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/rowing-machine-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(12)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(12)"> {{ 'sports.rowing' | translate }} </label>
+                </div>
+                <div class="sport-option">
+                    <img src="../../../assets/media/images/bowling-icon.png" height=70px class="margin-auto pointer sport-image" (click)="swipeToSecondFaze(13)">
+                    <label class="label-sport" (click)="swipeToSecondFaze(13)"> {{ 'sports.bowling' | translate }} </label>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="col full-width full-page-height second-page">
+        <div class="full-width first-row">
+            <img class="image-top" src="../../../assets/media/images/{{imageName}}" height="100px" (click)="goBack()">
+        </div>
+        
+        <div [formGroup]="form" class="container sport-form-3" *ngIf="this.formType === 3">
+            <!-- Duration -->
+            <mat-form-field class="example-full-width field" appearance="outline">
+                <mat-label class="text-cursive">{{ 'log-workout.duration' | translate }}</mat-label>
+                <input matInput required formControlName="duration">
+                <mat-icon matPrefix> {{ 'log-workout.timer' | translate }} </mat-icon>
+                <mat-icon matSuffix> <img src="../.././../assets/media/images/min-white.png" height="20px" style="margin-left: -10px; margin-bottom: 7px;"> </mat-icon>
+                <mat-error class="text-cursive" *ngIf="form.get('duration')!.hasError('required')">
+                    {{ 'errors.duration-required' | translate }}
+                </mat-error>
+                <mat-error class="text-cursive" *ngIf="form.get('duration')!.hasError('pattern') && !form.get('duration')!.hasError('required')">
+                    {{ 'errors.duration-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+            
+            <!-- Steps -->
+            <mat-form-field class="example-full-width field" appearance="outline">
+                <mat-label class="text-cursive">{{ 'log-workout.steps' | translate }}</mat-label>
+                <input matInput formControlName="steps">
+                <mat-icon matPrefix> <img src="../.././../assets/media/images/steps.png" height="22px" class="mb-2"> </mat-icon>
+                <mat-error class="text-cursive" *ngIf="form.get('steps')!.hasError('pattern')">
+                    {{ 'errors.steps-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+            
+            <!-- Distance -->
+            <mat-form-field class="example-full-width field" appearance="outline"> 
+                <mat-label class="text-cursive"> {{ 'log-workout.distance' | translate }} </mat-label>
+                <input matInput type="number" formControlName="distance">
+                <mat-icon matPrefix> <img src="../.././../assets/media/images/distance.png" height="22px" class="mb-2"> </mat-icon>
+                <mat-icon matSuffix> <img src="../.././../assets/media/images/km-white.png" height="22px" class="mb-3"> </mat-icon>
+                <mat-error class="text-cursive" *ngIf="form.get('distance')!.hasError('pattern')">
+                    {{ 'errors.distance-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+        </div>
+        
+        <div [formGroup]="form" class="container sport-form-2" *ngIf="this.formType === 2">
+            <!-- Duration -->
+            <mat-form-field class="example-full-width field" appearance="outline">
+                <mat-label class="text-cursive">{{ 'log-workout.duration' | translate }}</mat-label>
+                <input matInput required formControlName="duration">
+                <mat-icon matPrefix> {{ 'log-workout.timer' | translate }} </mat-icon>
+                <mat-icon matSuffix> <img src="../.././../assets/media/images/min-white.png" height="20px" style="margin-left: -10px; margin-bottom: 7px;"> </mat-icon>
+                <mat-error class="text-cursive" *ngIf="form.get('duration')!.hasError('required')">
+                    {{ 'errors.duration-required' | translate }}
+                </mat-error>
+                <mat-error class="text-cursive" *ngIf="form.get('duration')!.hasError('pattern') && !form.get('duration')!.hasError('required')">
+                    {{ 'errors.duration-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+            
+            <!-- Distance -->
+            <mat-form-field class="example-full-width field" appearance="outline"> 
+                <mat-label class="text-cursive"> {{ 'log-workout.distance' | translate }} </mat-label>
+                <input matInput type="number" formControlName="distance">
+                <mat-icon matPrefix> <img src="../.././../assets/media/images/distance.png" height="22px" class="mb-2"> </mat-icon>
+                <mat-icon matSuffix> <img src="../.././../assets/media/images/km-white.png" height="22px" class="mb-3"> </mat-icon>
+                <mat-error class="text-cursive" *ngIf="form.get('distance')!.hasError('pattern')">
+                    {{ 'errors.distance-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div [formGroup]="form" class="container sport-form-1" *ngIf="this.formType === 1">
+            <!-- Duration -->
+            <mat-form-field class="example-full-width field" appearance="outline">
+                <mat-label class="text-cursive">{{ 'log-workout.duration' | translate }}</mat-label>
+                <input matInput required formControlName="duration">
+                <mat-icon matPrefix> {{ 'log-workout.timer' | translate }} </mat-icon>
+                <mat-icon matSuffix> <img src="../.././../assets/media/images/min-white.png" height="20px" style="margin-left: -10px; margin-bottom: 7px;"> </mat-icon>
+                <mat-error class="text-cursive" *ngIf="form.get('duration')!.hasError('required')">
+                    {{ 'errors.duration-required' | translate }}
+                </mat-error>
+                <mat-error class="text-cursive" *ngIf="form.get('duration')!.hasError('pattern') && !form.get('duration')!.hasError('required')">
+                    {{ 'errors.duration-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="full-width third-row">
+            <button type="button" 
+                    class="btn btn-dark add-sport-button"
+                    (click)="addWorkout()"> 
+                {{ 'log-workout.add' | translate }} 
+            </button>
+        </div>
+    </div>
+</div>

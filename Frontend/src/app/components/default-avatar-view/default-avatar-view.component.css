@@ -1,0 +1,26 @@
+.avatar-view-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 30px;
+    border-radius: 20px;
+
+    background-image: url("../../../assets/media/backgrounds/design-space-paper-textured-background.jpg");
+    background-size: auto;
+    background-repeat: none;
+}
+
+.container-image{
+    display: grid;
+    justify-content: center;
+    width: fit-content;
+    padding: 20px;
+}
+
+img{
+    transition: transform .3s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.3);
+}

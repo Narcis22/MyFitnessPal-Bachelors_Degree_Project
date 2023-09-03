@@ -1,0 +1,86 @@
+<div class="statistics-container">
+    <div class="statistics-title">
+        {{ "profile.my-statistics.my-info" | translate }}
+    </div>
+
+    <div class="statistics-content">
+
+        <div class="statistics-row"> 
+            <div class="row-image">
+                <img src="../../../assets/media/images/age-group.png" height="30px">
+            </div>
+            <label class="ms-3"> 
+                <label class="comforta-font fs-20">{{ 'profile.age' | translate}}:</label>
+                <span  *ngIf="user.age === null"> {{ 'general.not-available' | translate}} </span>
+                <span  *ngIf="user.age !== null"> {{user.age}} {{ 'profile.my-statistics.years' | translate}} </span>
+            </label>
+        </div>
+        <div class="statistics-row">
+            <div class="row-image">
+                <img src="../../../assets/media/images/weight.png" height="30px">
+            </div>
+            <label class="ms-3"> 
+                <label class="comforta-font fs-20">{{ 'profile.weight' | translate}}:</label>
+                <span  *ngIf="user.weight === null"> {{ 'general.not-available' | translate}}  </span>
+                <span  *ngIf="user.weight !== null"> {{user.weight}} kg </span>
+            </label>
+        </div>
+        <div class="statistics-row">
+            <div class="row-image">
+                <img src="../../../assets/media/images/height.png" height="30px">
+            </div>
+            <label class="ms-3"> 
+                <label class="comforta-font fs-20">{{ 'profile.height' | translate}}:</label>
+                <span  *ngIf="user.height === null"> {{ 'general.not-available' | translate}}  </span>
+                <span  *ngIf="user.height !== null"> {{user.height}} cm </span>
+            </label>
+        </div>
+        <div class="statistics-row">
+            <div class="row-image">
+                <img src="../../../assets/media/images/sex.png" height="30px">
+            </div>
+            <label class="ms-3"> 
+                <label class="comforta-font fs-20">{{ 'profile.sex' | translate}}:</label>
+                <span  *ngIf="user.sex === null"> {{ 'general.not-available' | translate}}  </span>
+                <span  *ngIf="user.sex !== null"> {{user.sex}} </span>
+            </label>
+        </div>
+        <div class="statistics-row">
+            <div [ngClass]="user.height === null || this.user.weight === null ? '' : 'mt-2'">
+                <img src="../../../assets/media/images/bmi.png" height="30px">
+            </div>
+            <label class="ms-3"> 
+                <label class="comforta-font fs-20">{{ 'profile.my-statistics.bmi' | translate}}: </label>
+                <span *ngIf="user.height === null || this.user.weight === null"> {{ 'profile.my-statistics.height-and-weight-needed' | translate}} </span>
+                <span *ngIf="user.height !== null &&  this.user.weight !== null"> {{bmi()}} </span>
+
+            
+                <mat-icon style="color:white; width:40px; margin-top:15px;" 
+                    matTooltip="{{ 'profile.my-statistics.bmi-info' | translate }}"> {{ 'general.info' | translate }} </mat-icon>
+            </label>
+        </div>
+        <div class="statistics-row">
+            <div [ngClass]="user.height === null || this.user.weight === null ? '' : 'mt-2'">
+                <img src="../../../assets/media/images/category.png" height="30px">
+            </div>
+            <label class="ms-3">  
+                <label class="comforta-font fs-20">{{ 'profile.my-statistics.bmi-category' | translate}}:  </label> 
+                <span *ngIf="user.height === null || this.user.weight === null"> {{ 'profile.my-statistics.bmi-needed' | translate}} </span>
+                <span *ngIf="user.height !== null &&  this.user.weight !== null"> {{bmiCategory()}} </span>
+                <mat-icon style="color:white; width:40px; margin-top:15px;" 
+                    matTooltip="{{ 'profile.my-statistics.bmi-category-info' | translate }}">{{ 'general.info' | translate }}</mat-icon>
+            </label>
+        </div>
+        <div class="statistics-row">
+            <div style="width:0px"></div>
+            <label style="margin-left:-40px;"> 
+                <label class="comforta-font fs-20">{{ 'profile.my-statistics.healty-bmi-range' | translate}}:    </label>
+                <span *ngIf="user.height === null"> {{ 'profile.my-statistics.height-needed' | translate}} </span>
+                <span *ngIf="user.height !== null"> {{bmiRangeMin()}} kg - {{bmiRangeMax()}} kg </span>
+
+                <mat-icon style="color:white; width:40px; margin-top:15px;" 
+                    matTooltip="{{ 'profile.my-statistics.healty-bmi-range-info' | translate }}">{{ 'general.info' | translate }}</mat-icon>
+            </label>
+        </div>
+    </div>
+</div> 

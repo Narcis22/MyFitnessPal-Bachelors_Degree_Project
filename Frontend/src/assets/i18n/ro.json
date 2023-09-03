@@ -1,0 +1,635 @@
+{
+   "general":{
+      "email":"Email",
+      "logout":"Deconectare",
+      "activity":"Activitate",
+      "home":"Acasă",
+      "close":"Închide",
+      "log-wokout": "Adaugă antrenament",
+      "back":"Înapoi",
+      "cancel":"Anulează",
+      "update":"Actualizează",
+      "send":"Trimite",
+      "save":"Salvează",
+      "not-available":"Indisponibil",
+      "login":"Conectare",
+      "register":"Înregistrare",
+      "back-to-edit":"Înapoi la pagina de editare",
+      "or":"Sau",
+      "user-management":"Gestionarea Utilizatorilor",
+      "user-messages":"Mesaje",
+      "confirm-delete-user":"Ești sigur că vrei să ștergi?",
+      "confirm":"Confirmă",
+      "abandon":"Abandonează",
+      "gym-locations":"Săli de sport în apropiere",
+      "share":"Descarcă",
+      "info":"Informații",
+      "statistics":"Statistici",
+      "selected":"Selectat",
+      "confirm-make-admin": "Sigur vrei să acorzi privilegii de administrator?",
+      "make": "Acordă-i lui ",
+      "administrator": "drept de administrator"
+   },
+   "auth":{
+      "register":{
+         "already-have-account":"Ai deja un cont? Mergi la pagina de conectare",
+         "register":"Înregistrare",
+         "first-name":"Prenume",
+         "last-name":"Nume",
+         "confirm-password":"Confirmă Parola"
+      },
+      "login":{
+         "no-account":"Nu ai un cont? Înregistrează-te",
+         "password":"Parolă",
+         "login":"Conectare",
+         "forgot-password":"Ai uitat parola"
+      },
+      "forgot-password":{
+         "send-reset":"Resetează Parola",
+         "reset-sent":"Verifică inbox-ul pentru pașii următori"
+      }
+   },
+   "update-account":{
+      "success":"Profil actualizat!",
+      "password-change-success":"Parola schimbată cu succes!"
+   },
+   "send-message":{
+      "success":"Mesaj trimis!"
+   },
+   "errors":{
+      "username-already-in-use":"Nume de utilizator deja folosit",
+      "account-exists":"Un cont cu acest email există deja",
+      "generic":"A apărut o eroare",
+      "invalid-credentials":"Date de autentificare invalide",
+      "first-name-required":"Prenume obligatoriu",
+      "last-name-required":"Nume obligatoriu",
+      "password-required":"Parolă obligatorie",
+      "password-length-error":"Parola trebuie să aibă cel puțin 6 caractere",
+      "password-error-template":"Parola trebuie să aibă cel puțin 1 caracter special, 1 literă mare, 1 literă mică și 1 număr",
+      "password-no-match":"Câmpurile pentru parolă și confirmare parolă nu se potrivesc",
+      "email-error":"Aceasta nu este o adresă de email validă",
+      "email-required":"Email obligatoriu",
+      "duration-required":"Durata exercițiului este obligatorie",
+      "distance-number":"Distanța trebuie să fie un număr întreg",
+      "duration-number":"Durata trebuie să fie un număr",
+      "steps-number":"Pașii trebuie să fie un număr",
+      "field-number":"Acesta nu este un număr întreg valid",
+      "message-required":"Mesaj obligatoriu",
+      "no-medals":"Nici o medalie de afișat, ne pare rău!"
+   },
+   "language":{
+      "romanian":"Română",
+      "english":"Engleză"
+   },
+   "sports":{
+      "walking":"Mers pe jos",
+      "running":"Alergat",
+      "cycling":"Ciclism",
+      "indoor-cycling":"Ciclism de interior",
+      "eliptical":"Elipsă",
+      "traditional-strength":"Antrenament Tradițional de Forță",
+      "hiit":"HIIT",
+      "stair-stepper":"Stepper",
+      "hiking":"Drumeție",
+      "pool-swim":"Înot în piscină",
+      "functional-strength":"Antrenament Funcțional de Forță",
+      "yoga":"Yoga",
+      "rowing":"Vâslit",
+      "bowling":"Bowling"
+   },
+   "log-workout":{
+      "add":"Adaugă antrenament",
+      "duration":"Durată",
+      "steps":"Pași",
+      "distance":"Distanță",
+      "success":"Antrenament adăugat cu succes!",
+      "timer":"Cronometru"
+   },
+   "workouts":{
+      "achievements":"Realizări",
+      "my-workouts":"Antrenamentele Mele",
+      "table":{
+         "sport":"Sport",
+         "date":"Data",
+         "duration":"Durată",
+         "steps":"Pași",
+         "distance":"Distanță",
+         "workout-count":"Număr de Antrenamente"
+      }
+   },
+   "achievements":{
+      "title":"Realizări",
+      "how-to-get":"Cum să obții realizări?",
+      "gold-medals":"Medalii de aur",
+      "silver-medals":"Medalii de argint",
+      "bronze-medals":"Medalii de bronz",
+      "monthly-challenge":"Provocări lunare",
+      "gold-info":"Pentru a colecta medalii de aur trebuie să ai cel puțin 30 de ore de antrenament în total pe parcursul a 10 zile neconsecutive, dar acele zile neconsecutive trebuie să fie în aceeași lună.",
+      "silver-info":"Pentru a colecta medalii de argint trebuie să înregistrezi antrenamente pentru un sport în 7 zile consecutive. De fiecare dată când înregistrezi același sport timp de 7 zile consecutive, vei câștiga o medalie de argint indiferent dacă trece o nouă lună.",
+      "bronze-info":"Aceste medalii se câștigă prin înregistrarea primului tău antrenament într-un sport. Poți obține doar una pentru fiecare sport la care ai participat, așa că variază-ți activitățile sportive pentru a câștiga cât mai multe!",
+      "monthly-info":"Aceste realizări sunt obținute în fiecare lună a anului. Pentru a câștiga medalia lunii curente, trebuie să aveți cel puțin 20 (douăzeci) de zile cu un antrenament înregistrat. Nimeni nu a spus că va fi ușor, dar va merita!",
+      "see-detail":"Vezi toate",
+      "gold":"Aur",
+      "silver":"Argint",
+      "bronze":"Bronz",
+      "nothing-here":"Nimic aici",
+      "monthly-list":"Provocări lunare realizate",
+      "bronze-list-title":"Lista medaliilor de bronz",
+      "silver-list-title":"Lista medaliilor de argint",
+      "gold-list-title":"Lista medaliilor de aur",
+      "count-share-1":" tocmai a câștigat un ",
+      "count-share-2":" premiu în ",
+      "count-share-3":" și a colectat ",
+      "count-share-4":" până acum!",
+      "count-share-5":" tocmai a început un nou antrenament!",
+      "join":"Alătură-te ",
+      "join-message":" în călătoria sa spre fitness la MyFitnessPal",
+      "month-share-text-1":"a fost foarte activ în luna ",
+      "month-share-text-2":"și a câștigat acest premiu ca să-l încurajeze să continue!"
+   },
+   "profile":{
+      "my-profile":"Profilul meu",
+      "edit":"Editează profilul",
+      "my-sports":"Sporturile mele",
+      "my-achievements":"Realizările mele",
+      "username":"Nume utilizator",
+      "sex":"Sex",
+      "height":"Înălțime",
+      "weight":"Greutate",
+      "age":"Vârstă",
+      "contact-us":"Contactează-ne",
+      "message":"Mesaj",
+      "write-a-message":"Scrie-ne un mesaj",
+      "what-to-know":"Ce dorești să ne comunici?",
+      "change-password":"Schimbă parola",
+      "current-password":"Parola actuală",
+      "new-password":"Parolă nouă",
+      "confirm-password":"Confirmă parola",
+      "save-change-password":"Salvează",
+      "my-statistics":{
+         "my-info":"Informațiile mele",
+         "bmi":"IMC",
+         "bmi-category":"Categoria IMC",
+         "healty-bmi-range":"Intervalul sănătos pentru IMC",
+         "height-and-weight-needed":"Înălțimea și greutatea sunt necesare pentru a determina IMC-ul",
+         "bmi-needed":"IMC-ul este necesar pentru a determina categoria IMC",
+         "height-needed":"Înălțimea este necesară pentru a determina intervalul IMC",
+         "years":"ani",
+         "bmi-info":"IMC (indicele de masă corporală) = greutate / înălțime² (kg/m²); IMC nu este o măsurătoare exactă pentru: persoane sub 18 ani și pentru sportivi sau persoane cu o mulțime de mușchi.",
+         "bmi-category-info":"IMC-ul este o regulă convenabilă folosită pentru a categorisi larg o persoană ca fiind subponderală, cu greutate normală, supraponderală sau obeză, în funcție de masa țesutului și înălțime. Categorii: IMC < 18,5: subponderal; 18,5-24,99: greutate normală; 25-29,99: supraponderal; 30-34,99: obez gradul 1; 35-39,99: obez gradul 2; > 40: obez gradul 3",
+         "healty-bmi-range-info":"Formulă: [18,5 * înălțime² (m²) - 24,9 * înălțime² (m²)]"
+      },
+      "upload-image":"Încarcă imagine"
+   },
+   "home":{
+      "hi":"Salut",
+      "hi-finish":" Derulează pentru activitățile de azi",
+      "sport-label":"În mood pentru un sport?",
+      "workout-label":"Sau poate un antrenament tradițional?",
+      "sports":{
+         "title":"Sporturile nu se pot juca online :(",
+         "body-line-1":"Dar îți putem oferi câteva sfaturi pentru a face experiența mai bună și mai sigură:",
+         "body-line-2":"- De fiecare dată când practici un sport asigură-te că te-ai încălzit corespunzător",
+         "body-line-3":"- Asigură-te că ai echipamentul corespunzător dacă vremea este un factor",
+         "body-line-4":"- Cel mai important: Nu uita să îți notezi progresul în Jurnalul de antrenament",
+         "logbook":"Jurnal de antrenament"
+      },
+      "training":{
+         "title":"Unde ne antrenăm astăzi?",
+         "home":"Acasă",
+         "gym":"Sală"
+      },
+      "coming-soon":"În curând",
+      "gym":{
+         "title":"La ce lucrăm astăzi?",
+         "subtitle":"~ Primește sfaturi și du-ți antrenamentul la nivelul următor ~"
+      }
+   },
+   "workout-info":{
+      "title":"Info antrenamente",
+      "how-to":"Cum să",
+      "why":"De ce",
+      "warm-up":"În primul rând trebuie să ne încălzim pentru a preveni accidentările și a performa la maxim!",
+      "arms":{
+         "self":"Brațe",
+         "title":"Antrenament complet pentru brațe",
+         "barbell-bicep-curl":{
+            "title":"Ricșă cu Barbell pentru Bicep",
+            "how-to-description":"Stai pe o bancă înclinată și ține o ganteră în fiecare mână întinsă. Folosește bicepșii pentru a ridica gantera până ajunge la umăr, apoi coboară-le înapoi și repetă.",
+            "why-description":"Atenție: această poziție izolează bicepșii și împiedică alte mușchi să împartă sarcina. Poți lucra întregul mușchi rotind puțin mâna pe măsură ce gantera se mișcă."
+         },
+         "incline-bicep-curl":{
+            "title":"Ridicare înclinată pentru biceps",
+            "how-to-description":"Prinde o halteră cu o priză cât lățimea umerilor și las-o să atârne în fața coapselor tale. Întinde core-ul pe măsură ce ridici bara spre piept, ținând coatele lipite de talie. Revino controlat la poziția de start.",
+            "why-description":"Ridicarea pentru biceps cu haltera este regele exercițiilor pentru brațe, și pe bună dreptate. Vei putea încărca bara cu greutate suplimentară, dar fii prudent și încearcă să eviți impulsul. Păstrând repetările curate, vei izola bicepsul, ceea ce va rezulta într-o pompă mai bună."
+         },
+         "concentration-curl":{
+            "title":"Ridicarea concentrată",
+            "how-to-description":"Așează-te pe banca și sprijină-ți brațul drept de piciorul drept, lăsând greutatea să atârne în jos. Ridică greutatea, fă o pauză, apoi coboară. Repetă cu celălalt braț.",
+            "why-description":"Acesta izolează flexorii brațului și lucrează capul lateral al bicepsului pentru performanță și aspect de vârf."
+         },
+         "twisting-dumbbell-curl":{
+            "title":"Ridicare cu haltere și rotație",
+            "how-to-description":"Ține o halteră în fiecare mână lângă corp, cu palmele îndreptate una spre cealaltă. Folosește bicepsul pentru a ridica halterele alternativ spre umeri, rotind palmele să-ți fie îndreptate spre piept pe măsură ce le ridici. Coboră încet halterele înapoi și repetă.",
+            "why-description":"Rotația implică antebrațul. Nu va lucra la fel de intens bicepsul ca alte exerciții pentru brațe, dar când strângi serii în pauza de masă, acest exercițiu va lucra mai mult din brațul tău în mai puțin timp."
+         },
+         "underhand-seated-row":{
+            "title":"Rândul așezat cu priză inversată",
+            "how-to-description":"Îndoaie genunchii și ține bara cu o priză inversată, la lățimea umerilor. Înclină-te ușor înapoi, păstrându-ți spatele drept, apoi folosește mușchii spatelui pentru a trage bara spre buric. Revino la poziția de start și repetă.",
+            "why-description":"Fă un pas în plus față de exercițiile cu greutatea corpului în căutarea unor bicepși mai mari — acesta nu ocupă nici un suport pentru genuflexiuni."
+         },
+         "reverse-curl-straight-bar":{
+            "title":"Ridicare inversată cu bară dreaptă",
+            "how-to-description":"Stai și prinde o bară la lățimea umerilor cu o priză inversată. Îndoaie coatele și rotește bara în sus, folosind doar antebrațele, până când palmele sunt îndreptate în afară și bara este aliniată cu umerii. Coboră încet înapoi și repetă.",
+            "why-description":"De multe ori neglijat deoarece lucrează brachialisul, un mușchi invizibil mai jos pe brațul superior — dar esențial pentru bicepși mai mari. Antrenează-l bine și brachialisul va împinge vârful mușchiului biceps mai sus, rezultând într-o flexie mai impresionantă și brațe care par mai mari."
+         },
+         "leant-forward-ez-bar-curl":{
+            "title":"Ridicare înclinată în față cu bara EZ",
+            "how-to-description":"Ține bara EZ în fața coapselor cu o priză inversată, la lățimea umerilor. Înclină-te ușor în față, astfel încât trunchiul să fie la aproximativ 30 de grade față de șolduri. Pe măsură ce inspiri, ridică bara până când mâinile sunt la nivelul umerilor. Strânge bicepsii, apoi coboară controlat.",
+            "why-description":"Lucrezi mușchiul flexor principal implicat în forța degetelor, ceea ce îți va aduce o priză ca de menghină pentru ridicările mai mari - și o strângere de mână zdrobitoare pentru a măsura. În plus, înclinarea în față înseamnă că folosirea șoldurilor pentru a balansa ultimele repetări este exclusă. Formă perfectă pentru câștiguri perfecte."
+         },
+         "footer":{
+            "text-1":"Pentru a extinde antrenamentul folosește",
+            "text-2":"sursa",
+            "text-3":"pentru aceste exerciții unde vei găsi o bibliotecă extinsă de exerciții și te va ajuta să îți trăiești viața așa cum îți dorești."
+         }
+      },
+      "back":{
+         "self":"Înapoi",
+         "title":"Antrenament complet pentru spate",
+         "benefits":{
+            "title":"Beneficiile antrenării spatelui",
+            "text":"Există nenumărate motive pentru a-ți antrena trapezele, latii și restul. O să lăsăm pe Ben West și Jordane Zammit Tabona, co-fondatorii sălii de sport 360Athletic din Londra, să vă explice.",
+            "reasons":{
+               "reason-title-1":"Corectează-ți postura",
+               "reason-text-1":"Dacă îți petreci majoritatea săptămânii - și, în acest sens, vieții tale - aplecat peste un birou și apăsând pe tastatură, este probabil ca postura ta să fi avut de suferit de-a lungul săptămânilor, lunilor și anilor de muncă. 'Acest lucru creează o postură greșită și un dezechilibru muscular, cauzând rotunjirea umerilor și a părții superioare a spatelui,' spune Zammit Tabona. Antrenamentele pentru spate, foarte util, te vor ajuta să-ți corectezi postura și să scapi de 'cocoșătura' de la birou.",
+               "reason-title-2":"Reduce riscul de accidentare",
+               "reason-text-2":"Pentru omul obișnuit, viața arată în general ca lungi perioade de sedentarism - naveta, un job la birou, seri pe canapea uitându-te la televizor - frecvent întrerupte de antrenamente de înaltă intensitate care te duc de la zero la 100 și înapoi în doar 45 de minute. Și ne întrebăm de ce ne accidentăm. 'Pe lângă ajutorul pentru postură, antrenamentele pentru spate pot ajuta la reducerea durerilor și riscului de accidentare, ajutându-te să te concentrezi mai bine și să lucrezi mai eficient,' adaugă West.",
+               "reason-title-3":"Îmbunătățește ridicările grele",
+               "reason-text-3":"Antrenamentele pentru spate vor încuraja și mușchii mai slabi să crească, ajutând la creșterea forței în alte ridicări la care s-ar putea să nu te aștepți. Un bench press mai puternic, cineva? De asemenea, articulațiile umerilor tăi vor fi mai stabile și considerabil mai puternice. 'Mușchii spatelui și coloana vertebrală susțin corpul tău, fără ei ar fi foarte slab,' spune Zammit Tabona. 'A avea un spate puternic te va ajuta, prin urmare, să-ți susții corpul și să funcționezi mai bine și mai eficient.' Sună ca un câștig-câștig-câștig pentru noi.",
+               "reason-title-4":"Ajută la dezvoltarea fizicului în formă de V",
+               "reason-text-4":"Alături de un piept mai pronunțat și brațe mai mari, dorința pentru un fizic în formă de V este una dintre cele mai frecvente întâlniri în inbox-ul Men's Health. Din fericire, petrecând mai mult timp pe spatele tău te va ajuta să obții acel corp dorit în formă de V. 'A avea un fizic echilibrat și bine rotunjit este ceea ce majoritatea dintre noi aspirăm să avem din punct de vedere estetic, și antrenându-ți spatele frecvent cu siguranță va ajuta în acest sens,' spune West.",
+               "reason-title-5":"Reduce durerea de spate",
+               "reason-text-5":"Întărind coloana vertebrală, umerii și nucleul, exercițiile de spate de mai jos vor întări partea din spate și vor începe să șteargă tulpina durerii de spate, care pătrunde în viețile a mii de bărbați în fiecare zi. Parteneriat cu rutine eficiente de întindere și mișcări dinamice, aceste mișcări - executate cu o formă corectă - ar putea ajuta să transforme durerea de spate într-un lucru din trecut."
+            }
+         },
+         "kettlebell-swings":{
+            "title":"Kettlebell Swings",
+            "how-to-description":"Plasează o kettlebell la un picior în fața ta. Stai cu picioarele puțin mai larg decât lățimea umerilor și îndoaie genunchii pentru a te înclina la șolduri în față și prinde mânerul cu ambele mâini. Cu spatele drept, angajează-ți latii să tragă greutatea între picioare (fii atent cât de adânc te înclini) apoi împinge șoldurile în față și trage exploziv kettlebell-ul până la înălțimea umerilor cu brațele drepte în fața ta. Întoarce-te la poziția inițială și repetă fără pauze.",
+            "why-description":"KB swings nu sunt doar pentru fanii CrossFit. Departe de asta. Lucrând lanțul posterior al spatelui tău, kettlebell swings sunt de asemenea diabolic de eficiente pentru construirea unui nucleu mai puternic, care va ajuta la eliminarea greutății de pe spatele tău. Începe cu o greutate mai ușoară, obișnuiește-te cu forma și progresează încet."
+         },
+         "barbell-deadlift":{
+            "title":"Ridicări cu bara (Deadlift)",
+            "how-to-description":"Ghemuiește-te și prinde o bară cu mâinile la aproximativ lățimea umerilor. În timp ce faci asta, umerii trebuie să fie peste bară și corpul tău ar trebui să fie aproape de aceasta. În timp ce te ridici, ține umerii înapoi și împinge cu călcâiele până când te ridici în poziția verticală, apoi revino la poziția de pornire. Asigură-te că mișcarea este fluidă și controlată de-a lungul antrenamentului.",
+            "why-description":"Deadlift-ul lucrează mai mulți mușchi în același timp decât aproape orice alt exercițiu, și cu siguranță mai mulți decât oricare alt exercițiu de spate. Acesta ajută la dezvoltarea unei forțe brute, îmbunătățește postura și chiar ajută la arderea caloriilor. Deadlift-ul ar trebui să fie o piesă de bază în orice program de antrenament serios."
+         },
+         "pull-up":{
+            "title":"Tracțiuni la bară",
+            "how-to-description":"Prinde mânerele stației de tracțiuni astfel încât palmele tale să fie orientate în afara ta și brațele complet extinse. Mâinile tale ar trebui să fie la aproximativ lățimea umerilor. Strânge omoplații împreună, expiră și împinge coatele spre șolduri pentru a aduce bărbia peste bară. Coborâți încet înapoi la poziția de pornire.",
+            "why-description":"Dacă vrei un fizic în formă de V - și da, de asta ești aici - atunci nu poți evita tracțiunile. Țintindu-ți direct lats-ii, vei câștiga o structură mai lată și vei părea mai slab. Plus, vei obține un mare respect în sală odată ce bărbia trece peste acea bară."
+         },
+         "dumbbell-single-arm-row":{
+            "title":"Rând cu gantera cu o singură mână",
+            "how-to-description":"Mergi la o bancă plată și pune-ți mâna dreaptă pe ea sub umărul tău, ținând brațul drept. Odihnește genunchiul drept pe bancă și pășește cu celălalt picior în lateral. Cu mâna liberă, ia o ganteră de pe podea și trage-o spre tine până când brațul tău superior este paralel cu podeaua. Coborâți încet înapoi la podea și repetați.",
+            "why-description":"O altă mișcare excelentă pentru lats, rândul cu gantera cu o singură mână lucrează ambele părți ale corpului tău și te ajută să te concentrezi (și să corectezi) punctele slabe, eliminând dezechilibrele de forță de pe fiecare parte. Un sfat util: nu lăsa umărul să cadă la partea de jos a mișcării. Blochează-ți trunchiul pentru a te asigura că spatele ridică greutatea, nu brațul."
+         },
+         "chest-supported-dumbbell-row":{
+            "title":"Rând cu gantere suportate de piept",
+            "how-to-description":"Întinde-te cu fața în jos pe bancă cu picioarele de o parte și de alta pentru a te menține stabil. Atârnă ganterele sub tine folosind o prindere neutră. Ridică capul și adu omoplații împreună pe măsură ce tragi greutățile spre piept. Coborâți încet la poziția de pornire.",
+            "why-description":"O mișcare ideală pentru cei care au probleme cu menținerea pieptului puternic și coloanei drepte în timpul altor mișcări de dezvoltare a spatelui, rândul cu gantere suportate de piept izolează mușchii spatelui - ajutând la mișcarea ganterelor mult mai eficient și în siguranță."
+         },
+         "inverted-row":{
+            "title":"Rând Inversat",
+            "how-to-description":"Aranjează o bară într-un suport la înălțimea taliei. Prinde-o cu o prindere mai largă decât lățimea umerilor și atârnă dedesubt. Poziționează-te cu călcâiele în fața ta și brațele complet extinse. Corpul tău ar trebui să fie drept de la umeri la glezne. Flexează la coate pentru a-ți trage pieptul până la bară. Coborâți încet înapoi la poziția de pornire.",
+            "why-description":"Potrivit pentru cei care au probleme cu tracțiunile și bărbierile, rândul inversat este surprinzător de dificil. Lucrându-ți spatele și brațele, poți progres sau regresa mișcarea rearanjând unde îți pui picioarele."
+         },
+         "farmers-walk":{
+            "title":"Mersul Fermierului",
+            "how-to-description":"Ține două kettlebells sau gantere lângă tine. Menține-ți brațele puternice și fă pași mici și rapizi cât mai repede posibil. Întoarce-te și revino.",
+            "why-description":"Construind un spate mai puternic, umeri mai mari și o forță incredibilă de prindere, nu există prea multe lucruri pe care mersul fermierului nu le poate face. În plus, arde grăsimea de pe burtă și construiește mușchi mult mai repede decât majoritatea mișcărilor funcționale."
+         },
+         "superman":{
+            "title":"Superman",
+            "how-to-description":"Întinde-te cu fața în jos pe un covor cu brațele extinse în fața ta și picioarele extinse în spatele tău. Angajând fesierii și spatele inferior, ridică brațele, picioarele și pieptul de pe podea. Menține pentru o numărătoare, apoi revino încet la poziția de pornire.",
+            "why-description":"Nu există prea multe exerciții pentru spate care nu necesită echipament, dar Superman este cu siguranță unul dintre ele. Dacă este făcut corect, acesta va lucra mușchii spatelui tău mijlociu, precum și mușchii rotatori ai manșetei."
+         },
+         "pendlay-row":{
+            "title":"Rândul Pendlay",
+            "how-to-description":"Începe prin a-ți trimite șoldurile în spatele călcâielor tale cu spatele drept. Începe cu bara pe podea cu bara direct deasupra liniei piciorului tău. Trunchiul tău va fi paralel cu podeaua sau puțin mai jos, în funcție de lungimea membrelor tale. Blochează-ți miezul și umerii departe de urechi, prinde bara puțin mai largă decât umerii și trage barul în sus astfel încât coatele să se îndoaie în spatele tău. Nu este nevoie să rezistați greutății în jos, lăsați gravitația să-și facă treaba pentru a conserva energie pentru următoarea repetare puternică.",
+            "why-description":"Rândul Pendlay este poate una dintre variațiile mai puțin cunoscute ale exercițiilor pentru spate. În comparație cu rândul aplecat cu bara, este o mișcare explozivă și ar trebui să fie completată cu accent pe partea ascendentă a repetării pentru a promova puterea musculară."
+         },
+         "good-mornings":{
+            "title":"Bună Dimineața",
+            "how-to-description":"Stați cu picioarele la lățimea umerilor și sprijiniți-vă miezul. Țineți bara pe spatele superior cu o prindere peste mână. Trageți umerii înapoi astfel încât bara să se odihnească confortabil pe spatele tău superior. Îndoaie-te încet la șolduri pentru a-ți coborî trunchiul spre podea. Pauză când simți tensiune în ischio-gambieri, apoi inversați mișcarea.",
+            "why-description":"Acest exercițiu este adesea evitat deoarece este considerat prea periculos, dar dacă este făcut corect, este una dintre cele mai bune modalități de a construi forța ischio-gambierilor și a spatelui inferior."
+         },
+         "single-arm-t-bar-rows":{
+            "title":"Rânduri cu bara T cu o singură mână",
+            "how-to-description":"Adaugă greutate la un capăt al unei bare. Apleacă-te înainte până când trunchiul tău este aproape paralel cu podeaua și ține genunchii ușor îndoiți. Prinde bara cu o mână chiar în spatele plăcilor. Trage bara drept în sus cu coatele înăuntru până când plăcile ating pieptul și strânge mușchii spatelui la partea de sus a mișcării. Coborâți încet la poziția de pornire și repetați fără a lăsa plăcile să atingă podeaua.",
+            "why-description":"Probabil ai văzut rândul standard cu bara T executat (adesea incorect) în sală, dar rândul cu bara T cu o singură mână asigură faptul că, deoarece folosești o încărcătură mai ușoară, forma este mai strictă și dezechilibrele musculare sunt corectate."
+         }
+      },
+      "chest":{
+         "self":"Piept",
+         "title":"Antrenament Complet pentru Piept",
+         "dips":{
+            "title":"Flotări la Paralele",
+            "how-to-description":"Sari pe două bare paralele sau inele de gimnastică, cu palmele îndreptate spre interior și brațele întinse — folosește două cutii sau spătarele a două scaune robuste dacă ești acasă. Îndoaie brațele și coboară încet corpul până când coatele sunt la un unghi drept, asigurându-te că nu se îndoaie în afară. Împinge-te înapoi la poziția de plecare, strângând tare pieptul și brațele, apoi repetă.",
+            "why-description":"Ridicarea ușoară a picioarelor (sau mai mult decât ușoară) în timpul exercițiilor de tip press-up schimbă unghiul față de tine, oferind mai multă rezistență și creșteri mai mari. De asemenea, vei accentua părțile pieptului care pot fi omise în timpul exercițiilor de presă orizontală."
+         },
+         "feet-elevated-press-up":{
+            "title":"Flotări cu picioarele ridicate",
+            "how-to-description":"Pune ambele picioare pe o cutie sau bancă. Creează o poziție de plank puternică, cu mâinile pe pământ, la lățimea umerilor. Coboară încet pieptul spre pământ, apoi împinge-te explosiv înapoi. Cu cât picioarele tale sunt mai înalte, cu atât rezistența este mai mare, dar vei accentua și mai mult mușchii umerilor.",
+            "why-description":"Regele adevărat al mișcărilor compuse, deadlift-ul cu bara este o mișcare pentru întregul corp — construiește picioare, spate, umeri și brațe mai puternice. Locul său în următorul tău antrenament de spate este bine meritat — pe măsură ce lucrezi prin gama completă de mișcare, mușchii spatelui superior (rhomboizi, trapezi, deltoizi posteriori și lats) sunt în acțiune ajutând la menținerea trunchiului drept, în timp ce previne rotunjirea spatelui și apariția accidentărilor."
+         },
+         "deficit-press-up":{
+            "title":"Flotări deficitare",
+            "how-to-description":"Adoptă o poziție de plank puternică, cu miezul strâns și mâinile prinzând o pereche de mânere, gantere sau plasate pe două bănci, de fiecare parte a corpului tău. Îndoaie coatele pentru a aduce pieptul la podea, simțind o întindere profundă pe măsură ce cobori. Menține coatele apropiate de corp în timp ce te împingi înapoi, în mod exploziv.",
+            "why-description":"Cheia pentru creștere este stimularea mușchilor printr-o gamă completă de mișcare. Ridicând mâinile pe mânere sau cutii de fiecare parte a corpului tău, poți să te cobori sub nivelul mâinilor, întinzând complet pieptul și vizând mai multe fibre musculare."
+         },
+         "gymnastics-rings-press-ups":{
+            "title":"Flotări pe inele gimnastice",
+            "how-to-description":"Aranjează o pereche de inele astfel încât să atârne la aproximativ un picior de la podea. Adoptă o poziție de plank puternică, prinzând ambele inele cu brațele întinse, la lățimea umerilor. Strânge inelele cât poți de tare în timp ce te cobori spre podea. Continuă să te cobori până când simți o întindere profundă în pectorali, înainte de a te împinge înapoi, în mod exploziv.",
+            "why-description":"Natura liberă a inelelor nu îți permite doar să obții o întindere profundă în pectorali, dar instabilitatea lor inerentă poate întări serios umerii tăi. Ridică picioarele pentru a crește rezistența și pentru a-ți bomba și mai mult pieptul."
+         },
+         "tempo-press-ups":{
+            "title":"Flotări cu tempo",
+            "how-to-description":"Adoptă o poziție de plank puternică, cu mâinile plasate direct sub umeri. Menține coatele încuiate la un unghi de 45 de grade în timp ce cobori încet pieptul spre podea. Inspiră pe măsură ce cobori, numărând până la 4 secunde. Pauzează chiar înainte ca pieptul tău să atingă pământul și expiră exploziv, împingându-te înapoi. Repetă până când nu mai poți controla coborârea.",
+            "why-description":"Flotarea este constructorul pecs portabil final, perfect pentru repetări înaltă, dar dacă vrem ca toate aceste repetări să conteze, trebuie să ne concentrăm pe fiecare repetare, controlând tempo (viteza) și menținând tensiunea pe acei pectorali."
+         },
+         "flat-dumbbell-press":{
+            "title":"Presă cu gantere pe bancă plană",
+            "how-to-description":"Stai întins pe o bancă, cu genunchii îndoiți, împingând picioarele în podea. Împinge o pereche de gantere în aer, încuiând coatele. Coborâți greutățile încet până când ating partea exterioară a pieptului tău. Menține coatele la un unghi de 45 de grade, pauzează aici înainte de a presa înapoi, în mod exploziv.",
+            "why-description":"Spre deosebire de presa cu bara, având ambele mâini mișcându-se independent îți permite să creezi nu numai o gamă mai mare de mișcare, dar una care este perfectă pentru mecanica ta individuală. Repetiții perfecte pentru pectorali perfecți."
+         },
+         "incline-dumbbell-press":{
+            "title":"Presă cu gantere pe bancă înclinată",
+            "how-to-description":"Stai întins pe o bancă reglată la un unghi de 45 de grade, împingând picioarele în podea, dar evitând arcuirea spatelui. Împinge o pereche de gantere în aer, încuiând coatele. Coborâți greutățile încet până când ating partea exterioară a pieptului tău. Menține coatele la un unghi de 45 de grade, pauzează aici înainte de a presa înapoi, în mod exploziv.",
+            "why-description":"Schimbarea la un unghi înclinat te poate ajuta să țintești partea superioară a pieptului, care poate fi subdezvoltată dacă ai preferat mereu presa pe bancă plană. La fel ca și presa cu gantere pe bancă plană, folosirea ganterelor îți permite să obții o întindere mai mare în piept, crescând potențialul de creștere."
+         },
+         "dumbbell-press-to-fly":{
+            "title":"Presă cu gantere spre fluture",
+            "how-to-description":"Stai întins pe o bancă, cu genunchii îndoiți, împingând picioarele în podea. Împinge o pereche de gantere în aer, încuiând coatele. Menține brațele încuiate cu o ușoară îndoire a coatelor și coboară încet ganterele în exterior, deschizându-ți brațele spre părțile laterale ale corpului tău. Pauzează când simți o întindere adâncă înainte de a presa înapoi, în mod exploziv, și de a repeta.",
+            "why-description":"Fluturele cu gantere este o mișcare eficientă pentru a-ți întinde complet pieptul sub încărcătură, însă nu vei putea să folosești greutăți la fel de mari ca atunci când presezi. Prin presarea greutăților în sus, apoi folosind un fluture în drumul înapoi în jos, poți profita de forța naturală a corpului tău în partea de coborâre a ridicărilor, obținând astfel cel mai bun din ambele lumi."
+         },
+         "dumbbell-squeeze-press":{
+            "title":"Presă cu strângere de gantere",
+            "how-to-description":"Ține o singură gantereă, apucând 'capetele' de pe fiecare parte în fiecare mână. Stai întins pe o bancă și presează încet gantera deasupra pieptului până la încuierea completă. În timp ce presezi și cobori gantera, strânge capetele cât de tare poți și încearcă să 'strivești' gantera între mâini, flexând puternic pieptul.",
+            "why-description":"Poate fi greu să 'simți' pieptul lucrand în timpul mișcărilor de presare. Încălzindu-te cu o mișcare de strângere, activându-ți pieptul, ești capabil să stabilești o bună conexiune minte/muscul cu acei pectorali înainte de restul antrenamentului tău."
+         },
+         "incline-bench-press":{
+            "title":"Presă pe bancă înclinată",
+            "how-to-description":"Stai întins pe o bancă înclinată într-un suport, prinde haltera cu brațele în afara lățimii umerilor și scoate bara din suport. Coboară încet haltera până la partea de sus a pieptului tău, controlând mișcarea și asigurându-te că coatele nu se îndoaie prea mult în exterior. Pauzează aici și presează înapoi în sus, în mod exploziv, înainte de a repeta.",
+            "why-description":"Schimbarea la un unghi înclinat te poate ajuta să țintești partea superioară a pieptului, care poate fi subdezvoltată dacă ai preferat mereu presa pe bancă plană. Această poziție îți permite, de asemenea, să cobori haltera mai sus pe pieptul tău, creând o întindere mai mare. Nu vei putea să ridici la fel de multă greutate în această poziție, dar ceea ce miști va fi mai potent."
+         },
+         "guillotine-press":{
+            "title":"Presă ghilotină",
+            "how-to-description":"Stai întins pe o bancă plană într-un suport, prinde haltera cu brațele în afara lățimii umerilor și scoate bara din suport. Menținând coatele la un unghi de aproape 90 de grade față de corpul tău, coboară încet haltera până atinge partea de sus a pieptului tău înainte de a presa înapoi, în mod exploziv, spre încuiere și de a repeta.",
+            "why-description":"Deși poate fi mai complicat pentru umeri, folosind o prindere ușor mai largă și coborând haltera până la partea de sus a pieptului tău (chiar sub gât, de unde și numele) creează o întindere mult mai profundă peste pectorali. Vei putea să ridici la fel de greu? Nu. Vei putea să-ți mărești pieptul? Da."
+         },
+         "close-grip-bench-press":{
+            "title":"Presă pe bancă cu prindere îngustă",
+            "how-to-description":"Stai întins pe o bancă plană într-un suport, prinde haltera cu mâinile la o distanță de doar 15-30 de centimetri una de alta și scoate bara din suport. Coboră încet bara spre partea de jos a pieptului tău, menținând coatele aproape de corpul tău. Pauzează când bara intră în contact înainte de a presa înapoi, în mod exploziv, spre încuiere și de a repeta.",
+            "why-description":"Deși strict vorbind ai putea să clasifici acest exercițiu sub 'exerciții pentru tricepși', dacă brațele sunt punctul slab în construirea unei prese mai mari pe bancă (și a unui piept mai mare, prin extensie) atunci alocarea unui timp pentru concentrarea pe ele ar putea să aibă un impact mare. Cel mai rău caz este că îți vei umple mânecile mai mult."
+         },
+         "banded-resisted-press-ups":{
+            "title":"Flotări cu rezistență de bandă elastică",
+            "how-to-description":"Încrucișează o bandă elastică peste partea inferioară a spatelui tău și prinde fiecare capăt cu degetele mari. Intră în poziția de flotări. Coboară-te spre sol și apoi presează în sus, puternic - împingând în mod exploziv împotriva rezistenței suplimentare a benzii pentru a activa mai multe mușchi în partea superioară a corpului tău.",
+            "why-description":"Folosește o bandă elastică pentru a adăuga un plus la flotările tale, astfel încât să stimulezi mai multe creșteri ale pieptului. Împingerea împotriva benzilor (care devin 'mai grele' spre sfârșitul fiecărei repetări) te forțează, de asemenea, să lucrezi în mod exploziv, construind putere în acei pectorali."
+         },
+         "cable-crossover":{
+            "title":"Încrucișare cu cabluri",
+            "how-to-description":"Atașează mânerele de prindere la puleile înalte ale unei mașini de încrucișare cu cabluri. Ia câte unul în fiecare mână - brațele tale ar trebui să fie întinse cu o ușoară îndoire. Plasează un picior ușor înainte, contractează-ți abdomenul și trage mânerele în jos și peste corpul tău. Revină la poziția de start controlând mișcarea."
+         }
+      },
+      "legs":{
+         "self":"Picioare",
+         "title":"Antrenament Complet pentru Picioare",
+         "leg-muscles":{
+            "title":"Mușchii Picioarelor Explicați",
+            "text":"Înțelegerea mușchilor pe care îi lucrezi și rolul pe care îl joacă te va ajuta în timpul fiecărui exercițiu. Acestea sunt principalele grupuri de mușchi din picioare pe care trebuie să le cunoști.",
+            "glutes-title":"Fesieri",
+            "glutes-text":"Fesierii sunt motoarele care ajută la propulsarea corpului, oferă putere explozivă și ajută la menținerea unei posturi și mișcări adecvate. Fără ei, te-ai chinui să mergi, darămite să faci genuflexiuni.",
+            "adductors-title":"Adductori",
+            "adductors-text":"Mușchii coapsei interioare, sunt esențiali pentru atletism și putere. Compus din cinci mușchi, rolul lor este să stabilizeze coapsele și pelvisul, permițând în același timp mișcarea, extensia și rotația. Adductorii sunt foarte importanți pentru genuflexiuni, sprinturi și deplasări în mai multe direcții.",
+            "hamstrings-title":"Isoletele",
+            "hamstrings-text":"Isoletele sunt un grup de mușchi care se află pe spatele coapsei tale. Se atașează de oasele piciorului inferior în spatele genunchiului, trecând între două articulații — genunchiul și șoldul, acționând pentru a îndoi primul și a extinde cel de-al doilea. Deficitele în acest grup muscular pot provoca probleme funcționale și de performanță sportivă. De asemenea, pot duce la accidentări. Având isolete puternice, atleții pot efectua acțiuni sportive de impact și explozive de înaltă calitate.",
+            "quadriceps-title":"Cvadricepși",
+            "quadriceps-text":"Cvadricepșii tăi sunt formați din patru mușchi: rectus femoris, vastus lateralis, vastus medialis și vastus intermedius. Împreună, acești patru mușchi conțin mai multă masă decât orice alt mușchi din corp, ajutând la mișcări de zi cu zi precum mersul, alergarea, genuflexiunile și săriturile.",
+            "calves-title":"Geme",
+            "calves-text":"Funcția principală a mușchiului vițelului este să ajute la flexia piciorului, gleznei și genunchiului."
+         },
+         "barbell-bulgarian-split-squat":{
+            "title":"Genuflexiuni Bulgare cu Halteră",
+            "how-to-description":"Stai cu fața în direcția opusă băncii, ținând o halteră pe partea superioară a spatelui. Un picior trebuie să stea pe bancă, în spatele tău, cu șireturile în jos. Fă genuflexiuni cu piciorul care stă în picioare până când genunchiul piciorului de sprijin aproape atinge podeaua. Împinge în sus prin piciorul din față pentru a reveni la poziția de start.",
+            "why-description":"Cercetătorii au studiat activarea mușchilor într-o serie de exerciții unilaterale cu halteră: genuflexiunea divizată, genuflexiunea pe un singur picior și genuflexiunea bulgară (sau „cu piciorul spate ridicat”) într-un studiu publicat în The Journal of Strength & Conditioning Research. Deși toate trei vizează în mod egal cvadricepșii și fesierii, această mișcare este deosebit de eficientă pentru isolete, au concluzionat ei. „Dacă observi că haltera pe spate te face să te apleci excesiv în față, încearcă să o încarci în față sau să înlocuiești cu gantere pe lateral”, sugerează Phillip Leonard, șeful departamentului de antrenament personal de la Ten Health & Fitness."
+         },
+         "romanian-deadlift":{
+            "title":"Îndreptări Românești",
+            "how-to-description":"Stai în spatele unei haltere așezate pe podea. Îndoaie puțin genunchii pentru a o prinde, menținând tibia, spatele și șoldurile drepte. Fără a îndoi spatele, împinge șoldurile înainte pentru a ridica bara. Din poziția verticală, împinge șoldurile înapoi pentru a coborî bara, îndoindu-ți genunchii doar puțin.",
+            "why-description":"„Este o variație excelentă pe tema îndreptărilor tradiționale, care se concentrează pe fesieri și partea superioară a isoleților”, spune Leonard. Practicarea exercițiilor de flexie a șoldurilor - ca îndreptările românești - poate îmbunătăți serios viteza ta de sprint și agilitatea. După opt săptămâni de antrenament specific flexorilor de șold, participanții la un studiu al Universității din Florida au văzut îmbunătățiri de aproximativ patru la sută și nouă la sută la timpurile lor personale de sprint și shuttle run."
+         },
+         "goblet-squat":{
+            "title":"Genuflexiuni cu Goblet",
+            "how-to-description":"Stai cu picioarele mai larg desfășurate decât umerii și ține o ganteră cu ambele mâini în linie cu coapsele. Proiectează-ți posteriorul în spate, îndoaie genunchii și coboară-te într-o genuflexiune până când gantera atinge podeaua. Împinge înapoi și repetă.",
+            "why-description":"Obții beneficiile de construire a mușchilor din partea inferioară a corpului oferite de genuflexiunile tradiționale, în timp ce îți lucrezi și umerii și brațele în același timp. „Genuflexiunile cu goblet sunt o alternativă excelentă pentru cei care nu au mobilitatea la nivelul umerilor pentru a menține o formă corectă la genuflexiuni cu bara în spate”, spune Dick. „Poziționarea sarcinii în partea din față a corpului va pune la încercare mai mult nucleul și cvadricepșii.”"
+         },
+         "kettlebell-pistol-squat":{
+            "title":"Genuflexiuni Pistol cu Kettlebell",
+            "how-to-description":"Ține un kettlebell cu ambele mâini chiar sub bărbie. Ridică un picior de pe podea și fă o genuflexiune cu celălalt. Împinge prin călcâi și revino la poziția de start, fără a lăsa piciorul să atingă podeaua. Coboară din nou și repetă.",
+            "why-description":"„Un exercițiu excelent pe un singur picior pentru a provoca mobilitatea și stabilitatea șoldurilor, care se transferă direct în viața de zi cu zi”, spune Dick. Este, de asemenea, incredibil de complicat de stăpânit, necesitând forță, dexteritate și echilibru în măsuri egale - oferind celor care îl pot executa fără greșeală un bilet gratuit pentru a se lăuda."
+         },
+         "single-leg-curl":{
+            "title":"Flexie Pe Un Singur Picior",
+            "how-to-description":"Stai culcat pe burtă pe mașina de flexie a picioarelor, cu călcâiele împotriva suportului inferior și cu banca împotriva coapselor tale. Îndoaie un genunchi pentru a trage suportul cât mai aproape de posteriorul tău, apoi revino la poziția de start și repetă pe cealaltă parte.",
+            "why-description":"„Flexiile pe un singur picior sunt excelente pentru întărirea isoleților, iar făcând acest lucru, poți să-ți protejezi genunchii”, explică Dick. „Un lucru bun de încercat sunt repetările cu focus pe fază excentrică - folosește ambele picioare pentru a efectua flexia și doar un picior pentru a aduce greutatea înapoi la start. Acest lucru îți permite să suprasoliciti fiecare picior fără a risca accidentări.”"
+         },
+         "leg-extension":{
+            "title":"Extensia Picioarelor",
+            "how-to-description":"Stai într-o mașină de extensie a picioarelor, cu gleznele împotriva pernei de jos. Folosește-ți cvadricepii pentru a împinge înainte și a-ți întinde picioarele în fața ta, apoi revino la poziția inițială.",
+            "why-description":"Adaugă acest exercițiu la sfârșitul antrenamentului tău - este finisarea ideală concentrată pe cvadricepi. „Un exercițiu excelent de întărire pentru cvadricepi, care va ajuta din nou la protejarea genunchilor pe măsură ce îmbătrânim”, spune Dick. „Încearcă și repetări cu focalizare pe faza excentrică: ambele picioare efectuează extensia, un singur picior aduce greutatea înapoi.”"
+         },
+         "prowler-push":{
+            "title":"Împingerea Prowler",
+            "how-to-description":"Pentru a împinge, păstrează-ți brațele, gâtul și spatele într-o linie dreaptă statică. Când mergi înainte, mișcă doar picioarele. Pentru a trage, prinde mânerele saniei, îndoaie genunchii păstrându-ți spatele drept și vertical, și mergi înapoi cu pași fermi.",
+            "why-description":"Indiferent dacă scopul tău final este îmbunătățirea rezistenței, puterii sau a mușchilor funcționali - și mai ales dacă este vorba de toate cele trei - sania Prowler te acoperă. Riscul de accidentare este minim și te vei recupera mai repede, deoarece mișcarea este 'concentrică', spune Leonard. „Durerea musculară vine în mare parte din faza excentrică a unei mișcări - gândește-te: faza de coborâre într-o genuflexiune. Asta înseamnă că recuperarea de la o împingere grea a Prowler va fi mai rapidă decât la exerciții cum ar fi genuflexiunile sau ridicările de greutăți.” Progresia este simplă: fie mărești greutatea, fie împingi mai repede."
+         },
+         "box-jumps":{
+            "title":"Sărituri pe Cutie",
+            "how-to-description":"Pozitionează-te la o distanță confortabilă de cutie cu picioarele la lățimea umerilor. Coboră rapid într-o genuflexiune parțială, oscilează brațele și explodează în sus pentru a sari pe cutie. Aterizează cât mai moale posibil. Acum coboară controlat de pe cutie.",
+            "why-description":"Dacă vrei să arzi grăsimi, să construiești mușchi funcționali și să nu lași niciun mușchi neatins după antrenamentul pentru partea inferioară a corpului, atunci e greu să bati săriturile pe cutie. Acestea îți vor accelera ritmul cardiac în timp ce construiesc cvadricepi și fesieri mai puternici și mai rezistenți."
+         },
+         "box-squats":{
+            "title":"Genuflexiuni pe Cutie",
+            "how-to-description":"Plasează o cutie în spatele tău și stai cu picioarele la lățimea umerilor. Așează-te într-o genuflexiune până când te așezi pe cutie. Pauzează și apoi împinge în sus menținând greutatea pe călcâie.",
+            "why-description":"Dacă ai probleme să atingi adâncimea completă în timpul genuflexiunilor cu greutatea corpului sau cu greutăți, genuflexiunile pe cutie sunt terenul de mijloc ideal pentru a-ți testa forța, subliniind în același timp tehnica adecvată. Odată ce ai stăpânit-o, începe să adaugi greutăți - gantere, haltere sau kettlebells - pentru a o face mai dificilă."
+         },
+         "barbell-front-squats":{
+            "title":"Genuflexiuni Frontale cu Halteră",
+            "how-to-description":"Stai cu picioarele la lățimea umerilor, ținând o halteră pe pieptul superior. Poți fie să sprijini greutatea pe degete, cu încheieturile extinse, fie să încrucișezi brațele pentru a sprijini greutatea. Având grijă să nu îți arcuiești spatele, împinge șoldurile înapoi și îndoaie genunchii pentru a coborî corpul până când coapsele sunt paralele cu podeaua. Împinge prin călcâie pentru a te ridica exploziv înapoi la poziția de pornire.",
+            "why-description":"Îți place să faci genuflexiuni, dar te-ai plictisit de genuflexiunile cu bara în spate? Genuflexiunea frontală este un exercițiu ideal pentru picioare, deoarece haltera încărcată în față va ajuta la îmbunătățirea mobilității umerilor, gleznelor și șoldurilor. Nucleul tău va fi, de asemenea, foarte activ pentru a te menține drept și pentru a-ți proteja spatele."
+         },
+         "bodyweight-split-squat":{
+            "title":"Genuflexiune împărțită cu Greutatea Corpului",
+            "how-to-description":"Stai cu fața în afara unei bănci, cu un picior odihnindu-se pe ea, cu șireturile în jos. Fă o genuflexiune cu piciorul pe care stai până când genunchiul piciorului care atârnă atinge aproape podeaua. Împinge prin piciorul din față pentru a reveni la poziția de pornire.",
+            "why-description":"Indiferent dacă îl folosești ca încălzire sau ca element de bază al antrenamentului acasă, genuflexiunea împărțită cu greutatea corpului este un instrument puternic pentru construirea echilibrului, stabilității și forței în cvadricepi și fesieri."
+         },
+         "sumo-deadlift":{
+            "title":"Ridicări Sumo",
+            "how-to-description":"Cu picioarele mai larg deschise decât lățimea umerilor, coboară și prinde o halteră cu mâinile aproape atingându-se. Menține pieptul ridicat, trage umerii înapoi și privește drept înainte în timp ce ridici bara. Concentrează-te pe a duce greutatea înapoi pe călcâie și menține bara cât mai aproape posibil de corpul tău în tot acest timp. Ridică până la nivelul coapselor, pauzează, apoi revino controlat la poziția inițială.",
+            "why-description":"„[Cu ridicările Sumo], ai multă libertate să te miști pe o rază de acțiune mai scurtă”, spune directorul de fitness de la Men's Health US, Ebenezer Samuel. „[Deoarece] ne lărgim picioarele, nu trebuie să ne înclinăm atât de mult.”"
+         },
+         "bus-driver-squat-hold":{
+            "title":"Ținerea în Genuflexiune a Șoferului de Autobuz",
+            "how-to-description":"Stai cu picioarele mai larg deschise decât umerii și ține o greutate cu ambele mâini extinse în fața ta. Împinge șezutul înapoi, îndoaie genunchii și coboară-te într-o genuflexiune. Ține această poziție pentru 30 de secunde până la un minut.",
+            "why-description":"Aceasta va arde cvadricepii, dar este de asemenea un excelent exercițiu de preîncălzire și de prevenire a accidentărilor, care face minuni pentru rotatorii tăi."
+         },
+         "leg-press":{
+            "title":"Presa pentru Picioare",
+            "how-to-description":"Poți folosi presa pentru picioare așezată sau la 45 de grade. Începe cu picioarele plantate în mijlocul pedalei, la lățimea umerilor, cu spatele lipit de scaun. Controlează greutatea și îndoaie genunchii astfel încât placa să se miște spre tine - asigură-te că zona lombară nu pierde contactul cu scaunul. Împinge placa înapoi de la tine, pregătit să repeți.",
+            "why-description":"Pentru a încărca o greutate decentă pe exercițiile pentru picioare, presa pentru picioare cu încărcare de placă este o mașină eficientă pentru a realiza acest lucru fără instabilitatea greutăților libere. Folosește o poziție a piciorului care se potrivește cu mobilitatea șoldului și gleznei, menține întregul spate lipit de scaun cu fiecare repetare și asigură-te că nu îți blochezi genunchii."
+         }
+      },
+      "core":{
+         "self":"Nucleu",
+         "title":"Antrenament Complet pentru Nucleu",
+         "barbell-floor-wiper":{
+            "title":"Ștergător de Podea cu Halteră",
+            "how-to-description":"Stai cu spatele drept pe podea și cu brațele întinse, ținând o halteră deasupra pieptului. Menținând brațele fixe, ridică picioarele în poziția în formă de L. Coboară piciorul pe fiecare parte, apoi înapoi în sus fără a atinge podeaua."
+         },
+         "medicine-ball-slam":{
+            "title":"Lovire cu Minge Medicinală",
+            "how-to-description":"Ghemuiește-te și prinde o halteră cu mâinile la o distanță aproximativ egală cu lățimea umerilor. Menține pieptul ridicat, trage umerii înapoi și privește drept înainte în timp ce ridici bara. Concentrează-te pe a duce greutatea înapoi pe călcâie și menține bara cât mai aproape posibil de corpul tău în tot acest timp. Ridică până la nivelul coapselor, pauzează, apoi revino controlat la poziția de start."
+         },
+         "side-jackknife":{
+            "title":"Briceag Lateral",
+            "how-to-description":"Stai pe o parte cu brațul stâng întins pe podea și brațul drept îndoit spre cap, cu cotul deschis. Asigură-te că piciorul drept este deasupra celui stâng. Adu cotul drept la piciorul stâng în timp ce ridici corpul, contractând mușchii oblici, apoi coboară încet înainte de a schimba părțile după un număr de repetări."
+         },
+         "dragon-flag":{
+            "title":"Steagul Dragonului",
+            "how-to-description":"Întinde-te pe bancă cu mâinile ținând banca în spatele capului tău. Adu genunchii la piept și lovește spre tavan, ridicând corpul astfel încât doar umerii să rămână pe bancă. Menține corpul drept și coboară încet. Vei simți arderea nu doar în abdomen, ci și în zona lombară."
+         },
+         "cable-woodchopper":{
+            "title":"Tăietor de Lemne cu Cablu",
+            "how-to-description":"Setează mașina de cablu la poziția cea mai înaltă și stai lateral față de greutăți, cu spatele la mașină. Prinde mânerul cu ambele mâini, fă un pas în lateral față de turn și pune picioarele la lățimea umerilor. Extinde complet brațele și trage mânerul în jos și peste corpul tău în timp ce rotești torsul. Îndoaie genunchii și pivotează piciorul din spate, apoi revino încet la poziția de start, schimbând părțile după fiecare serie."
+         },
+         "cocoon":{
+            "title":"Cocon",
+            "how-to-description":"Stai întins pe spate cu brațele întinse în spatele capului și cu picioarele ușor ridicate deasupra podelei. Trage genunchii spre piept, ridică posteriorul de pe podea și ridică brațele peste cap în timp ce execuți o răsucire și repetă."
+         },
+         "sandbag-sit-up":{
+            "title":"Ridicare cu Sac de Nisip",
+            "how-to-description":"Stai întins pe spate pe podea, cu genunchii îndoiți în sus. Ține un sac de nisip deasupra ta cu ambele brațe întinse și execută o răsucire înainte tensionând mușchii abdominali astfel încât corpul tău să formeze un V cu coapsele. Coboară cu atenție și repetă."
+         },
+         "hanging-leg-raise":{
+            "title":"Ridicarea Piciorului în Atracție",
+            "how-to-description":"Prinde o bară de tracțiuni, formând un V cu brațele și lasă-te într-o atracție moartă. Pune picioarele împreună și ridică-le până când sunt perpendiculare pe trunchi, menținându-le drepte. Coboară încet înapoi la poziția de start."
+         },
+         "superman-with-a-twist":{
+            "title":"Superman cu o Răsucire",
+            "how-to-description":"Stai pe stomac și pune-ți mâinile pe cap. Ridică torsul și rotește pieptul de la o parte la alta. Această mișcare nu va ținta doar mușchii abdominali, dar poate ajuta și la combaterea rigidității spatelui."
+         },
+         "hollow-rocks":{
+            "title":"Leagăne Goale",
+            "how-to-description":"Stai în șezut cu picioarele drepte și întinde-ți mâinile deasupra capului. Ridică-ți picioarele pentru a forma corpul într-o formă de farfurie. Menține corpul rigid în timp ce te leagăni înainte și înapoi pentru a-ți întări centrul."
+         },
+         "barbell-roll-outs":{
+            "title":"Extensii cu Bară",
+            "how-to-description":"Încarcă o bară cu discuri de 10 kg și prinde bara cu o priză largă, la lățimea umerilor. Poziționează-ți umerii direct deasupra barei și rostogolește barul încet în față. Pauză, apoi inversează mișcarea. Extinde-te la o distanță care e provocatoare, dar nu îți forțează șoldurile să se lase."
+         },
+         "russian-twists":{
+            "title":"Răsuciri Rusești",
+            "how-to-description":"Stai în șezut ținând o greutate, halteră sau kettlebell cu brațele întinse și picioarele ridicate de la sol. Cu control, răsucește rapid la nivelul trunchiului, întorcându-te dintr-o parte în alta."
+         },
+         "hollow-holds":{
+            "title":"Mențineri Goale",
+            "how-to-description":"Începe întins pe spate cu brațele întinse deasupra capului pe podea și picioarele drepte odihnindu-se pe saltea. În același timp, și cu control, ridică brațele, capul, lamelele umărului și picioarele de pe podea."
+         },
+         "dumbbell-deadbugs":{
+            "title":"Gândaci Morți cu Gantere",
+            "how-to-description":"Cu o ganteră în fiecare mână, ridică-ți brațele spre tavan. Ridică-ți picioarele, genunchii îndoiți la 90º. Întinde încet brațul stâng și piciorul drept simultan, menținând spatele drept. Revino, apoi repetă pe cealaltă parte."
+         },
+         "bear-crawls":{
+            "title":"Mers de Urs",
+            "how-to-description":"Asumă o poziție de flotări cu genunchii îndoiți la unghiuri de 90 de grade și direct sub șolduri. Genunchii tăi ar trebui să fie ridicați. Fără a permite spatelui inferior să se ridice sau să se rotunjească, contractă abdomenul ca și cum ai urma să fii lovit în stomac. Menține această contracție tot timpul. Aceasta este poziția ta de start. 'Mergi' cu mâna dreaptă și piciorul stâng înainte câțiva centimetri. Pauză, apoi revino la poziția de start. Apoi, 'mergi' cu mâna stângă și piciorul drept înainte. Reveniți la poziția de start."
+         },
+         "butterfly-sit-ups":{
+            "title":"Ridicări de Trunchi Fluture",
+            "how-to-description":"Stai întins pe sol cu brațele întinse în spatele capului. Îndoaie genunchii și așează tălpile picioarelor una față de cealaltă, astfel încât să formeze o formă de diamant. Contractă abdomenul într-o poziție șezând în timp ce te întinzi înainte cu ambele mâini spre picioare."
+         },
+         "cable-crunch":{
+            "title":"Crunch cu Cablu",
+            "how-to-description":"Atașează o coardă la un scripete înalt și îngenunchează în fața lui, cu mânerele ținute pe fiecare parte a gâtului. Fără a-ți mișca șoldurile, contractă abdomenul pentru a aduce coatele spre coapse. Pauză pentru o clipă, apoi revino încet la poziția de start."
+         },
+         "overhead-crunch":{
+            "title":"Crunch cu Brațe Ridicate",
+            "how-to-description":"Stai întins pe spate cu brațele întinse drept deasupra capului astfel încât corpul tău să formeze o linie dreaptă. Îndoaie genunchii și menține tălpile pe podea, apoi - păstrând brațele întinse - contractă abdomenul pentru a ridica umerii de pe podea."
+         },
+         "plank-pass-through":{
+            "title":"Treceri în Planșă",
+            "how-to-description":"Începe în poziția de planșă înaltă cu o ganteră sau kettlebell în afara palmei tale. Întinde brațul sub trunchi din partea opusă greutății. Trage greutatea sub corpul tău menținând șoldurile complet echilibrate. Repetă pe cealaltă parte."
+         },
+         "landmine-rotations":{
+            "title":"Rotații Landmine",
+            "how-to-description":"Începe cu un capăt al barei într-un colț sau într-un suport landmine. Îngenunchează și ține celălalt capăt al barei deasupra capului la o distanță suficientă de atașament încât să poți trece confortabil bara dintr-o parte în alta într-o formă de arc. Păstrând șoldurile îndreptate în față, ridică bara de la un șold, deasupra capului spre cealaltă parte, în timp ce răsucești trunchiul. Repetă în direcția opusă."
+         }
+      },
+      "footer":{
+         "text-1":"Pentru a extinde antrenamentul tău, folosește",
+         "text-2":"sursa",
+         "text-3":"pentru aceste exerciții unde vei găsi o bibliotecă extinsă de exerciții și te va ajuta să trăiești viața așa cum îți dorești."
+      }
+   },
+   "edit-picture":{
+      "title":"Schimbă Imaginea de Profil",
+      "file-type-error":"Fișierele trebuie să fie .PNG, .JPG sau .JPEG",
+      "default-avatar-title":"Alege din Avatarele implicite",
+      "choose-file":"Alege Fișierul: "
+   },
+   "user-management":{
+      "username":"Nume de utilizator",
+      "name":"Nume",
+      "email":"Email",
+      "date-join":"Data înscrierii",
+      "actions":"Acțiuni",
+      "delete-succes":"Utilizator șters",
+      "user-made-admin": "Utilizatorul a fost făcut Administrator"
+   },
+   "user-messages":{
+      "seen":"Văzut",
+      "from":"De la",
+      "date":"Data",
+      "preview":"Previzualizare",
+      "actions":"Acțiuni"
+   },
+   "tooltips":{
+      "open-mail":"Deschide Mail",
+      "delete-user":"Șterge utilizator",
+      "reply":"Răspunde"
+   },
+   "footer":{
+      "nume":"Proiect realizat de Necula Narcis",
+      "project-for":"Aplicație realizată ca proiect de licență",
+      "email":"Email: narcis.necula@s.unibuc.ro",
+      "faculty-1":"Facultatea de Matematică și Informatică la",
+      "faculty-2":"Universitatea din București"
+   },
+   "months":{
+      "jan":"Ianuarie",
+      "feb":"Februarie",
+      "mar":"Martie",
+      "apr":"Aprilie",
+      "may":"Mai",
+      "jun":"Iunie",
+      "jul":"Iulie",
+      "aug":"August",
+      "sep":"Septembrie",
+      "oct":"Octombrie",
+      "nov":"Noiembrie",
+      "dec":"Decembrie"
+   },
+   "statistics": {
+      "chart-1-title": "Grafic reprezentând procentul unui sport înregistrat și timpul total al acestuia",
+      "chart-2-title": "Ce procent de utilizatori participă și câștigă realizările unice lunare"
+   }
+}

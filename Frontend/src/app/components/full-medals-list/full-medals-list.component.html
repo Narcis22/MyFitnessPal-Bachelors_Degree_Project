@@ -1,0 +1,57 @@
+<div class="medal-list-container">
+    <div class="title fs-40 mb-5 mt-5">
+        <label class="{{shadowClass}}"> {{titleText}} </label>
+    </div>
+    <div class="medal-list">
+        <div class="table-container">
+            <table mat-table [dataSource]="dataSource!" matSort>
+                <!-- Icon Column -->
+                <ng-container matColumnDef="icon" class="container-col">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
+                    <td mat-cell *matCellDef="let element" class="first-cell"> 
+                        <div class="sport-image">
+                            <img src="../../../assets/media/achievements/{{element.sportName}}-{{medalType}}-medal.png" height="50px">
+                        </div>
+                    </td>
+                </ng-container>
+
+                <!-- SportName Column -->
+                <ng-container matColumnDef="sportName" class="container-col">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                    <td mat-cell *matCellDef="let element" class="middle-cell"> 
+                        <div class="sport-name">
+                            {{element.sportName}}
+                        </div>
+                    </td>
+                </ng-container>
+                
+                <!-- Count Column -->
+                <ng-container matColumnDef="count" class="container-col">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                    <td mat-cell *matCellDef="let element" class="middle-cell"> 
+                        <div class="sport-image">
+                            x{{countMedals.get(element.sportName)}}
+                        </div>
+                    </td>
+                </ng-container>
+                
+                <!-- Share Column -->
+                <ng-container matColumnDef="share" class="container-col">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                    <td mat-cell *matCellDef="let element" class="last-cell"> 
+                        <div class="share-image" (click)="openShareDialog(element)">
+                            <img height="30px" src="../../../assets/media/images/share-white.png" class="cursor-pointer" matTooltip="Generate share ready image">
+                        </div>
+                    </td>
+                </ng-container>
+
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="btn btn-outline-dark fs-20" (click)="close()">
+            {{ 'general.close' | translate }}
+        </button>
+    </div>
+</div>

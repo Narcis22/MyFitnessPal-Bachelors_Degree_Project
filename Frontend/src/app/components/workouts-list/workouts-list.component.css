@@ -1,0 +1,59 @@
+.workouts-list{
+    display: grid;
+    justify-content: space-around;
+    margin-top:40px;
+    width: 100%;
+}
+
+.table-container{
+    display: block;
+}
+
+.sport-image{
+    margin: 10px 10px 10px 10px;
+}
+
+/* Table */
+.mat-mdc-cell{
+    margin-top: 10px;
+    color:rgb(222, 218, 196);
+    background-color: #212529;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+}
+
+.mat-mdc-row {
+    height: 80px;
+}
+
+.mat-mdc-table{
+    width: 1300px;
+    background-color: transparent;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    border-radius: 15px;
+}
+
+.first-cell{
+    border-radius: 15px 0px 0px 15px;
+}
+
+.middle-cell{
+    border-radius: 0px;
+}
+
+.last-cell{
+    border-radius: 0px 15px 15px 0px;
+}
+
+th{
+    border-bottom: none;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.orange-text{
+    color: tomato;
+}

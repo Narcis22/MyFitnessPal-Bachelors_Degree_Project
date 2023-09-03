@@ -1,0 +1,90 @@
+<div class="users-container">
+    <div class="title-row fs-50">
+        User Management
+    </div>
+    <div class="table-container">
+        <table mat-table [dataSource]="dataSource!" matSort>
+            <!-- Icon Column -->
+            <ng-container matColumnDef="profilePic" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                <td mat-cell *matCellDef="let element" class="first-cell"> 
+                    <div *ngIf="element.profilePicId === '0'" class="profile-image">
+                        <img class="profile-custom-pic" [src]="getImageFromByteArray(element.imageContentType, element.image)" height="50px">
+                    </div>
+                    <div *ngIf="!(element.profilePicId === '0')" class="profile-image">
+                        <img src="../../../assets/media/profile-pics/profile-pic-{{element.profilePicId}}.png" height="50px">
+                    </div>
+                </td>
+            </ng-container>
+
+            <!-- username Column -->
+            <ng-container matColumnDef="username" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'user-management.username' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell">
+                    {{element.username}}
+                </td>
+            </ng-container>
+
+            <!-- FirstLastName Column -->
+            <ng-container matColumnDef="FirstLastName" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'user-management.name' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell"> 
+                    {{element.firstName}}  {{element.lastName}}
+                </td>
+            </ng-container>
+
+            <!-- email Column -->
+            <ng-container matColumnDef="email" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>  {{ 'user-management.email' | translate }}  </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell">
+                    {{element.email}}
+                </td>                
+            </ng-container>
+
+            <!-- dateJoin Column -->
+            <ng-container matColumnDef="dateJoin" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'user-management.date-join' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="middle-cell"> 
+                    {{element.dateJoin | date: 'MMM d, yyyy'}}
+                </td>                
+            </ng-container>
+
+            <!-- Actions Column -->
+            <ng-container matColumnDef="actions" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>  {{ 'user-management.actions' | translate }}  </th>
+                <td mat-cell *matCellDef="let element" class="last-cell cursor-pointer">
+                    <img    class="cursor-pointer ms-3 delete-user"
+                            src="../../../assets/media/images/trash.png"
+                            height="35px"
+                            (click)="deleteDialog(element)"
+                            matTooltip="{{ 'tooltips.delete-user' | translate }}">
+
+                    <img    class="cursor-pointer ms-3 delete-user"
+                            src="../../../assets/media/images/edit.png"
+                            height="30px"
+                            (click)="adminDialog(element)"
+                            matTooltip="{{ 'tooltips.delete-user' | translate }}">
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+    
+    <div class="general-app-container w-100 mb-5">
+        <div class="general-app-info">
+            <div class="mt-1 first-app-info-row"> 
+                {{ 'footer.nume' | translate }}
+                <div class="d-flex flex-row-reverse"> 
+                    {{ 'footer.project-for' | translate }}
+                </div>
+            </div>
+            <div class="mt-1"> 
+                {{ 'footer.email' | translate }} 
+            </div>
+            <div class="mt-1"> {{ 'footer.faculty-1' | translate }}  <a href="https://fmi.unibuc.ro/">{{ 'footer.faculty-2' | translate }} </a> </div>
+            <div class="mt-1"> <img height="40px" src="../../../assets/media/images/sigla-fmi-1.png"> </div>
+        </div>
+    </div>
+</div>

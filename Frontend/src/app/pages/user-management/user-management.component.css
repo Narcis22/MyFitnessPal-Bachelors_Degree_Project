@@ -1,0 +1,130 @@
+.users-container{
+    background-image: url("../../../assets/media/backgrounds/abstract-arrangement-networking-concept-still-life.png");   
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.table-container{
+    margin-top: 30px;
+    display: block;
+}
+
+.profile-image{
+    margin: 10px;
+}
+
+/* Table */
+.mat-mdc-cell{
+    margin-top: 10px;
+    color:rgb(222, 218, 196);
+    background-color: #212529;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+}
+
+.mat-mdc-row {
+    height: 80px;
+}
+
+.mat-mdc-table{
+    width: 1300px;
+    background-color: transparent;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    border-radius: 15px;
+}
+
+.first-cell{
+    border-radius: 15px 0px 0px 15px;
+}
+
+.middle-cell{
+    border-radius: 0px;
+}
+
+.last-cell{
+    border-radius: 0px 15px 15px 0px;
+}
+
+th{
+    border-bottom: none;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.orange-text{
+    color: tomato;
+}
+
+.title-row{
+    width:100%;
+    display: grid;
+    justify-content: center;
+
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+/* pulsing dot */
+
+.notification{
+    display: grid;
+    height: 50px;
+}
+
+.ring-container {
+    position: relative;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #cd2323;
+    border-radius: 50%;
+    position: absolute;
+    top: 23px;
+    left: 23px;
+}
+
+.ringring {
+    border: 3px solid #cd2323;
+    border-radius: 30px;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 0.0
+}
+
+@keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+.delete-user{
+    transition: transform 0.3s ease-in-out;
+}
+
+.delete-user:hover{
+    transform: scale(1.3);
+}
+
+.profile-custom-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

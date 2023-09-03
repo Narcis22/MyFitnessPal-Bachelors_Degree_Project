@@ -1,0 +1,672 @@
+{
+    "general":{
+        "email": "Email",
+        "logout": "Logout",
+        "activity": "Activity",
+        "home": "Home",
+        "close": "Close",
+        "log-wokout": "Log Workout",
+        "back": "Back",
+        "cancel": "Cancel",
+        "update": "Update",
+        "send": "Send",
+        "save": "Save",
+        "not-available": "Not available",
+        "login": "Login",
+        "register": "Register",
+        "back-to-edit": "Back to edit page",
+        "or": "Or",
+        "user-management": "User Management",
+        "user-messages": "Messages",
+        "confirm-delete-user": "Are you sure you want to delete?",
+        "confirm": "Confirm",
+        "abandon": "Abandon",
+        "gym-locations": "Gyms near me",
+        "share": "Download",
+        "info": "info",
+        "statistics": "Statistics",
+        "selected": "Selected",
+        "confirm-make-admin": "Are you sure you want to grant admin privileges?",
+        "make": "Make",
+        "administrator": "administrator"
+    },
+    "auth": {
+        "register": {
+            "allready-have-account": " Already have an account? Go to Login page",
+            "register": "Register",
+            "first-name": "First Name",
+            "last-name": "Last Name",
+            "confirm-password": "Confirm Password",
+            "register-success": "Account created successfully"
+        },
+        "login": {
+            "no-account": "Do not have an account? Register",
+            "password": "Password",
+            "login": "Login",
+            "forgot-password": "Forgot Password"
+        },
+        "forgot-password": {
+            "send-reset": "Reset Password",
+            "reset-sent": "Check inbox for next steps"
+        }
+    },
+    "update-account": {
+        "success": "Profile updated!",
+        "password-change-success": "Password changed successfully!" 
+    },
+    "send-message": {
+        "success": "Message sent!"
+    },
+    "errors": {
+        "username-already-in-use": "Username already in use",
+        "account-exists": "An account with this email already exists",
+        "generic": "An error ocurred",
+        "invalid-credentials": "Invalid Credentials",
+        "first-name-required": "First name is required",
+        "last-name-required": "Last name is required",
+        "password-required": "Password is required",
+        "password-length-error": "Password must be at least 6 characters long",
+        "password-error-template": "Password must have at least 1 special character, 1 upper letter, 1 lower letter and 1 number",
+        "password-no-match": "Password and confirm password fields do not match",
+        "email-error": "This is not a valid email address",
+        "email-required": "Email is required",
+        "duration-required": "Duration of exercise is required",
+        "distance-number": "Distance must be an integer",
+        "duration-number": "Duration must be a number",
+        "steps-number": "Steps must be a number",
+        "field-number": "This is not a valid integer",
+        "message-required": "Message is required",
+        "no-medals": "No medals to display, sorry!"
+    },
+    "language": {
+        "romanian": "Română",
+        "english": "English"
+    },
+    "sports": {
+        "walking": "Walking",
+        "running": "Running",
+        "cycling": "Cycling",
+        "indoor-cycling": "Indoor Cycling",
+        "eliptical": "Eliptical",
+        "traditional-strength": "Traditional Strength Training",
+        "hiit": "HIIT",
+        "stair-stepper": "Stair Stepepr",
+        "hiking": "Hiking",
+        "pool-swim": "Pool Swim",
+        "functional-strength": "Functional Strength Training",
+        "yoga": "Yoga",
+        "rowing": "Rowing Machine",
+        "bowling": "Bowling"
+    },
+    "log-workout":{
+        "add": "Add workout",
+        "duration": "Duration",
+        "steps": "Steps",
+        "distance": "Distance",
+        "succes": "Workout added succesfully!",
+        "timer": "timer"
+    },
+    "workouts": {
+        "achievements": "Achievements",
+        "my-workouts": "My Workouts",
+        "table": {
+            "sport": "Sport",
+            "date": "Date",
+            "duration": "Duration",
+            "steps": "Steps",
+            "distance": "Distance",
+            "workout-count": "Workout Count"
+        }
+    },
+    "achievements": {
+        "title": "Achievements",
+        "how-to-get": "How to get achievements?",
+        "gold-medals": "Gold medals",
+        "silver-medals": "Silver medals",
+        "bronze-medals": "Bronze medals",
+        "monthly-challange": "Monthly Challange medals",
+        "gold-info": "To collect gold medals you have to have at least 30(thirty) hours of total workouts over the span of 10(ten) non-consecutive days, but those non-consecutive days have to be in the same month.",
+        "silver-info": "To collect silver medals you have to log workouts for a sport in 7(seven) consecutive days, each 7(seven) consecutive days you log the same sport you will earn a silver medal regardless the month passing.",
+        "bronze-info": "These medals are earned by logging your first workout on a sport. You can only get one for each sport you participated in so wear that one with pride.",
+        "monthly-info": "These achievements are earned each month of the year. To earn the current month medal you have to have at least 20(twenty) days with a workout logged. Nobody said it would be easy, but it will be worth it!",
+        "see-detail": "See all",
+        "gold": "Gold",
+        "silver": "Silver",
+        "bronze": "Bronze",
+        "nothing-here": "Nothing here",
+        "monthly-list": "Monthly Challanges achieved",
+        "bronze-list-title": "List of bronze medals",
+        "silver-list-title": "List of silver medals",
+        "gold-list-title": "List of gold medals",
+        "count-share-1": " has just earned a ",
+        "count-share-2": " achievement in ",
+        "count-share-3": " and has collected ",
+        "count-share-4": " of them so far!",
+        "count-share-5": " just started a new workout!",
+        "join": "Join ",
+        "join-message": " in his fitness journey at MyFitnessPal",
+        "month-share-text-1": "has been very active in the month of ",
+        "month-share-text-2": "and earned this award to remember and motivate him to keep it going!"
+
+    },
+    "profile": {
+        "my-profile": "My Profile",
+        "edit": "Edit Profile",
+        "my-sports": "My Sports",
+        "my-achievements": "My Achievements",
+        "username": "Username",
+        "sex": "Sex",
+        "height": "Height",
+        "weight": "Weight",
+        "age": "Age",
+        "contact-us": "Contact us",
+        "message": "Message",
+        "write-a-message": "Write us a message",
+        "what-to-know": "What would you want us to know?",
+        "change-password": "Change Password",
+        "current-password": "Current Password",
+        "new-password": "New Password",
+        "confirm-password": "Confirm Password",
+        "save-change-password": "Save",
+        "my-statistics": {
+            "my-info": "My Info",
+            "bmi": "BMI",
+            "bmi-category": "BMI category",
+            "healty-bmi-range": "Healthy BMI Range",
+            "height-and-weight-needed":"The height and weight is needed to determine the BMI",
+            "bmi-needed": "The BMI is needed to determine the BMI category",
+            "height-needed": "The height is needed to determine the BMI range",
+            "years": "years",
+            "bmi-info": "BMI (body mass index) = weight / height² (kg/m²); BMI is not an accurate measure for: people 18 years of age or younger and athletes or people who have a lot of muscle.",
+            "bmi-category-info": "The BMI is a convenient rule used to broadly categorize a person as underweight, normal weight, overweight, or obese based on tissue mass and height. Categories: BMI < 18,5: underweight; 18,5-24,99: normal weight; 25-29,99: overweight; 30-34,99: obese degree 1; 35-39,99: obese degree 2; > 40: obese degree 3",
+            "healty-bmi-range-info": "Formula: [18,5 * height² (m²) - 24,9 * height² (m²)]"
+        },
+        "upload-image": "Upload image"
+    },
+    "home": {
+        "hi": "Hi",
+        "hi-finish": " Scroll for todays activities",
+        "sport-label": "In the mood for a sport?",
+        "workout-label": "Or maybe some traditional training?",
+        "sports": {
+            "title": "Sports can't be played online :(",
+            "body-line-1": "But we can give you some pointers to make the experience better and safer:",
+            "body-line-2": "- Every time you play some sports make sure you properly warm up",
+            "body-line-3": "- Make sure you have the propper equipment if weather is a factor",
+            "body-line-4": "-  Most important:  Make sure to log your progress into the Workout ",
+            "logbook": "LogBook"
+        },
+        "training": {
+            "title": "Where are we working out today?",
+            "home": "Home",
+            "gym": "Gym"
+        },
+        "coming-soon": "Coming Soon",
+        "gym":{
+            "title": "What are we working on today?",
+            "subtitle": " ~ Get tips and take your workout routine to the next level ~ "
+        }
+    },
+    "workout-info":{
+        "title": "Workout Info",
+        "how-to": "How to", 
+        "why": "Why",
+        "warm-up": "First we have to warm up to prevent injury and perform at our best!",
+        "arms": {
+            "self": "Arms",
+            "title": "Complete Arm Workout",
+            "barbell-bicep-curl": {
+                "title":"Barbell Bicep Curl",
+                "how-to-description": "Sit on an incline bench and hold a dumbbell in each hand at arm's length. Use your biceps to curl the dumbbell until it reaches your shoulder, then lower them back down to your side and repeat.",
+                "why-description": "Beware: this position isolates the biceps and prevents other muscles from sharing the load. You can work the entire muscle by turning your wrists out slightly and keeping your elbows pointed towards the floor throughout the rep, a range of motion not available in other arm exercises."
+            },
+            "incline-bicep-curl": {
+                "title": "Incline Bicep Curl",
+                "how-to-description": "Grab a barbell with a shoulder-width grip and let it hang in front of your thighs. Brace your core as you curl the bar up to your chest, keeping your elbows pinned to your waist. Return under control to the start position.",
+                "why-description": "The barbell bicep curl is the king of arm exercises, and for good reason. You'll be able to load the bar with additional weight, but be sensible, and try to avoid momentum. By keeping your reps clean, you'll isolate your biceps which will result in a better pump."
+            },
+            "concentration-curl": {
+                "title": "Concentration Curl",
+                "how-to-description": "Sit down on the bench and rest your right arm against your right leg, letting the weight hang down. Curl the weight up, pause, and then lower. Repeat with the other arm.",
+                "why-description": "This isolates the arm flexors and hits the lateral head of the biceps for peak performance (and appearance)."
+            }, 
+            "twisting-dumbbell-curl": {
+                "title": "Twisting Dumbbell Curl",
+                "how-to-description": "Hold a dumbbell in each hand at your side with palms facing each other. Use your bicep to curl the dumbbells up to your shoulders alternately, twisting your palms to face your chest as you lift them. Slowly lower the dumbbells back down to your side and repeat.",
+                "why-description": "The twist brings your forearm into play. It won't hit your biceps as hard as other arm exercises, but when you're squeezing sets in over lunch this move will hit more of your arm in less time."
+            },
+            "underhand-seated-row": {
+                "title": "Underhand Seated Row",
+                "how-to-description": " Bend your knees and hold the bar with an underhand grip, shoulder-width apart. Lean back slightly, keeping your back straight, then use your back muscle to drive the bar towards your belly button. Return the bar to starting position and repeat.",
+                "why-description": "Go one better than bodyweight moves in your quest for bigger biceps — this doesn't take up a squat rack, either."
+            },
+            "reverse-curl-straight-bar": {
+                "title": "Reverse Curl Straight Bar",
+                "how-to-description": " Stand and grip a barbell at shoulder width with an overhand grip. Flex the elbows and rotate the barbell upwards, only using your forearms, until your palms face out and the barbell is in line with your shoulders. Return it back down slowly and repeat.",
+                "why-description": "Often neglected because it works the brachialis, an invisible muscle lower down your upper arm — but one essential for bigger biceps. Train it well and the brachialis pushes the peak of your bicep muscle up higher, making for a more impressive flex and bigger-looking arms."
+            },
+            "leant-forward-ez-bar-curl": {
+                "title": "Leant-Forward EZ Bar Curl",
+                "how-to-description": "Hold the EZ bar in front of your thighs with an underhand, shoulder-width grip. Lean forward slightly, so your torso's around 30 degrees to your hips. As you breathe in, curl the bar until your hands are at your shoulders. Squeeze your biceps, then lower under control.",
+                "why-description": "You're working the main flexor muscle involved in finger strength, which will earn you a vice-like grip for the bigger lifts - and a bone-crushing handshake for good measure. Plus, that forward tilt means using your hips to swing up the final few reps is a no-no. Perfect form for perfect gains."
+            },
+            "reverse-grip-ez-bar-curl": {
+                "title": "Reverse-Grip EZ Bar Curl",
+                "how-to-description": " Hold the EZ bar in front of your thighs with an overhand, shoulder-width grip. As you breathe in, curl the bar until your hands are at your shoulders. Squeeze your biceps, then lower under control.",
+                "why-description": " No matter how many arm exercises and curls you crank out, biceps development can be severely limited by weaknesses in your elbows and forearms. This move hits your brachioradialis (forearm muscle) to remedy it."
+            },
+            "one-arm-tricep-extension": {
+                "title": "One Arm Tricep Extension (seated)",
+                "how-to-description": " Hold a dumbbell in one hand directly behind your head, with your elbow bent and pointed towards the ceiling. Extend through your elbow until your arm is straight and the dumbbell is directly above you. Lower your arm back to starting position and repeat.",
+                "why-description": "This move builds arm strength and adds stability to your shoulders and elbows. Plus, working unilaterally will put an end to any muscle imbalances."
+            },
+            "decline-close-grip-ez-bar-skullcrusher": {
+                "title": "Decline Close-Grip EZ Bar Skullcrusher",
+                "how-to-description": "Lie back on a bench set to a 30-degree decline. Grip the EZ bar on the innermost grips and extend your arms straight up, palms facing your feet. Keeping your elbows fixed and tucked in, lower the bar until it is about an inch from your forehead. Slowly extend your arms back to the starting position without locking your elbows.",
+                "why-description": "Don't be scared of the name, this is one of the arm exercises for ultimate triceps builders. Set the bench to decline and it'll increase your range of motion for increased muscle activation."
+            },
+            "tate-press": {
+                "title": "Tate Press",
+                "how-to-description": "Lie on a bench and hold two dumbbells directly above your shoulders. Slowly bend your elbows to bring the dumbbells to your chest, so your palms face outwards and the dumbbells point towards the ceiling. Raise the dumbbells back to starting position and repeat.",
+                "why-description": "Working at this angle places more emphasis on the long head of the triceps for more visible muscle separation at the back of your arms. Wearing a vest to show them off at the office is against the rules, sadly."
+            }, 
+            "tricep-dips": {
+                "title": "Tricep Dips (Advanced)",
+                "how-to-description": " Hoist yourself up on parallel bars with your torso perpendicular to the floor. Bend your knees and slowly lower your body until your shoulder joints are below your elbows. Push back up until your elbows are nearly straight but not locked. If you have shoulder issues, skip this move.",
+                "why-description": "Lifting your entire bodyweight means your triceps have to work against a much heavier load than they would if you were just isolating your tri's."
+            }, 
+            "straight-barbell-palms-up-wrist-curl": {
+                "title": "Straight Barbell Palms-Up Wrist Curl",
+                "how-to-description": "Sit on a bench and hold a barbell with your palms facing up. Rest your forearms on your knees and lower the bar towards the floor as far as possible. Curl your wrist upward, pause, then slowly lower.",
+                "why-description": "Your forearms will be on display long after your beach body has gone back into hiding, so give them due care. Your grip strength will be much improved come deadlift day too."
+            },
+            "straight-barbell-palms-down-wrist-curl": {
+                "title": "Straight Barbell Palms-Down Wrist Curl",
+                "how-to-description": "Sit on a bench and hold a barbell with your palms facing down. Rest your forearms on your knees and lower the bar towards the floor as far as possible. Curl your wrist upward, pause, then slowly lower.",
+                "why-description": "This subtle move isn't one for show-boating, but don't skip it. It targets the extensor muscles to minimise wrist and elbow injury during other moves."
+            },
+            "footer": {
+                "text-1": "To expand your workout use the",
+                "text-2": "source",
+                "text-3": "for these exercises where you will find an expanded library of exercises and will help you live your life the way you want."
+            }
+        },
+        "back": {
+            "self": "Back",
+            "title": "Complete Back Workout",
+            "benefits": {
+                "title": "The Benefits of Training Your Back", 
+                "text": "There are myriad reasons to train your traps, lats and beyond. We'll let Ben West and Jordane Zammit Tabona, co-founders of London gym 360Athletic, talk you through them.",
+                "reasons": {
+                    "reason-title-1": "Fix Your Posture",
+                    "reason-text-1": "If you spent most of your week - and, at that, your life - slumped over a desk and slapping a keyboard, your posture is likely to have taken a bit of a beating over the weeks, months and years you've been at work. 'This creates poor posture and muscle imbalance, which causes rounding of the shoulders and upper back,' says Zammit Tabona. Back workouts, handily, will help fix your posture and get rid of the desk-bound 'hunch'. ",
+                    "reason-title-2": "Reduce Your Risk of Injury",
+                    "reason-text-2": "For the average Joe, life generally looks like long periods of being sedentary - the commute, a desk job, nights on the sofa watching telly - frequently interspersed with high intensity workouts that take you from zero to 100 and back again in a mere 45 minutes. And we wonder why we get injured. 'Besides helping your posture, back workouts can help reduce pain and risk of injury, making you focus better and work more efficiently,' West adds.",
+                    "reason-title-3": "Boost Your Bigger Lifts",
+                    "reason-text-3": "Back workouts will also encourage weaker muscles to grow, helping boost strength in other lifts you may not expect. A stronger bench press, anyone? Likewise, your shoulder joints will be more stable and considerably stronger. 'Your back muscles and spine support your body, without them it would be very weak,' says Zammit Tabona. 'Having a strong back will therefore help support your body and have you functioning better and more efficiently.' Sounds like a win-win-win to us.",
+                    "reason-title-4": "Help Develop Your V-Shape Physique",
+                    "reason-text-4": "Alongside a more pronounced chest and bigger arms, the want for a V-shape physique is one of the most regular occurrences in the Men's Health inbox. Handily, spending more time on your rear will help you earn that coveted v-shape upper-body. 'Having a balanced, well-rounded physique is what most of us aspire to have aesthetically, and training your back frequently will certainly help with this,' says West.",
+                    "reason-title-5": "Reduce Lower-Back Pain",
+                    "reason-text-5": "By strengthening your spine, shoulders and core, the back exercises below will strengthen your rear and begin to erase the strain of lower-back pain, which encroaches on the lives of thousands of men every day. Partnered with effective stretching routines and dynamic movements, these moves - performed with correct form - could help to make lower-back pain a thing of the past."
+                }
+            },
+            "kettlebell-swings" : {
+                "title": "Kettlebell Swings",
+                "how-to-description": " Place a kettlebell one foot in front of you. Stand with your feet slightly wider than shoulder-width apart and bend your knees to hinge at the hips forward and grab the handle with both hands. With your back flat, engage your lats to pull the weight between your legs (be careful with how deep you swing) then drive your hips forward and explosively pull the kettlebell up to shoulder height with your arms straight in front of you. Return to the start position and repeat without pauses.", 
+                "why-description": "KB swings aren't just for CrossFit fans. Far from it. Working your back’s posterior chain, kettlebell swings are also devilishly effective for building a stronger core, which will help take weight away from your lower back. Start with a lighter weight, get used to form and progress slowly."
+            },
+            "barbell-deadlift" : {
+                "title": "Barbell Deadlift",
+                "how-to-description": "Squat down and grasp a barbell with your hands roughly shoulder-width apart. Keep your chest up, pull your shoulders back and look straight ahead as you lift the bar. Focus on taking the weight back onto your heels and keep the bar as close as possible to your body at all times. Lift to thigh level, pause, then return under control to the start position.",
+                "why-description": "The true king of compound movements, the barbell deadlift is a full-body move — building stronger legs, back, shoulders and arms. Its place in your next back workout is well deserved — as you work through the full range of motion, your upper-back muscles (rhomboids, traps, rear delts and lats) are firing away helping to keep your torso straight, while preventing your back from rounding and causing injury."
+            },
+            "pull-up" : {
+                "title": "Pull-Up",
+                "how-to-description": " Grab the handles of the pull-up station with your palms facing away from you and your arms fully extended. Your hands should be around shoulder-width apart. Squeeze your shoulder blades together, exhale and drive your elbows towards your hips to bring your chin above the bar. Lower under control back to the start position.",
+                "why-description": "If you want a V-shape physique — you do, that's why you're here — then theres no avoiding pull-ups. Targeting your lats directly, youll gain a wider frame and will appear slimmer. Plus, you'll get major gym kudos once your chin goes above that bar. "
+            },
+            "dumbbell-single-arm-row" : {
+                "title": "Dumbbell Single-Arm Row",
+                "how-to-description": "Head to a flat bench and place your right hand against it under your shoulder, keeping your arm straight. Rest your right knee on the bench and step your other leg out to the side. With your free hand grab a dumbbell off the floor and row it up to your side until your upper arm is parallel with the floor. Lower slowly back to the floor and repeat.", 
+                "why-description": "Another great move for your lats, the dumbbell single arm row works both sides of your body and helps you focus (and fix) weaker spots by smashing through strength imbalances on either side. A handy tip: don't let your shoulder drop at the bottom of the movement. Lock your torso to ensure your back lifts the weight, not your arm. "
+            },
+            "chest-supported-dumbbell-row" : {
+                "title": "Chest-Supported Dumbbell Row",
+                "how-to-description": "Lie face down on the bench with your feet other side to keep you stable. Hang the dumbbells beneath you using a neutral grip. Keep your head up and bring your shoulder blades together as you row the weights towards your chest. Lower to the starting position under control.", 
+                "why-description": "An ideal move for those struggling to keep the chest strong and spine straight during other back-building bent-over moves, the chest-supported dumbbell row isolates your back muscles — helping move the dumbbells considerably more efficiently and safely. "
+            },
+            "inverted-row" : {
+                "title": "Inverted Row",
+                "how-to-description": "Set up a bar in a rack at waist height. Grab it with a wider than shoulder-width overhand grip and hang underneath. Position yourself with heels out in front of you and arms fully extended. Your body should be straight from shoulders to ankles. Flex at the elbows to pull your chest up to the bar. Lower yourself back to the start position under control.", 
+                "why-description": "Suitable for those struggling with pull-ups and chin-ups, the inverted row is surprisingly difficult. Smoking your back and your arms, you can progress or regress the move by re-arranging where your feet."
+            },
+            "farmers-walk" : {
+                "title": "Farmers' Walk",
+                "how-to-description":  "Hold two kettlebells or dumbbells by your side. Keep your arms strong and walk short, quick steps as fast as possible. Turn around and walk back.",
+                "why-description": "Building a stronger back, bigger shoulders and insane grip strength, there's very little the humbling farmers' walk can't do. Moreover, it blitzes belly fat and builds muscle far quicker than most functional moves."
+            },
+            "superman" : {
+                "title": "Superman",
+                "how-to-description": "Lie facedown on a mat with your arms extended in front of you and your legs extended behind you. Engaging your glutes and lower back, raise your arms, legs, and chest off the floor. Hold for a count, then slowly return to the starting position.",
+                "why-description": "There aren't too many back exercises that don't require kit, but the Superman is definitely one of them. Done correctly, this will work your mid-back muscles, as well as your rotator cuff muscles."
+            },
+            "pendlay-row" : {
+                "title": "Pendlay Row",
+                "how-to-description": "Begin by sending your hips behind your heels with a flat back. Start with the barbell on the floor with the bar directly over the inline of your foot. Your torso will be parallel to the floor or a little lower depending on your limb length. Lock your core and shoulders away from your ears, grab the bar a little wider than your shoulders and explosively pull the bar up so that your elbows bend behind you. You don't need to resist the weight on the way down, let gravity do its job to preserve energy for the next powerful rep.", 
+                "why-description": "The Pendlay row is perhaps one of the more unknown variations of back exercises. In comparison to the bent-over barbell row, it is an explosive movement and should be completed with an emphasis on the upward portion of the rep to promote muscular power."
+            },
+            "good-mornings" : {
+                "title": "Good Mornings",
+                "how-to-description": "Stand with your feet shoulder-width apart, and brace your core. Hold the bar across your upper back with an overhand grip. Pull your shoulders back so that the bar's resting comfortably on your upper back. Slowly bend at the hips to lower your torso towards the floor. Pause when you feel tension in your hamstrings, then reverse the movement.", 
+                "why-description": "This exercise is often avoided because it's considered too dangerous, but if done correctly it's one of the best ways to build hamstring and lower-back strength."
+            },
+            "single-arm-t-bar-rows" : {
+                "title": "Single-Arm T-Bar Rows",
+                "how-to-description": "Add weight to one end of a barbell. Bend forward until your torso is almost parallel to the floor and keep your knees slightly bent. Grab the bar with one arm just behind the plates. Pull the bar straight up with your elbow in until the plates touch your chest and squeeze your back muscles at the top of the move. Slowly lower to the starting position and repeat without letting the plates touch the floor.",
+                "why-description": "You've probably seen the standard T-bar row being performed (often incorrectly) at the gym, but the single-arm T-bar row ensures that, as you're using a lighter load, form is stricter and muscle imbalances are being ironed out."
+            }
+        },
+        "chest": {
+            "self": "Chest",
+            "title": "Complete Chest Workout",
+            "dips" : {
+                "title": "Dips",
+                "how-to-description": "Jump up on two parallel bars or gymnastics rings with your palms facing inward and your arms straight — use two boxes or the backs of two sturdy chairs if you’re at home. Bend your arms and slowly lower your body until your elbows are at right angles, ensuring they don’t flare outward. Drive yourself back up to the top, squeezing your chest and arms hard, before repeating.",
+                "why-description": "Elevating your feet slightly (or more than slightly) when performing press-ups alters the angle against you, providing more resistance and greater gains. You’ll also emphasise parts of your chest that can be missed with flat pressing."
+            },
+            "feet-elevated-press-up" : {
+                "title": "Feet elevated press-up",
+                "how-to-description": "Kick both feet up onto a box or bench. Create a strong plank position with your hands on the ground, shoulder-width apart. Slowly lower your chest to the ground, before explosively pressing back to lockout. The higher your feet, the greater the resistance, but the more you’ll emphasise your shoulder muscles.",
+                "why-description": "The true king of compound movements, the barbell deadlift is a full-body move — building stronger legs, back, shoulders and arms. Its place in your next back workout is well deserved — as you work through the full range of motion, your upper-back muscles (rhomboids, traps, rear delts and lats) are firing away helping to keep your torso straight, while preventing your back from rounding and causing injury."
+            },
+            "deficit-press-up" : {
+                "title": "Deficit press-up",
+                "how-to-description": "Assume a strong plank position, with your core tight and hands gripping a pair of handles, dumbbells or placed on two benches, either side of your body. Bend your elbows to bring your chest to the floor, feeling a deep stretch as you lower. Keep your elbows from flaring away from your body as you push back up explosively.",
+                "why-description": "The key to growth is stimulating your muscles through a full range of motion. By raising your hands up on handles or boxes either side of your body, you’re able to drop yourself below your hands, stretching your chest fully and targeting more muscle fibres."
+            },
+            "gymnastics-rings-press-ups" : {
+                "title": "Gymnastics rings press-ups",
+                "how-to-description": "Arrange a pair of rings so they’re hanging around a foot from the floor. Assume a strong plank position gripping both rings with straight arms, shoulder-width apart. Squeeze the rings as hard as you can whilst lowering your body towards the floor. Continue lowering until you feel a deep stretch in your pecs before pressing back up explosively.",
+                "why-description": "The free-moving nature of the rings don’t just allow you to get a deep stretch in your pecs, but their inherent instability can seriously bulletproof your shoulders. Elevate your feet to increase the resistance and pump up your chest even further."
+            },
+            "tempo-press-ups" : {
+                "title": "Tempo press-ups",
+                "how-to-description": "Assume a strong plank position with hands stacked directly beneath your shoulders. Keep your elbows locked at a 45 degree angle as you slowly lower your chest to the floor. Inhale as you lower, counting to 4 seconds. Pause just before your chest touches the ground and explosively exhale, pushing back up. Repeat until you can no longer control your descent.",
+                "why-description": "The press-up is the ultimate portable pec builder, perfect for high rep blasts, but if we want all of those reps to pay-off we need to focus on nailing each rep by controlling the tempo (speed) and keeping the tension on those pecs."
+            },
+            "flat-dumbbell-press" : {
+                "title": "Flat dumbbell press",
+                "how-to-description": "Lay flat on a bench, your knees bent, pushing your feet into the floor. Press a pair of dumbbells into the air, locking out your elbows. Lower the bells slowly until they touch the outside of your chest. Keep your elbows at a 45 degree angle, pause here before explosively pressing back up.",
+                "why-description": "Unlike the barbell bench press, having both hands moving independently allows you to create not only a larger range of motion, but one that’s perfect for your individual mechanics. Perfect reps for perfect pecs."
+            },
+            "incline-dumbbell-press" : {
+                "title": "Incline dumbbell press",
+                "how-to-description": "Lay with your back on a bench set at 45-degree angle, pushing your feet into the floor, but avoiding arching your back. Press a pair of dumbbells into the air, locking out your elbows. Lower the bells slowly until they touch the outside of your chest. Keep your elbows at a 45 degree angle, pause here before explosively pressing back up.",
+                "why-description": "Switching to an incline angle can help to target the upper portion of the chest, which may be underdeveloped if you’ve long favoured the flat bench press. Just like the flat dumbbell press, using ‘bells enables you to get a greater stretch in your chest, increasing growth potential."
+            },
+            "dumbbell-press-to-fly" : {
+                "title": "Dumbbell press-to-fly",
+                "how-to-description": "Lay flat on a bench, your knees bent, pushing your feet into the floor. Press a pair of dumbbells into the air, locking out your elbows. Keep your arms locked with a slight bend in the elbows and slowly lower your bells outwards, opening up your arms to the sides of your body. Pause when you feel a deep stretch before explosively pressing back upwards and repeating.",
+                "why-description": "The dumbbell fly is an effective movement for stretching your chest fully under load, however, you won’t be able to go as heavy as you can press. By pressing the weights up, then using a fly on the way back down you can take advantage of your body’s natural strength in the lowering portion of lifts, getting the best of both worlds."
+            },
+            "dumbbell-squeeze-press" : {
+                "title": "Dumbbell squeeze press",
+                "how-to-description": "Hold a single dumbbell, gripping the ‘heads’ on either side in each hand. Lay flat on a bench and slowly press the dumbbell above your chest to full lockout. As you press and lower the bell, grip the heads as hard as possible and attempt to ‘crush’ the dumbbell between your hands, flexing your chest hard.",
+                "why-description": "It can be hard to ‘feel’ your pecs working during pressing movements. By warming up with a squeezing movement, firing up your chest, you’re able to establish a good mind/muscle connection with those pecs ahead of the rest of your workout."
+            },
+            "incline-bench-press" : {
+                "title": "Incline bench press",
+                "how-to-description": "Lay on an incline bench in a rack, grip your barbell with arms outside of shoulder width and un-rack your bar. Slowly lower the barbell to the top of your chest under control, ensuring your elbows don’t flare too much. Pause here and press back up explosively before repeating.",
+                "why-description": "Switching to an incline angle can help to target the upper portion of the chest, which may be underdeveloped if you’ve long favoured the flat bench press. This position also enables you to lower the barbell higher on your chest, creating a bigger stretch. You won’t be able to shift as much weight in this position, but what you do move will be more potent."
+            },
+            "guillotine-press" : {
+                "title": "Guillotine press",
+                "how-to-description": "Lay on a flat bench in a rack, grip your barbell with arms outside of shoulder width and un-rack your bar. Keeping your elbows almost 90-degrees to your body, slowly lower your barbell until it touches the top of your chest before explosively pressing back up to lock out and repeating.",
+                "why-description": "Although trickier on the shoulders, using a slightly wider grip and lowering the barbell to the top of your chest (just below your neck, thus the name) creates a much deeper stretch across your pecs. Will you be able to lift as heavy? No. Will you grow a bigger chest? Yes."
+            },
+            "close-grip-bench-press" : {
+                "title": "Close grip bench press",
+                "how-to-description": "Lay on a flat bench in a rack, grip your barbell with your hands only 6-12 inches apart and un-rack your bar. Slowly lower your bar towards the bottom of your chest, keeping your elbows close to your body. Pause as the bar contacts before explosively pressing back up to lock out and repeating.",
+                "why-description": "Although strictly speaking you could file this one under ‘triceps exercises’, if your arms are the weak link in building a bigger bench press (and bigger chest, by proxy) then spending some time focussing on them could pay-off big time. Worst case scenario is you’ll fill your sleeves out some more."
+            },
+            "banded-resisted-press-ups" : {
+                "title": "Banded resisted press-ups",
+                "how-to-description": "Cross a band across your lower back and loop your thumbs through each end. Assume the press-up position. Lower yourself towards the ground then press up, hard – pushing explosively against the extra resistance of the band to activate more muscles in your upper body.",
+                "why-description": "Use a resistance band to spice up your press-ups to ignite more chest gains. Pushing against bands (which get ‘heavier’ towards the end of each rep) also forces you to work explosively, building power in those pecs."
+            },
+            "cable-crossover" : {
+                "title": "Cable Crossover",
+                "how-to-description": "Attach stirrup handles to the high pulleys of a cable crossover machine. Take one in each hand – your arms should be outstretched with a slight bend. Place one foot slightly forward, brace your core, and pull the handles downward and across your body. Return to the start position under control."
+            }
+        },
+        "legs": {
+            "self": "Legs",
+            "title": "Complete Legs Workout",
+            "leg-muscles": {
+                "title":"Your Leg Muscles Explained",
+                "text": "Understanding the muscles you are working and the role they play will help when performing each exercise. These are the main muscle groups within the leg that you need to know about.",
+                "glutes-title": "Glutes",
+                "glutes-text": "The glutes are the engines that help drive the body, deliver explosive power and help maintain proper posture and movement. Without them, you'd struggle walking, let alone squatting.",
+                "adductors-title":"Adductors",
+                "adductors-text": "Your inner thigh muscles, are essential for athleticism and power. Made up of five muscles, their job is to stabilise your thighs and pelvis, while allowing for movement, extension and rotation. Adductors are hugely important for squatting, sprinting and moving in multiple directions.",
+                "hamstrings-title": "Hamstrings",
+                "hamstrings-text": "The hamstrings are a group of muscles that line the back of your thigh. Attaching to the bones of the lower leg behind your knee, the hamstrings cross between two joints — the knee and the hip, acting to bend the former and extend the latter.  Deficits in this muscle group can cause issues in function and sports performance. It may also lead to injury. Having strong hamstrings enable athletes to perform higher quality impact and explosive sports.",
+                "quadriceps-title": "Quadriceps",
+                "quadriceps-text": "Your quadriceps consist of four muscles: the rectus femoris, vastus lateralis, vastus medialis and the vastus intermedius. Together, these four muscles contain more mass than any other muscle in the body, assisting with every day movements like walking, running, squatting and jumping.",
+                "calves-title": "Calves",
+                "calves-text": "The main function of the calf muscle is to assist with flexion of the foot, ankle and knee."
+            },
+            "barbell-bulgarian-split-squat" : {
+                "title": "Barbell Bulgarian Split Squat",
+                "how-to-description": "Stand facing away from the bench, holding a barbell across your upper back. Have one leg resting on the bench behind you, laces down. Squat with your standing leg until the knee of your trailing leg almost touches the floor. Push up through your front foot to return to the start position.",
+                "why-description": "Scientists looked at muscle activation across a trio of unilateral barbell exercises: the split squat, single-leg squat and Bulgarian (or “rear foot elevated”) split squat in a study published in The Journal of Strength & Conditioning Research. While all three equally target the quads and glutes, this move is particularly effective at targeting the hamstrings, they concluded. “If you find having the barbell on your back causes you to excessively lean forward, try front loading or replacing with dumbbells by the side instead,” suggests Phillip Leonard, head of personal training at Ten Health & Fitness."
+            },
+            "romanian-deadlift" : {
+                "title": "Romanian Deadlift",
+                "how-to-description": "Stand behind a grounded barbell. Bend your knees slightly to grab it, keeping your shins, back and hips straight. Without bending your back, push your hips forwards to lift the bar. From upright, push your hips back to lower the bar, bending your knees only slightly.",
+                "why-description": "“It's a great variation on the traditional deadlift that focuses on your glutes and superior end of your hamstrings,” says Leonard. Practising hip flexion exercises - like the Romanian deadlift - can seriously improve your sprint speed and agility. After eight weeks of hip flexor-specific training, participants in a University of Florida study saw their sprint and shuttle run PBs improve by around four per cent and nine per cent respectively."
+            },
+            "goblet-squat" : {
+                "title": "Goblet Squat",
+                "how-to-description": "Stand with your legs wider than your shoulders and hold a dumbbell with both hands in line with your thighs. Stick your backside out, bend your knees and lower yourself into a squat until the dumbbell touches the floor. Drive back up and repeat.",
+                "why-description": "You get the lower body muscle-building benefits reaped from traditional squats while torching your shoulders and arms at the same time. “Goblet squats are a great alternative for those who lack the shoulder mobility to maintain proper back squat form,” says Dick. “Positioning the load in the front of the body will challenge the core and quadriceps more.”"
+            },
+            "kettlebell-pistol-squat" : {
+                "title": "Kettlebell Pistol Squat",
+                "how-to-description": "Hold one kettlebell with both hands just under your chin. Lift one leg off the floor and squat down with the other. Drive through the heel and bring yourself back up to standing position, without letting your leg touch the floor. Lower back down and repeat.",
+                "why-description": "“A great single leg exercise to challenge hip mobility and stability that transfers over directly to daily life,” says Dick. It's also incredibly tricky to master, requiring strength, dexterity and balance in equal measure - giving those who can execute it flawlessly a free pass to gloat."
+            },
+            "single-leg-curl" : {
+                "title": "Single Leg Curl",
+                "how-to-description": "Lie face down on the leg curl machine with your heels against the lower pad and the bench against your thighs. Bend one knee to pull the pad up towards your backside as far as possible, then return to the start position and repeat on the other side.",
+                "why-description": "“Single leg curls are great for strengthening the hamstrings, and doing so can help bulletproof your knees,” explains Dick. “A great thing to try is eccentric-focused reps - use both legs to perform the curl and use only one leg to return the weight back to the start. This allows you to overload each leg without risking injury.”"
+            },
+            "leg-extension" : {
+                "title": "Leg Extension",
+                "how-to-description": "Sit in a leg extension machine with your ankles against the lower pad. Use your quads to push forwards and straighten your legs in front of you, then return to the start position.",
+                "why-description": "Tag this onto the end of your workout - it's the ultimate quad-centric finisher. “A great strengthening exercise for the quadriceps, which will again help with protecting the knees as we get older,” says Dick. “Again, try using eccentric-focused reps: both legs perform the extension, one leg lowers the weight back.”"
+            },
+            "prowler-push" : {
+                "title": "Prowler Push",
+                "how-to-description": "To push, keep your arms, neck and back in a static straight line. When you walk forwards, only move your legs. To pull, grip the sled handles, bend at the knees while keeping your back straight and upright, and walk backwards with firm steps.",
+                "why-description": "No matter whether your end goal is improved endurance, power, or functional muscle - and especially if it's all three - the prowler sled has you covered. There's minimal risk of injury and you'll recover quicker, too, since the movement is 'concentric', says Leonard. “Muscle soreness largely comes from the eccentric phase of a movement - think: the lowering phase in a squat. That means recovery from a heavy prowler push will be quicker than exercises like back squats or deadlifts.” Progressing is simple: either up the weight or push faster."
+            },
+            "box-jumps" : {
+                "title": "Box Jumps",
+                "how-to-description": "Set yourself a comfortable distance from the box with feet shoulder width apart. Drop quickly into a quarter squat, swing your arms and explode upwards to jump onto the box. Land as softly as possible. Now step backwards off the box under control.",
+                "why-description": "If you want to burn fat, build functional muscle and leave no muscle untorn after your lower-body workout, then it's hard to beat box jumps. They'll redline your heart rate while building stronger, more powerful glutes and quads."
+            },
+            "box-squats" : {
+                "title": "Box Squats",
+                "how-to-description": "Place a box behind you and stand with your feet shoulder width apart. Sit back into a squat until you sit on the box. Pause and then push up keeping the weight on your heels.",
+                "why-description": "If you're struggling to hit full depth during bodyweight or weighted squats, box squats are the ideal middle ground to test your strength while emphasising proper technique. Once you've got it nailed, begin adding weights — dumbbells, barbells or kettlebells — to make it harder."
+            },
+            "barbell-front-squats" : {
+                "title": "Barbell Front Squats",
+                "how-to-description": "Stand with your feet shoulder-width apart holding a barbell across your upper chest. You can either support the weight on your fingers, with wrists extended, or cross your arms to support the weight. Taking care to keep to not arch your back, push your hips back and bend your knees to lower your body until your thighs are parallel to the floor. Drive your heels into the floor to push yourself explosively back up to the start position.",
+                "why-description": "Like squatting, but bored of back squats? The front squat is an ideal leg exercise, as the front-loaded barbell will help improve shoulder, ankle and hip mobility. Your core will be firing off to keep you upright and your back safe, too."
+            },
+            "bodyweight-split-squat" : {
+                "title": "Bodyweight Split Squat",
+                "how-to-description": "Stand facing away from bench with one leg resting on it, laces down. Squat down with your standing leg until the knee of your trailing leg almost touches the floor. Push up through your front foot to return to the start position.",
+                "why-description": "Whether you use this as a warm-up or as a home workout staple, the bodyweight split squat is a powerful tool for building balance, stability and strength in your quads and glutes."
+            },
+            "sumo-deadlift" : {
+                "title": "Sumo Deadlift",
+                "how-to-description": "With your feet wider than shoulder-width apart, squat down and grasp a barbell with your hands almost touching. Keep your chest up, pull your shoulders back and look straight ahead as you lift the bar. Focus on taking the weight back onto your heels and keep the bar as close as possible to your body at all times. Lift to thigh level, pause, then return under control to the start position.",
+                "why-description": "“[With the sumo deadlift], you have a lot of freedom to move over a shorter range of motion,” says Men's Health US fitness director Ebenezer Samuel. “[Because] we get our legs wider, we don't have to hinge quite as far.”"
+            },
+            "bus-driver-aquat-hold" : {
+                "title": "Bus Driver Squat Hold",
+                "how-to-description": "Stand with your legs wider than your shoulders and hold a weight plate with both hands extended out in front of you. Stick your backside out, bend your knees and lower yourself into a squat. Hold in this position for 30 seconds to a minute.",
+                "why-description": "This will burn your quads, but is also a great prehab and warm-up exercise that works wonders for your rotator cuffs."
+            },
+            "leg-press" : {
+                "title": "Leg Press",
+                "how-to-description": "You can use the seated leg press or 45-degree leg press. Begin with your feet planted in the middle of the foot pad, about shoulder-width apart with your back flat against the seat. Control the weight and bend the knees so the plate moves towards you - don't let your lower back lose contact with the seat. Push the plate away from you, ready to repeat.",
+                "why-description": "For loading some decent weight on your leg exercises, the plate loaded leg press is a efficient machine to get the job done without the instability of free weights. Use a foot position that suits your hip and ankle mobility, keep the entirety of the back flat against the seat with each rep and make sure you don't lock out your knees."
+            }
+        },
+        "core": {
+            "self": "Core",
+            "title": "Complete Core Workout",
+            "barbell-floor-wiper" : {
+                "title": "Barbell Floor Wiper",
+                "how-to-description": "Lie with your back flat on the floor and your arms extended holding the barbell above your chest. Keeping your arms fixed straight raise your legs up to the L-shaped position. Lower your leg down to each side then back up without touching the floor."
+            },
+            "medicine-ball-slam" : {
+                "title": "Medicine Ball Slam",
+                "how-to-description": "Squat down and grasp a barbell with your hands roughly shoulder-width apart. Keep your chest up, pull your shoulders back and look straight ahead as you lift the bar. Focus on taking the weight back onto your heels and keep the bar as close as possible to your body at all times. Lift to thigh level, pause, then return under control to the start position."
+            },
+            "side-jackknife" : {
+                "title": "Side Jackknife",
+                "how-to-description": "Lay on your side with your left arm extended out on the floor and you right arm bent to your head with your elbow bent out. Make sure your right leg is on top of your left. Bring your right elbow to your left leg as you raise your body up, contracting your obliques and slowly lower down before swapping sides after reps."
+            },
+            "dragon-flag" : {
+                "title": "Dragon Flag",
+                "how-to-description": "Lie back on the bench with your hands holding the bench behind your head. Bring your knees up to your chest and kick out to the ceiling, raising your body with just your shoulders on the bench. Keep your body straight and as you slowly move down. You'll not only feel the burn in your abs but in your lower back too."
+            },
+            "cable-woodchopper" : {
+                "title": "Cable Woodchopper",
+                "how-to-description": "Set the cable machine to the highest position with and stand side on to the weights with your back to the machine. Grabbing the handle with both hands take a step away from the tower and put your feet shoulder width apart. Extend your arms fully and pull the handle down and across your body whilst rotating your torso. Bend your knees and pivot your back foot and slowly return to the start position, swapping sides after each set."
+            },
+            "cocoon" : {
+                "title": "Cocoon",
+                "how-to-description": "Lay flat on your back with your arms extended behind your head and your feet slightly off the ground. Pull your knees towards your chest, lift your backside off the floor and lift your arms over your head as you perform a crunch and repeat."
+            },
+            "sandbag-sit-up" : {
+                "title": "Sandbag Sit-Up",
+                "how-to-description": "Lie with your back on the ground and you knees bent upwards. Hold a sandbag up above you with both extended arms and crunch forwards as you tense your core so your body performs a V shape with your thighs. Carefully lower down and repeat."
+            },
+            "hanging-leg-raise" : {
+                "title": "Hanging Leg Raise",
+                "how-to-description": "Grab a pull-up bar making a V shape with your arms and lower yourself into a dead hang. Put your feet together and raise your legs until they are perpendicular to your torso whilst keeping them straight. Slowly lower back to the starting position."
+            },
+            "superman-with-a-twist" : {
+                "title": "Superman With A Twist",
+                "how-to-description": "Lie on your stomach and place your hands on your head. Raise your torso and twist your chest from one side to the other. This move will not only target your abs but can also help combat a stiff back."
+            },
+            "hollow-rocks" : {
+                "title": "Hollow Rocks",
+                "how-to-description": "Sit up with your legs straight and extend your hands up above your head Raise your legs to make your body form a dish shape. Keep your body rigid as you rock back and forth to strengthen your core."
+            },
+            "barbell-roll-outs" : {
+                "title": "Barbell Roll Outs",
+                "how-to-description": "Load a barbell with 10kg plates and grab the bar with an overhand, shoulder-width grip.Position your shoulders directly over the barbell and slowly roll the bar forwards.Pause, then reverse the move. Roll out to a distance that's challenging, but doesn't force your hips to sag."
+            },
+            "russian-twists" : {
+                "title": "Russian Twists",
+                "how-to-description": "Sit holding the weight plate, dumbbell or kettlebell with your arms extended and feet off the floor. Under control, quickly twist at the torso, turning from side to side."
+            },
+            "hollow-holds" : {
+                "title": "Hollow Holds",
+                "how-to-description": "Start lying on back with with your arms extended overhead on floor and legs straight resting on mat.At the same time, and with control, lift arms, head, shoulder blades, and legs off the floor."
+            },
+            "dumbbell-deadbugs" : {
+                "title": "Dumbbell Deadbugs",
+                "how-to-description": "With a dumbbell in each hand, lift your arms towards the ceiling. Raise your legs, your knees bent at 90º. Slowly extend your left arm and right leg simultaneously, keeping your back straight. Return, then repeat on the other side."
+            },
+            "bear-crawls" : {
+                "title": "Bear Crawls",
+                "how-to-description": "Assume a press-up position with your knees bent at 90-degree angles and directly underneath your hips. Your knees should be elevated. Without allowing your lower back to rise or round, brace your abs as if you were about to punched in the gut. Hold this contraction the entire time. This is your starting position. 'Walk' your right hand and left foot forward a few inches. Pause, and then return to the starting position. Next, 'walk' your left hand and right foot forward. Return to the starting position."
+            },
+            "butterfly-sit-ups" : {
+                "title": "Butterfly Sit-Ups",
+                "how-to-description": "Lie on the ground with your arms extended past your head. Bend your knees and have the soles of your feet facing one another so they're in a diamond shape. Crunch your abs to a sitting position as you reach forward with both hands to your feet."
+            },
+            "cable-crunch" : {
+                "title": "Cable Crunch",
+                "how-to-description": "Attach a rope to a high pulley and kneel in front of it, with the handles held either side of your neck. Without moving your hips, contract your abs to bring your elbows to your thighs.Pause for a moment then slowly return to the starting position."
+            },
+            "overhead-crunch" : {
+                "title": "Overhead Crunch",
+                "how-to-description": "Lie on your back with your arms extended straight over your head so your body forms a straight line. Bend your knees and keep your feet flat on the floor then - keeping your arms locked - contract your abs to crunch your shoulders off the floor."
+            },
+            "plank-pass-through" : {
+                "title": "Plank Pass Through",
+                "how-to-description": "Begin in the high plank position with a dumbbell or kettlebell on the outside of your palm. Reach under your torso from the opposite side to the weight. Pull the weight under your body while keeping the hips completely even. Repeat on the other side."
+            },
+            "landmine-rotations" : {
+                "title": "Landmine Rotations",
+                "how-to-description": "Start with one end of the barbell in a corner or landmine attachment. On your knees, hold the other end of the barbell overhead with enough distance from the attachment that you can comfortably pass the barbell from side to side in an arc shape. Keeping your hips facing forwards, lift the barbell upwards from one hip, overhead to the other side while twisting the torso. Repeat in the opposite direction."
+            }
+        },
+        "footer": {
+            "text-1": "To expand your workout use the",
+            "text-2": "source",
+            "text-3": "for these exercises where you will find an expanded library of exercises and will help you live your life the way you want."
+        }
+    },
+    "edit-picture":{
+        "title": "Change Profile Image",
+        "file-type-error": "Files must be .PNG, .JPG or .JPEG",
+        "default-avatar-title":"Choose from default Avatars",
+        "choose-file": "Choose File: "
+    },
+    "user-management": {
+        "username": "Username",
+        "name": "Name",
+        "email": "Email",
+        "date-join": "Date joined",
+        "actions": "Actions",
+        "delete-succes": "User deleted",
+        "user-made-admin": "User upgraded to Admin succsesfully!"
+    },
+    "user-messages": {
+        "seen": "Seen", 
+        "from": "From", 
+        "date": "Date",
+        "preview": "Preview",
+        "actions": "Actions"
+    },
+    "tooltips":{
+        "open-mail": "Open Mail",
+        "delete-user": "Delete user",
+        "reply": "Reply"
+    },
+    "footer": {
+        "nume": "Project realized by Necula Narcis",
+        "project-for": "App realised as Bachelors degree final project",
+        "email": "Email: narcis.necula@s.unibuc.ro",
+        "faculty-1": "Faculty of Mathematics and Computer Science at",
+        "faculty-2": "University Of Bucharest"
+    },
+    "months": {
+        "jan": "January",
+        "feb": "February",
+        "mar": "March",
+        "apr": "April",
+        "may": "May",
+        "jun": "June",
+        "jul": "July",
+        "aug": "August",
+        "sep": "September",
+        "oct": "October",
+        "nov": "November",
+        "dec": "December"
+    },
+    "statistics": {
+        "chart-1-title": "Chart representing the procent of a sport being logged and it's total time",
+        "chart-2-title": "What procent of users participate and win the monthly unique achievements"
+    }
+}

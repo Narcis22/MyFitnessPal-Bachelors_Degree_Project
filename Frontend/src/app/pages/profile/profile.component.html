@@ -1,0 +1,145 @@
+<mat-drawer-container 
+    class="container-profile h-100 w-100" 
+    [hasBackdrop]="true">
+
+    <mat-drawer #drawer mode="over" position="end" class="drawer-container">
+        <div *ngIf="type === 'my-statistics'">
+            <app-my-statistics [user]="user"></app-my-statistics>   
+        </div>
+
+        <div *ngIf="type === 'change-password'">
+            <app-change-password    (type)="changeDrawer($event)"
+                                    [drawer]="drawer"></app-change-password>
+        </div>
+
+        <div *ngIf="type === 'edit-profile'">
+            <app-edit-profile-dialog    [data]="user" 
+                                        [drawer]="drawer" 
+                                        (detectUpdate)="detectUpdate($event)"
+                                        (type)="changeDrawer($event)">
+            </app-edit-profile-dialog>
+        </div>
+
+        <div *ngIf="type === 'contact-us'">
+            <app-contact-us-dialog [drawer]="drawer"></app-contact-us-dialog>
+        </div>
+
+        <div *ngIf="type === 'upload-image'">
+            <app-change-profile-pic [drawer]="drawer"
+                                    [userImage]="this.userImage"
+                                    (uploaded)="photoUploaded($event)"></app-change-profile-pic>
+        </div>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div class="container-content">
+            <div class="profile-content h-100 w-100">
+                <div class="photo-container">
+                    <div class="photo">
+                        <div *ngIf="!isProfilePicCustom" class="container-profile-images">
+                            <img    src="../../../assets/media/profile-pics/profile-pic-{{userImage.profilePhotoId}}.png" 
+                                    height=150px 
+                                    class="profile-image cursor-pointer"
+                                    (click)="openDrawer(drawer, 'upload-image')">
+
+                            <img    src="../../../assets/media/images/edit.png" 
+                                    height=40px 
+                                    class="edit-icon-overlay cursor-pointer" 
+                                    (click)="openDrawer(drawer, 'upload-image')">
+                        </div>
+                        
+                        <div *ngIf="isProfilePicCustom" class="container-profile-images">
+                            <img    [src]="customProfilePic"
+                                    height=150px 
+                                    class="profile-image cursor-pointer"
+                                    (click)="openDrawer(drawer, 'upload-image')">
+
+                            <img    src="../../../assets/media/images/edit.png" 
+                                    height=40px 
+                                    class="edit-icon-overlay cursor-pointer" 
+                                    (click)="openDrawer(drawer, 'upload-image')">
+                        </div>
+
+                        <div class="btn-edit-container">
+                            <button class="edit-profile-button cursor-pointer" style="margin-right: 10px;" (click)="openDrawer(drawer, 'edit-profile')">
+                                <img class="btn-image" src="../../../assets/media/images/edit.png" height=24px alt="pen">
+                                <label class="edit-label ms-3 cursor-pointer" > {{ 'profile.edit' | translate }} </label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="user-info-top">
+                        <div class="d-flex">
+                            <label class="username"> {{user.username}} </label>
+                            <div class="btn-edit-containerc info-button">
+                                <button class="edit-profile-button cursor-pointer" (click)="openDrawer(drawer, 'my-statistics')">
+                                    <img class="btn-image mb-1" src="../../../assets/media/images/list-icon.png" height=24px alt="list">
+                                    <label class="edit-label ms-3 cursor-pointer" > {{ 'profile.my-statistics.my-info' | translate }} </label>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="email">{{ user.email}}</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-container">
+                    <div class="user-sports">
+                        <div class="sports-title">
+                            {{ "profile.my-sports" | translate }}
+                        </div>
+                        <div class="list-of-sports">
+                            <div id="container">
+                                <div class="coin-image cursor-pointer" *ngFor="let sportId of sports" (click)="gotoActivity()">
+                                    <img src="../../../assets/media/images/{{sportIcons[sportId - 1]}}" alt=pic height="70px" width="70px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-achievements">
+                        <div class="achievements-title">
+                            {{ "profile.my-achievements" | translate }}
+                        </div>
+                        <div class="list-of-achievements" id="container">
+                            <div id="container">
+                                <div class="coin-image cursor-pointer" *ngFor="let achievement of achievements" (click)="gotoAcievements()">
+                                    <img *ngIf="!(achievement.level === 4)" src="../../../assets/media/achievements/{{achievement.sportName}}-{{medalType[achievement.level]}}-medal.png" alt=pic height="70px" width="70px">
+                                    <img *ngIf="achievement.level === 4" src="../../../assets/media/achievements/{{medalType[achievement.level]}}-{{achievement.sportName}}.png" alt=pic height="70px" width="70px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drawer-buttons">
+                </div>
+
+                <div class="footer">
+                    <div></div>
+                    <div class="btn-contact-us-container">
+                        <button class="edit-profile-button cursor-pointer" (click)="openDrawer(drawer, 'contact-us')">
+                            <img class="btn-image" src="../../../assets/media/images/mail.png" height=24px alt="Contact Us">
+                            <label class="edit-label ms-3 cursor-pointer" > {{ 'profile.contact-us' | translate }} </label>
+                        </button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        
+        <div class="general-app-container">
+            <div class="general-app-info">
+                <div class="first-app-info-row"> 
+                    {{ 'footer.nume' | translate }}
+                    <div class="d-flex flex-row-reverse"> 
+                        {{ 'footer.project-for' | translate }}
+                    </div>
+                </div>
+                <div class="mt-1"> 
+                    {{ 'footer.email' | translate }} 
+                </div>
+                <div class="mt-1"> {{ 'footer.faculty-1' | translate }}  <a href="https://fmi.unibuc.ro/">{{ 'footer.faculty-2' | translate }} </a> </div>
+                <div class="mt-1"> <img height="40px" src="../../../assets/media/images/sigla-fmi-1.png"> </div>
+            </div>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

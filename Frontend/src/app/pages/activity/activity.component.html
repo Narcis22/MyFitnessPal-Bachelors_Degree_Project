@@ -1,0 +1,41 @@
+<div class="activity-page full-width h-100">
+    <div class="h-100 w-100 list-container">
+        <div  *ngIf="displayContent === 'workouts'" class="buttons-row">
+            <div class="achivements-button" (click)="gotoAchievements()">
+                <img src="../../../assets/media/images/medal-black.png" height=30px class="achievements-icon">
+                
+                <span class="achievements-label"> {{ 'workouts.achievements' | translate }} </span>
+                <span> 
+                    <img src="../../../assets/media/images/medals-border.png" height=30px>
+                </span>
+            </div>
+        </div>
+        
+        <div *ngIf="displayContent === 'workouts'" class="my-workouts-title">
+            {{ 'workouts.my-workouts' | translate }}
+        </div>
+
+        <div *ngIf="displayContent === 'workouts'" class="list-view">
+            <app-workouts-list></app-workouts-list>
+        </div>
+        
+        <div *ngIf="displayContent === 'achievements'" class="buttons-row">
+            <div class="back-button" (click)="goBack()">
+                <img src="../../../assets/media/images/previous-gold.png" height=50px matTooltip="Back">
+            </div>
+        </div>
+        
+        <div *ngIf="displayContent === 'achievements'" class="achievements-title">
+            {{ 'achievements.title' | translate }}
+        </div>
+        
+        <div *ngIf="displayContent === 'achievements'" class="list-view">
+            <app-achievements   [bronzeMedals]="bronzeMedals"
+                                [silverMedals]="silverMedals"
+                                [goldMedals]="goldMedals"
+                                [monthlyMedals]="monthlyMedals"
+                                [achievementNotification]="achievementNotification"
+                                [newAchievement]="newAchievement"></app-achievements>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.API\obj\Debug\net6.0\MyFitnessPal.csproj.AssemblyReference.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.API\obj\Debug\net6.0\MyFitnessPal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.API\obj\Debug\net6.0\MyFitnessPal.AssemblyInfoInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.API\obj\Debug\net6.0\MyFitnessPal.AssemblyInfo.cs
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.API\obj\Debug\net6.0\MyFitnessPal.csproj.CoreCompileInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.API\obj\Debug\net6.0\MyFitnessPal.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.API\obj\Debug\net6.0\MyFitnessPal.MvcApplicationPartsAssemblyInfo.cache

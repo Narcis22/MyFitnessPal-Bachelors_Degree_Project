@@ -1,0 +1,29 @@
+<div class="w-100 h-100 container-dialog">
+    <div class="title-row">
+        <label> {{ 'profile.write-a-message' | translate }} </label>
+        <img class="cursor-pointer close-button mt-3" matTooltip="{{ 'general.close' | translate}}"  (click)="closeDrawer()"  src="../../../assets/media/images/cancel.png" height=30px>
+    </div>
+
+    <div class="d-flex flex-row">
+        <div class="container" [formGroup]="form">
+            <label class="mb-5 fs-18"> 
+                {{ 'profile.what-to-know' | translate }} 
+            </label>
+
+            <!-- Message -->
+            <mat-form-field appearance="outline" class="field example-full-width">
+                <mat-label> {{ 'profile.message' | translate }} </mat-label>
+                <textarea rows="16" matInput formControlName="message"></textarea>
+                <mat-error *ngIf="form.get('message')!.hasError('required')">
+                    {{ 'errors.message-required' | translate }}
+                </mat-error>
+            </mat-form-field>
+        </div>    
+    </div>
+
+    <div class="d-flex flex-row footer-row">
+        <div> 
+            <button class="btn btn-outline-light submit-button" (click)="sendMail()"> {{ 'general.send' | translate }} </button>
+        </div>
+    </div>
+</div>         

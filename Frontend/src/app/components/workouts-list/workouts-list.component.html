@@ -1,0 +1,72 @@
+<div class="workouts-list">
+    <div class="table-container">
+        <table mat-table [dataSource]="dataSource!" matSort>
+            <!-- Icon Column -->
+            <ng-container matColumnDef="icon" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'workouts.table.sport' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="first-cell"> 
+                    <div class="sport-image">
+                        <img src="../../../assets/media/images/{{sportIcons[element.sportId - 1]}}" height="50px">
+                    </div>
+                </td>
+            </ng-container>
+
+            <!-- Date Column -->
+            <ng-container matColumnDef="date" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ 'workouts.table.date' | translate }}</th>
+                <td mat-cell *matCellDef="let element" class="middle-cell"> {{ element.createdAt | date:'MMM dd, yyyy' }} </td>
+            </ng-container>
+
+            <!-- Duration Column -->
+            <ng-container matColumnDef="duration" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ 'workouts.table.duration' | translate }}</th>
+                <td mat-cell *matCellDef="let element" class="middle-cell"> {{element.duration}} min </td>
+            </ng-container>
+
+            <!-- Steps Column -->
+            <ng-container matColumnDef="distance" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ 'workouts.table.steps' | translate }}</th>
+                <td mat-cell *matCellDef="let element" class="middle-cell" [ngClass]="element.steps === null ? 'orange-text' : ''"> 
+                    <label *ngIf="element.steps === null"> {{ 'general.not-available' | translate }} </label> 
+                    <label *ngIf="element.steps !== null"> {{element.steps}} {{ 'workouts.table.steps' | translate }} </label>
+                </td>                
+            </ng-container>
+            
+            <!-- Distance Column -->
+            <ng-container matColumnDef="steps" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ 'workouts.table.distance' | translate }}</th>
+                <td mat-cell *matCellDef="let element" class="middle-cell" [ngClass]="element.distance === null ? 'orange-text' : ''"> 
+                    <label *ngIf="element.distance === null"> {{ 'general.not-available' | translate }} </label> 
+                    <label *ngIf="element.distance !== null"> {{element.distance}} km </label>
+                </td>   
+            </ng-container>
+
+            <!-- Total no this workout Column -->
+            <ng-container matColumnDef="noWorkouts" class="container-col">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ 'workouts.table.workout-count' | translate }}</th>
+                <td mat-cell *matCellDef="let element" class="last-cell"> 
+                    <label> No #{{mapOfWorkouts.get(element.sportId.toString())}} </label> 
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+    
+    <div class="general-app-container w-100 mb-0">
+        <div class="general-app-info">
+            <div class="mt-1 first-app-info-row"> 
+                {{ 'footer.nume' | translate }}
+                <div class="d-flex flex-row-reverse"> 
+                    {{ 'footer.project-for' | translate }}
+                </div>
+            </div>
+            <div class="mt-1"> 
+                {{ 'footer.email' | translate }} 
+            </div>
+            <div class="mt-1"> {{ 'footer.faculty-1' | translate }}  <a href="https://fmi.unibuc.ro/">{{ 'footer.faculty-2' | translate }} </a> </div>
+            <div class="mt-1"> <img height="40px" src="../../../assets/media/images/sigla-fmi-1.png"> </div>
+        </div>
+    </div>
+</div>

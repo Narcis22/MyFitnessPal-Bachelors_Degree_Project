@@ -1,0 +1,66 @@
+.medal-list-container{
+    display: grid;
+    width: 100%;
+    max-height: 700px;
+    
+    padding: 20px;
+    border-radius: 30px;
+    
+    background-image: url("../../../assets/media/backgrounds/paper-background.jpg");
+    background-size: auto;
+    background-repeat: repeat-y;
+}
+
+.title{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+
+}
+
+/* Table */
+.mat-mdc-cell{
+    margin-top: 10px;
+    color:rgb(222, 218, 196);
+    background-color: #212529;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+}
+
+.mat-mdc-row {
+    height: 80px;
+}
+
+.mat-mdc-table{
+    width: 400px;
+    background-color: transparent;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    border-radius: 15px;
+}
+
+.first-cell{
+    border-radius: 15px 0px 0px 15px;
+}
+
+.middle-cell{
+    border-radius: 0px;
+}
+
+.last-cell{
+    border-radius: 0px 15px 15px 0px;
+}
+
+.sport-name{
+    text-transform: capitalize;
+}
+
+.footer{
+    display: grid;
+    width:100%;
+    justify-content: center;
+    padding:30px;
+}

@@ -1,0 +1,30 @@
+<div class="message-container">
+    <div class="head-icon">
+        <img src="../../../assets/media/images/reply.png" height="100px">
+    </div>
+
+    <div class="user-info">
+        <img *ngIf="!(messageDetails.profilePicId === '0')" height="60px" src="../../../assets/media/profile-pics/profile-pic-{{messageDetails.profilePicId}}.png"> 
+        <img class="custom-icon" *ngIf="messageDetails.profilePicId === '0'" height="60px" [src]="getImageFromByteArray(messageDetails.imageContentType, messageDetails.image)"> 
+        <label class="fs-20 email-label"> TO: {{ messageDetails.emailSender }} </label>
+    </div>
+
+    <div class="message-text">
+        <div class="container" [formGroup]="form">
+            <!-- Message -->
+            <mat-form-field appearance="outline" class="field example-full-width">
+                <mat-label> {{ 'profile.message' | translate }} </mat-label>
+                <textarea rows="10" matInput formControlName="message"></textarea>
+                <mat-error *ngIf="form.get('message')!.hasError('required')">
+                    {{ 'errors.message-required' | translate }}
+                </mat-error>
+            </mat-form-field>
+        </div>    
+    </div>
+
+    <div class="footer">
+        <button class="btn btn-outline-danger close-button" (click)="sendMail()">
+            {{ 'tooltips.reply' | translate }}
+        </button>
+    </div>
+</div>

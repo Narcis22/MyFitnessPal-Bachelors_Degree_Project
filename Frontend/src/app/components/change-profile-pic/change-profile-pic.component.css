@@ -1,0 +1,105 @@
+.change-profile-pic-container{
+    height: 680px;
+    width: 420px;
+
+    display: grid;
+    grid-template-rows: 30px 190px 100px 30px auto;
+}
+
+.title-row{
+    display: grid;
+    grid-template-columns: 375px auto;
+    
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.previw-image-container{
+    display: grid;
+    justify-content: center;
+    padding-top:50px;
+}
+
+.previw-image{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.drag-n-drop-container{
+    width: 100%;
+}
+
+/* Profile pic cascade */
+.choose-defaults{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Comfortaa', cursive;
+    grid-template-rows: 50px 150px;
+    grid-gap: 20px;
+}
+
+.super-container-avatars{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+
+}
+
+#container {
+    display: flex;
+    width: fit-content;
+}
+
+.coin-image {
+    height: 60px;
+    width: 60px;
+    margin-left: -30px;  
+    transition:  margin-left 0.3s ease;
+    box-sizing: border-box;
+
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.coin-image:first-of-type, #container:hover .inncoin-imageer:first-of-type {
+    margin-left: 0; 
+}
+
+#container:hover .coin-image {
+    margin-left: -15px;  
+}
+
+
+.footer{
+    display: grid;
+    width: 100%;
+}
+
+.save-button{
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.upload-section{
+    display: grid;
+    grid-template-rows: 40px auto;
+    margin-top: 30px;
+}
+
+.label-file{
+    display: grid;
+    width:100%;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+}
+.or-class{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 10px 0px;
+}

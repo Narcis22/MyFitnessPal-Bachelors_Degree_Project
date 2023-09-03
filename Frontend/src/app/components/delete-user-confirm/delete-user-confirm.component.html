@@ -1,0 +1,14 @@
+<div class="delete-confirm-container">
+    <div class="title-row fs-30">
+        <label> {{'general.confirm-delete-user' | translate }} </label>
+        <img height=40px>
+    </div>
+    <div class="footer">
+        <button class="btn btn-outline-danger close-button" (click)="confirmation()">
+            {{ 'general.confirm' | translate }}
+        </button>
+        <button class="btn btn-outline-primary close-button" (click)="abandon()">
+            {{ 'general.abandon' | translate }}
+        </button>
+    </div>
+</div>

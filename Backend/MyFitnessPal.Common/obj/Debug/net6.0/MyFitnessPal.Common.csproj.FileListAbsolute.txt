@@ -1,0 +1,14 @@
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\bin\Debug\net6.0\MyFitnessPal.Common.deps.json
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\bin\Debug\net6.0\MyFitnessPal.Common.runtimeconfig.json
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\bin\Debug\net6.0\MyFitnessPal.Common.dll
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\bin\Debug\net6.0\MyFitnessPal.Common.pdb
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.csproj.AssemblyReference.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.AssemblyInfoInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.AssemblyInfo.cs
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.csproj.CoreCompileInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.dll
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\refint\MyFitnessPal.Common.dll
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.pdb
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\MyFitnessPal.Common.genruntimeconfig.cache
+C:\Users\denis\OneDrive\Documents\GitHub\MyFitnessPal\Backend\MyFitnessPal.Common\obj\Debug\net6.0\ref\MyFitnessPal.Common.dll

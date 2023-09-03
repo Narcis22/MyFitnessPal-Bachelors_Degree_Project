@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/purple-green.css";
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
+html, body {
+    height: 100%;
+    font-size: 14px !important;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.full-width {
+    width: 100%;
+}
+
+.full-page-height{
+    height: 100%;
+}
+
+.card {
+    border: none;
+    border-radius: 0px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.mb-6{
+    margin-bottom: 20px !important;
+}
+
+.ng-dropdown-panel{
+    width: 150px !important;
+    background-color: white;
+    padding: 5px 10px 5px 15px;
+    border-radius: 6px;
+    margin-left: -15px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.margin-auto{
+    margin: auto;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;   
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.black-drop-shadow{
+    filter: drop-shadow(0.35rem 0.35rem 1rem rgba(0, 0, 0, 0.5));
+}
+
+.gold-drop-shadow{
+    filter: drop-shadow(0.35rem 0.35rem 1rem gold);
+}
+
+.bronze-drop-shadow{
+    filter: drop-shadow(0.35rem 0.35rem 1rem #cd7f32);
+}
+
+.green-drop-shadow{
+    filter: drop-shadow(0.35rem 0.35rem 1rem #01782e);
+}
+
+.white-drop-shadow{
+    filter: drop-shadow(0.35rem 0.35rem 1rem rgba(219, 219, 219, 0.5));
+}
+
+.fs-15{
+    font-size: 15px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.fs-35{
+    font-size: 35px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-45{
+    font-size: 45px;
+}
+.fs-50{
+    font-size: 50px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+    visibility: visible;
+    background-color: rgba(0,0,0, 0.4) !important;
+    backdrop-filter: blur(3px) !important;
+}
+
+
+/* footer */
+.general-app-info{
+    font-size: 15px;
+}
+
+.first-app-info-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.general-app-container{
+    padding: 10px 20px;
+
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    border-top: 1px solid black;
+}
+
+.gm-style-iw-c > button {
+    display: none !important;
+}
+
+.mat-mdc-dialog-surface {
+    border-radius: 30px !important;
+}

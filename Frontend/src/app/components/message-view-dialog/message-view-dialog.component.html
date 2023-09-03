@@ -1,0 +1,28 @@
+<div class="message-container">
+    <div class="head-icon">
+        <img src="../../../assets/media/images/open-mail.png" height="100px">
+    </div>
+
+    <div class="user-info">
+        <img *ngIf="!(messageDetails.profilePicId === '0')" height="60px" src="../../../assets/media/profile-pics/profile-pic-{{messageDetails.profilePicId}}.png"> 
+        <img class="custom-icon" *ngIf="messageDetails.profilePicId === '0'" height="60px" [src]="getImageFromByteArray(messageDetails.imageContentType, messageDetails.image)"> 
+        <label class="fs-20 email-label"> {{ messageDetails.emailSender }} </label>
+    </div>
+
+    <div class="message-text">
+        <div class="message-text-container fs-15">
+            <p> {{messageDetails.message}} </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button *ngIf="!isLoading" class="btn btn-outline-danger close-button" (click)="close()">
+            {{ 'general.close' | translate }}
+        </button>
+
+        <button *ngIf="isLoading" class="btn btn-outline-danger close-button" [disabled]="true">
+            <img src="../../../assets/media/SVGs/loader.svg" height="20px">
+            {{ 'general.close' | translate }}
+        </button>
+    </div>
+</div>

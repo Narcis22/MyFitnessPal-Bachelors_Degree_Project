@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qElpIUxKYmDIXSS5HjkiLY8MK0lNXKNqvNDUhbHF/6k=",
+  "Source": "MyFitnessPal.API",
+  "BasePath": "_content/MyFitnessPal.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

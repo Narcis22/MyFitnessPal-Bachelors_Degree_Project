@@ -1,0 +1,74 @@
+<div>
+<div class="w-100 h-100 container-dialog">
+    <img class="exit-button cursor-pointer" matTooltip="{{'general.close' | translate}}" (click)="closeDrawer()"  src="../../../assets/media/images/cancel.png" height=30px>
+
+    <div class="d-flex flex-row title-row">
+        <img src="../../../assets/media/images/edit.png" height=30px class="mt-4 me-3">
+        <label> {{ 'profile.edit' | translate }} </label>
+    </div>
+
+    <div class="btn-change-pass">
+        <button class="change-pass-button cursor-pointer" (click)="changePasswordToggle()">
+            <img class="btn-image" src="../../../assets/media/images/lock.png" height=24px alt="lock">
+            <label class="change-label ms-3 cursor-pointer fs-15" > {{ 'profile.change-password' | translate }} </label>
+        </button>
+    </div>
+
+    <div class="d-flex flex-row content-row align-middle">
+        <div class="container" [formGroup]="form">
+            <!-- Username -->
+            <mat-form-field appearance="outline" class="field example-full-width">
+                <mat-label> {{ 'profile.username' | translate }} </mat-label>
+                <input matInput formControlName="username">
+            </mat-form-field>
+
+            <!-- Sex -->
+            <mat-form-field appearance="outline" class="field example-full-width">
+                <mat-label> {{ 'profile.sex' | translate }} </mat-label>
+                <select matNativeControl  formControlName="sex" [(ngModel)]="selectedSex" name="sex">
+                    <option *ngFor="let sex of sexes" [value]="sex">
+                        {{sex}}
+                    </option>
+                </select>
+            </mat-form-field>
+
+            <!-- Height -->
+            <mat-form-field appearance="outline" class="field example-full-width">
+                <mat-label> {{ 'profile.height' | translate }} </mat-label>
+                <input matInput formControlName="height">
+                <mat-error *ngIf="form.get('height')!.hasError('pattern')">
+                    {{ 'errors.field-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+
+            <!-- Weight -->
+            <mat-form-field appearance="outline" class="field example-full-width">
+                <mat-label> {{ 'profile.weight' | translate }} </mat-label>
+                <input matInput formControlName="weight">
+                <mat-error *ngIf="form.get('weight')!.hasError('pattern')">
+                    {{ 'errors.field-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+
+            <!-- Age -->
+            <mat-form-field appearance="outline" class="field example-full-width">
+                <mat-label> {{ 'profile.age' | translate }} </mat-label>
+                <input matInput formControlName="age">
+                <mat-error *ngIf="form.get('age')!.hasError('pattern')">
+                    {{ 'errors.field-number' | translate }}
+                </mat-error>
+            </mat-form-field>
+
+        </div>
+    </div>
+
+    <div class="d-flex flex-row footer-row">
+        <div> 
+            <button class="submit-button btn btn-outline-light" (click)="updateUser()"> {{ 'general.update' | translate }} </button>
+        </div>
+        <div> 
+            <button class="cancel-button btn btn-outline-danger" (click)="closeDrawer()"> {{ 'general.cancel' | translate }} </button>
+        </div>
+    </div>
+</div>
+</div>

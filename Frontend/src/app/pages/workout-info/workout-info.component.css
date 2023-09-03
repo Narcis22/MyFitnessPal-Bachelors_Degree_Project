@@ -1,0 +1,23 @@
+.workout-info-container{
+    display: grid;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+.container-info{
+    height: 100%;
+    width: 100%;
+    
+    background-image: url("../../../assets/media/backgrounds/white-paper-texture.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.workout-info-app-info{
+    background-image: url("../../../assets/media/backgrounds/white-paper-texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}

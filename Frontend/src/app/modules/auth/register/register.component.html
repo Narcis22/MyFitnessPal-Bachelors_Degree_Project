@@ -1,0 +1,86 @@
+<div class="card main-card">
+    <div class="header-login">
+        <img src="../../../assets/media/images/logo-inline-transparent.png" alt="Logo" height="60px">
+    </div>
+
+    <div class="container mt-3" [formGroup]="form">
+        <!-- First Name -->
+        <mat-form-field class="example-full-width" appearance="outline" class="field">
+            <mat-label>{{ 'auth.register.first-name' | translate }}</mat-label>
+            <input matInput required formControlName="firstName">
+            <mat-error *ngIf="form.get('firstName')!.hasError('required')">
+                {{ 'errors.first-name-required' | translate }}
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Last Name -->
+        <mat-form-field class="example-full-width" appearance="outline" class="field">
+            <mat-label>{{ 'auth.register.last-name' | translate }}</mat-label>
+            <input matInput required formControlName="lastName">
+            <mat-error *ngIf="form.get('lastName')!.hasError('required')">
+                {{ 'errors.last-name-required' | translate }}
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Email -->
+        <mat-form-field class="example-full-width" appearance="outline" class="field">
+            <mat-label>{{ 'general.email' | translate }}</mat-label>
+            <input matInput required formControlName="email">
+            <mat-error *ngIf="form.get('email')!.hasError('required')">
+                {{ 'errors.email-required' | translate }}
+            </mat-error>
+            <mat-error *ngIf="form.get('email')!.hasError('email')">
+                {{ 'errors.email-error' | translate }}
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Password -->
+        <mat-form-field class="example-full-width" appearance="outline" class="field">
+            <mat-label>{{ 'auth.login.password' | translate }}</mat-label>
+            <input matInput required formControlName="password" type="password">
+            <mat-error *ngIf="form.get('password')!.hasError('required')">
+                {{ 'errors.password-required' | translate }}
+            </mat-error>
+            <mat-error *ngIf="form.get('password')!.hasError('minlength')">
+                {{ 'errors.password-length-error' | translate }}
+            </mat-error>
+            <mat-error *ngIf="form.get('password')!.hasError('passwordStrength') && !form.get('password')!.hasError('minlength')">
+                {{ 'errors.password-error-template' | translate }}
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Confirm Password -->
+        <mat-form-field class="example-full-width" appearance="outline" class="field">
+            <mat-label>{{ 'auth.register.confirm-password' | translate }}</mat-label>
+            <input matInput required formControlName="confirmPassword" type="password">
+            <mat-error *ngIf="form.get('confirmPassword')!.hasError('required')">
+                {{ 'errors.password-required' | translate }}
+            </mat-error>
+            <mat-error *ngIf="form.hasError('passwordConfirmedError') && !form.get('confirmPassword')!.hasError('required')">
+                {{ 'errors.password-no-match' | translate }}
+            </mat-error>
+        </mat-form-field>
+
+        <div class="field pick-avatar">
+            <div class="avatar-container fs-20">
+                <label> Avatar </label>
+            </div>
+            
+            <div class="super-container-avatars">
+                <div id="container" (click)="openAvatarList()" class="cursor-pointer">
+                    <div class="coin-image" *ngFor="let profileId of [1,2,3,4,5,6,26]">
+                        <img src="../../../assets/media/profile-pics/profile-pic-{{profileId}}.png" alt=pic height="60px" width="60px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-outline-primary mt-3 register-btn"
+            (click)="register()">{{ 'auth.register.register' | translate }}
+        </button>
+    </div>
+    
+    <div class="d-flex link-container">
+        <a (click)="gotoLogin()" class="login-link"> {{ 'auth.register.allready-have-account' | translate }} </a>
+    </div>
+</div>

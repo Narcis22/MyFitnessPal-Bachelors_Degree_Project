@@ -1,0 +1,96 @@
+.container-all-pages{
+    height: 100%;
+    overflow-y: hidden;
+    padding-top: 59px;
+}
+
+.font-white{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.navbar{
+    padding: 5px 0px;
+    background-color: #212529;
+    position: absolute;
+    width: 100%;
+}
+
+.lang-select{
+    position: absolute;
+    width: fit-content;
+}
+.language-picker:hover{
+    border-color: black;
+}
+
+.option-lang{
+    color: rgb(109, 109, 109);
+    background-color: transparent;
+    width: 150px;
+}
+
+.picker-container{
+    width: 150px;
+    background-color: white;
+    padding: 5px 10px 5px 15px;
+    border-radius: 6px;
+}
+
+.language-label{
+    margin-left: 1.5rem;
+    color: black;
+    font-size: medium;
+    font-weight: 600 !important;
+    width: 150px;
+}
+
+.language-flag{
+    margin-top: -3px;
+}
+
+.language-selector-container{
+    display: flex;
+    float: right;
+    justify-content: end;
+}
+
+.nav-item{
+    font-family: 'Comfortaa', cursive;
+}
+
+.selected-tab{
+    color: gold;
+}
+
+.end-header {
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.label-profile{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+}
+
+.drop-item{
+    padding-top:5px; 
+    padding-bottom:5px; 
+    text-align: center;
+}
+
+.drop-item:hover{
+    background-color: #3c3e40;
+}
+
+.profile-image{
+    border-radius: 20px;
+    width:40px;
+}

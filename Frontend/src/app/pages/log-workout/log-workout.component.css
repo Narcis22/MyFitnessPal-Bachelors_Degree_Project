@@ -1,0 +1,151 @@
+.choose-workout{
+    background-image: url("../../../assets/media/backgrounds/pexels-victor-freitas-949132.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sports-container{
+    display: grid;
+    padding: 150px 300px;
+    grid-template-rows: auto auto auto;
+}
+
+.sports-row-1{
+    display: grid;
+    grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+}
+
+.sports-row-2{
+    display: grid;
+    grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+}
+
+.sports-row-3{
+    display: grid;
+    grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+}
+
+.label-sport{
+    font-size: large;
+    color: White;
+    padding-top: 10px;
+    cursor: pointer; 
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.sport-image{
+    transition: transform .5s;
+}
+
+.sport-image:hover{
+    transform:scale(1.5);
+}
+
+
+.label-sport-wide{
+    font-size:large;
+    color: white;
+    padding-top: 10px;
+    cursor: pointer;
+    font-family: 'Comfortaa', cursive;
+}
+
+.sport-option{
+    display: grid;
+    grid-template-rows: 80px 130px;
+    justify-content: center;
+    text-align: center;
+}
+
+.sport-option-wide{
+    display: grid;
+    grid-template-rows: 80px 130px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Second page */
+.second-page{
+    background-image: url("../../../assets/media/backgrounds/pexels-victor-freitas-949132.png");
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    display: grid;
+    grid-template-rows: 270px auto 150px;
+}
+
+.first-row{
+    display: grid;
+    justify-content: space-around;
+}
+
+.image-top{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+/* Add button */
+.third-row{
+    display: grid;
+    justify-content: space-around;
+}
+
+.add-sport-button{
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+    height: 50px;
+    width: 180px;
+    line-height: 30px;
+    border-radius: 14px;
+}
+
+.sport-form-3{
+    display: grid;
+    grid-template-rows: 90px 90px 90px;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #212529;
+    padding: 60px;
+}
+
+.sport-form-2{
+    display: grid;
+    grid-template-rows: 90px 90px;
+    justify-content: center;
+    width: 350px;
+    height: 265px;
+    border-radius: 20px;
+    background-color: #212529;
+    padding: 60px;
+}
+
+.sport-form-1{
+    display: grid;
+    justify-content: center;
+    width: 350px;
+    height: 180px;
+    border-radius: 20px;
+    background-color: #212529;
+    padding: 60px;
+}
+
+.field{
+    width: 250px;
+    line-height: normal;
+    height: 70px;
+    color: white;
+    font-size: medium !important;
+}
+
+mat-error{
+    color: #f44336;
+    font-size: 12px !important;
+}
+
+.text-cursive{
+    font-family: 'Comfortaa', cursive !important;
+}

@@ -1,0 +1,47 @@
+.charts-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 50px;
+    padding: 50px;
+
+    
+    background-image: url("../../../assets/media/backgrounds/paper-background.jpg");  
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sports-chart-row{
+    display: grid;
+    grid-template-rows: 100px auto;
+    justify-content: center;
+}
+
+.achievements-chart-row{
+    display: grid;
+    grid-template-rows: 100px auto;
+    justify-content: center;
+}
+
+#statisticsSportChart {
+    width: 1000px;
+    margin: auto;
+}
+
+#statisticsAchievementChart {
+    width: 1000px;
+    margin: auto;
+}
+
+.sports-text{
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.achievements-text{
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+}
